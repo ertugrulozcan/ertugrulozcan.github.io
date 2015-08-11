@@ -1,0 +1,43 @@
+/* Font dosyalarının eklenmesi */
+@font-face
+{
+    font-family: SegoeWP;
+    src: url(../assets/fonts/segoewp/segoe-wp.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Bold;
+    src: url(../assets/fonts/segoewp/segoe-wp-bold.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Black;
+    src: url(../assets/fonts/segoewp/segoe-wp-black.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Light;
+    src: url(../assets/fonts/segoewp/segoe-wp-light.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Semibold;
+    src: url(../assets/fonts/segoewp/segoe-wp-semibold.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Semilight;
+    src: url(../assets/fonts/segoewp/segoe-wp-semilight.ttf);
+}
+
+
+@font-face
+{
+    font-family: Consolas;
+    src: url(../assets/fonts/Consolas/Consolas.ttf);
+}

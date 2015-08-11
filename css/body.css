@@ -1,0 +1,192 @@
+body
+{
+	background-color:#1E1E1E !important;
+    -webkit-font-smoothing: antialiased;
+	padding: 0;
+	margin: 0;
+	font-family: SegoeWP;
+	color: white;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+body .header
+{
+	height: 100%;
+}
+
+body .content
+{
+	color: #BBBBBB;
+	min-height: 305px;
+}
+
+body .footer
+{
+	background-color: #333333;
+	height: 100px;
+	margin-top: 100px;
+}
+
+#ContentTable .centercolumn
+{
+	width: 100%;
+	height: 100%;
+}
+
+#ContentTable .leftcolumn
+{
+	height: 100%;
+}
+
+#ContentTable .rightcolumn
+{
+	height: 100%;
+}
+
+.leftpanel
+{
+	/*width: 150px;*/
+	height: 100%;
+}
+
+.rightpanel
+{
+	/*width: 200px;*/
+	height: 100%;
+}
+
+.contentpanel
+{
+	width: 100%;
+	height: 100%;
+}
+
+/* Ana başlık için etiket */
+maintitle
+{
+    color: #FFFFFF;
+    font-family: SegoeWP-Light;
+    font-size: 500%;
+}
+
+/* Alt yazı */
+subtitle
+{
+    font-family: SegoeWP;
+    color: #909090;
+	font-size: 90%;
+    margin-left:3px;
+}
+
+#footerProfileCard
+{
+	float: right;
+	font-size: 80%;
+	font-family: SegoeWP-Semilight;
+    color: #707070;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+
+.menu
+{
+	margin-top: 20px;
+	width: 100%;
+	padding-left: 2%;
+	padding-bottom: 10px; 
+	font-size: 170%;
+	font-family: SegoeWP-Light;
+}
+
+.menu a:link
+{
+    color: white;
+	text-decoration: none;
+}
+
+.menu a:visited
+{
+    color: white;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+    color: white;
+	text-decoration: none;
+	cursor: pointer; 
+	cursor: hand;
+}
+
+.menu a:active
+{
+    color: white;
+	text-decoration: none;
+}
+
+.selectedMenuItem
+{
+	color: white;
+}
+
+.unselectedMenuItem
+{
+	color: white;
+	opacity: 0.3;
+}
+
+h1
+{
+	color: white;
+	font-family: SegoeWP-Black;
+}
+
+h2
+{
+	color: white;
+	font-family: SegoeWP-Semibold;
+	font-size: 240%;
+}
+
+h3
+{
+	color: white;
+}
+
+h4
+{
+	color: white;
+}
+
+h5
+{
+	color: white;
+}
+
+h6
+{
+	color: white;
+}
+
+.panelBoxItem
+{
+	border:1px solid #303030;
+	background-color:#242424;
+	color: white;
+	border-radius:0px;
+	padding: 0 2% 1.5% 2%;
+	margin-bottom: 1%;	
+}
+
+.panelBoxItem:hover
+{
+	border:1px solid #444444;
+	background-color:#151515;
+	border-radius:5px;
+}
+
+.postListItem:hover
+{
+	background-color:#881188;
+}
