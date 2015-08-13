@@ -15,9 +15,11 @@ function BindStrings(language)
 	{
 		console.log("done();");
 	})
-	.fail(function()
+	.fail(function(jqxhr, textStatus, error)
 	{
 		console.log("fail();");
+		var errMessage = textStatus + ", " + error;
+		console.log( "Request Failed: " + errMessage );
 	})
 	.always(function()
 	{
