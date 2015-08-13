@@ -11,7 +11,7 @@ function BindStrings(language)
 			}
 			catch (exc)
 			{
-				console.log("Hata : " + exc.message);	
+				console.log("Hata : " + exc.message + "(key:" + key + ", value:" + val + ")");	
 			}
 		});
 	})
