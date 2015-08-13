@@ -4,7 +4,8 @@ function BindStrings(language)
 	{
 		$.each(data, function(key, val)
 		{
-			console.log(key + " : " + val);
+			document.getElementById(key).innerHTML = value;
+			//console.log(key + " : " + val);
 		});
 	})
 	.done(function()
