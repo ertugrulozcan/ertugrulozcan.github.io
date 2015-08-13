@@ -10,6 +10,18 @@ function BindStrings(language)
 		{
 			console.log(key + " : " + val);
 		});
+	})
+	.done(function()
+	{
+		console.log("done();");
+	})
+	.fail(function()
+	{
+		console.log("fail();");
+	})
+	.always(function()
+	{
+		console.log("always();");
 	});
 
 	console.log("BindStrings() finished.");
