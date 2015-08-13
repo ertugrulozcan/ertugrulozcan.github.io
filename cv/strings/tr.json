@@ -1,0 +1,141 @@
+{"Strings":
+[
+    {"key":"PersonalInformationHeader", "value":"Kişisel Bilgiler"},
+
+    {"key":"EducationStatusTitle", "value":"Eğitim Durumu"},
+    {"key":"EducationStatusContent", "value":" : Üniversite"},
+
+    {"key":"MaritalStatusTitle", "value":"Medeni hali"},
+    {"key":"MaritalStatusContent", "value":" : Bekar"},
+
+    {"key":"MilitaryStatusTitle", "value":"Askerlik durumu"},
+    {"key":"MilitaryStatusContent", "value":" : Yapıldı"},
+
+    {"key":"PlaceOfBirthTitle", "value":"Doğum yeri"},
+    {"key":"PlaceOfBirthContent", "value":" : Amasya"},
+
+    {"key":"DateOfBirthTitle", "value":"Doğum tarihi"},
+    {"key":"DateOfBirthContent", "value":" : 09.08.1991"},
+
+    {"key":"EducationInformationHeader", "value":"Eğitim Bilgileri"},
+
+    {"key":"BachelorsDegreeTitle", "value":"Lisans"},
+    {"key":"BachelorsDegreeContent", "value":"<span> : Deniz Harp Okulu <span style=\"opacity: 0.65;\"> Bilgisayar Mühendisliği, Denizcilik İşletmesi (Yandal) (2009-2012) </span></span><br/><span> : Ondokuz Mayıs Üniversitesi <span style=\"opacity: 0.65;\"> Bilgisayar Mühendisliği (2012-2015) </span></span>"},
+
+    {"key":"HighSchoolTitle", "value":"Lise"},
+    {"key":"HighSchoolContent", "value":" : Amasya Anadolu Lisesi <span style=\"opacity: 0.65;\"> (2005-2009) </span>"},
+
+    {"key":"ForeignLanguageTitle", "value":"Yabancı dil"},
+    {"key":"ForeignLanguageContent", "value":"İngilizce"},
+
+    {"key":"VocationalInformationsHeader", "value":"Mesleki Bilgiler"},
+
+    {"key":"ProgrammingLanguagesTitle", "value":"Programlama dilleri;"},
+    {"key":"Year", "value":" yıl"},
+
+    {"key":"UsingTechnologiesTitle", "value":"Kullanılan teknolojiler;"},
+    {"key":"DevelopedProjectsTitle", "value":"Geliştirilen projeler"},
+
+	{"key":"Project1Name", "value":"LojikSim"},  
+	{"key":"Project1Description", "value":" - Lojik Elektronik Devre Simülatörü"},  
+	{"key":"Project1Additional", "value":"(Java, Swing ve Json teknolojileri kullanıldı)"},    
+
+	{"key":"Project2Name", "value":"SMS PGP"},  
+	{"key":"Project2Description", "value":" - PGP API ve Kriptolu SMS/E-posta Windows Phone Mobil Uygulaması"},  
+	{"key":"Project2Additional", "value":"(C#, WCF, MsSQL, Json, PKCS#7, RSA, SHA-3(Keccak), Diffie-Hellman teknolojileri kullanıldı)"},    
+
+	{"key":"Project3Name", "value":"TNB KEP"},  
+	{"key":"Project3Description", "value":" - Türkiye Noterler Birliği Kayıtlı Elektronik Posta Sistemi entegrasyonu için .Net kütüphanesi"},  
+	{"key":"Project3Additional", "value":"(C#, WPF, ESYA API, PKCS#11 teknolojileri kullanıldı) "},
+
+	{"key":"Project4Name", "value":"Drone112"},  
+	{"key":"Project4Description", "value":" - Ambulans-Drone projesi kapsamında geliştirilen Parrot-ArDrone kontrol yazılımı ve web uygulaması"},  
+	{"key":"Project4Additional", "value":"(JavaScript, NodeJS, Socket.IO, ExpressJS teknolojileri kullanıldı) "},    
+
+	{"key":"Project5Name", "value":"E-Seçim"},  
+	{"key":"Project5Description", "value":" - Elektronik seçim sistemi, masaüstü uygulaması ve web uygulaması"},  
+	{"key":"Project5Additional", "value":"(C#, WPF, MySQL, Json, Javascript, NodeJS, Socket.IO, PKCS#11 teknolojileri kullanıldı) "},    
+
+	{"key":"Project6Name", "value":"Müzik+"},  
+	{"key":"Project6Description", "value":" - Windows Phone Müzik Uygulaması"},  
+	{"key":"Project6Additional", "value":"http://www.windowsphone.com/tr-tr/store/app/m%C3%BCzik/d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0"},    
+
+	{"key":"Project7Name", "value":"Araçlar"},  
+	{"key":"Project7Description", "value":" - Windows Phone sensör araçları uygulaması"},  
+	{"key":"Project7Additional", "value":"http://www.windowsphone.com/tr-tr/store/app/ara%C3%A7lar/c65f8058-c7d8-4e2a-9993-8584d4ff3406"},    
+
+	{"key":"Project8Name", "value":"Post-It"},  
+	{"key":"Project8Description", "value":" - Windows Phone kilit ekranı not uygulaması"},  
+
+	{"key":"Project9Name", "value":"Chip Online"},  
+	{"key":"Project9Description", "value":" - Chip Online Dergisi Mobil Uygulaması"},   
+
+	{"key":"Project10Name", "value":"Hava Durumu"},  
+	{"key":"Project10Description", "value":" - Hava Durumu Mobil Uygulaması"},  
+	{"key":"Project10Additional", "value":"(C#, Json teknolojileri kullanıldı, OpenWeatherMap verilerinden faydalanıldı) "},    
+
+	{"key":"Project11Name", "value":"Hesap Makinesi"},  
+	{"key":"Project11Description", "value":" - Windows Phone Bilimsel Hesap Makinesi Uygulaması"},  
+	
+
+	{"key":"Project12Name", "value":"OMÜ Cep"},  
+	{"key":"Project12Description", "value":" - Ondokuz Mayıs Üniversitesi Windows Phone Uygulaması"},  
+
+	{"key":"Project13Name", "value":"OMÜ Alışveriş"},  
+	{"key":"Project13Description", "value":" - İkinci el eşya takas sitesi"},  
+	{"key":"Project13Additional", "value":"(Java, JSP, Servlet, MySQL teknolojileri kullanıldı)"}, 
+
+	{"key":"SeminarsAndCoursesHeader", "value":"Konferans, seminer, kurs ve yarışmalar"},
+
+	{"key":"Conference1Title", "value":"Liderlik Sempozyumu 2010 , “Liderlik Anlayışının 21'inci YY. Gerekleri Doğrultusunda Değişken Uygulamaları"},	
+	{"key":"Conference1Description", "value":" (Deniz Harp Okulu – 2010)"},	
+
+	{"key":"Conference2Title", "value":"Askeri Liderlik Konferansı"},	
+	{"key":"Conference2Description", "value":" (Deniz Harp Okulu – 2011)"},	
+
+	{"key":"Conference3Title", "value":"\"Etik ve Liderlik\" Konulu Konferans / Prof.Dr. Güven DÜNDAR"},	
+	{"key":"Conference3Description", "value":" (Deniz Harp Okulu – 2011)"},	
+
+	{"key":"Conference4Title", "value":"Deniz Harp Tarihi Sempozyumu / Prof.Dr. İlber Ortaylı"},	
+	{"key":"Conference4Description", "value":" (Deniz Harp Okulu – 2012)"},	
+
+	{"key":"Conference5Title", "value":"Android Geliştirici Günleri kapsamında Ankara Google Developer Group Android Eğitim Semineri ve GDG Android geliştirme kursu"},	
+	{"key":"Conference5Description", "value":" (Samsun - 2012)"},	
+
+	{"key":"Conference6Title", "value":"Kriptoloji Uygulamaları Kursu / INETD"},	
+	{"key":"Conference6Description", "value":" (Mersin Üniversitesi - 2014)"},	
+
+	{"key":"Conference7Title", "value":"AB'14 Akademik Bilişim Konferansı"},	
+	{"key":"Conference7Description", "value":" (Mersin Üniversitesi - 2014)"},	
+
+	{"key":"Conference8Title", "value":"Tübitak Yazılım Projeleri Yarışması <strong>(SMS PGP projesi ile Türkiye 2.'lik ödülü')</strong>"},	
+	{"key":"Conference8Description", "value":" (Ankara - 2014)"},	
+
+	{"key":"Conference9Title", "value":"OKÜP (Orta Karadeniz Üniversiteler Platformu) Proje Pazarı ArGe Projeleri Yarışması"},	
+	{"key":"Conference9Description", "value":" (Samsun - 2014)"},	
+
+	{"key":"Conference10Title", "value":"\"Emektar C dili ve bileşenleri\" kursu / Rıza Engür Pişirici"},	
+	{"key":"Conference10Description", "value":" (Eskişehir - 2015)"},	
+
+	{"key":"Conference11Title", "value":"AB'15 Akademik Bilişim Konferansı"},	
+	{"key":"Conference11Description", "value":" (Anadolu Üniversitesi - 2015)"},		
+
+	{"key":"Conference12Title", "value":"IBM Bluemix Etkinliği"},	
+	{"key":"Conference12Description", "value":" IBM&Viveka (OMÜ Teknopark - 2015)"},	
+
+	{"key":"Conference13Title", "value":"OKÜP (Orta Karadeniz Üniversiteler Platformu) Proje Pazarı Sergisi"},	
+	{"key":"Conference13Description", "value":" (Hitit Üniversitesi - 2015)"},	
+
+	{"key":"JobExperienceHeader", "value":"İş tecrübesi"},
+
+	{"key":"JobExperience1", "value":"2014 - Staj : Teknoloji Çözümleri Merkezi"},
+	{"key":"JobExperience1Additional", "value":" - Yazılım ve Sistem (İstanbul)"},
+
+	{"key":"JobExperience2", "value":"2013 - Staj : Teknoloji Çözümleri Merkezi"},
+	{"key":"JobExperience2Additional", "value":" - Yazılım ve Sistem (İstanbul)"},
+
+	{"key":"SummaryHeader", "value":"İlgi alanları ve mesleki hedefler"},
+	{"key":"SummaryContent", "value":"<p>Yazılım sektöründeki yenilikleri ve değişimleri takip ediyorum. Gelecekte bilişim alanında önemli bir alan haline geleceğini düşündüğüm bulut bilişim, mobil cihazlar, sezgisel kontrol, fonksiyonel programlama dilleri vb. bir çok farklı konu ilgimi çekmekte ve bu alanlarda ar-ge çalışmaları yürütmek istiyorum. </p><p>Mesleki kariyerimde kendimi geliştirdiğim alanda öncelikle ülkemin teknolojik birikimine katkıda bulunmak istiyorum.</p>"},	
+
+	{"key":"ReferencesHeader", "value":"Referanslar"},
+]}
