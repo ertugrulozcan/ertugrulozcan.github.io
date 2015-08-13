@@ -2,7 +2,7 @@ function BindStrings(language)
 {
 	//var json = ReadFromFile("/strings/" + language + ".json");
 
-	$.getJSON("./cv/strings/" + language + ".json", function(data)
+	$.getJSON("./strings/" + language + ".json", function(data)
 	{
 		$.each( data, function( key, val )
 			{
