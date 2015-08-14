@@ -56,11 +56,11 @@
     
     "Project6Name" : "Müzik+",
     "Project6Description" : " - Windows Phone Müzik Uygulaması",
-    "Project6Additional" : "<a href=\"http://www.windowsphone.com/tr-tr/store/app/m%C3%BCzik/d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0\">Mağaza'da görüntüle</a>",
+    "Project6Additional" : "<a href=\"http://www.windowsphone.com/tr-tr/store/app/m%C3%BCzik/d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0\" target=\"_blank\">Mağaza'da görüntüle</a>",
     
     "Project7Name" : "Araçlar",
     "Project7Description" : " - Windows Phone sensör araçları uygulaması",
-    "Project7Additional" : "<a href=\"http://www.windowsphone.com/tr-tr/store/app/ara%C3%A7lar/c65f8058-c7d8-4e2a-9993-8584d4ff3406\">Mağaza'da görüntüle</a>",
+    "Project7Additional" : "<a href=\"http://www.windowsphone.com/tr-tr/store/app/ara%C3%A7lar/c65f8058-c7d8-4e2a-9993-8584d4ff3406\" target=\"_blank\">Mağaza'da görüntüle</a>",
     
     "Project8Name" : "Post-It",
     "Project8Description" : " - Windows Phone kilit ekranı not uygulaması",
