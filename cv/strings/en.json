@@ -84,7 +84,7 @@
     
     "SeminarsAndCoursesHeader" : "Seminars and Courses",
     
-    "Conference1Title" : "Leadership Symposium 2010 , “Leadership Approach's Dynamic Practices in 21st Century",
+    "Conference1Title" : "Leadership Symposium 2010 , “Leadership Approach's Dynamic Practices in 21st Century“",
     "Conference1Description" : " (Turkish Naval Academy – 2010)",
     
     "Conference2Title" : "Military Leadership Conference",
@@ -125,14 +125,17 @@
     
     "JobExperienceHeader" : "Job Experience",
     
-    "JobExperience1" : "2014 - Internship : Center of Technology Solitions",
+    "JobExperience1" : "2014 - Internship : Center of Technology Solutions",
     "JobExperience1Additional" : " - Software and System (İstanbul)",
     
-    "JobExperience2" : "2013 - Internship : Center of Technology Solitions",
+    "JobExperience2" : "2013 - Internship : Center of Technology Solutions",
     "JobExperience2Additional" : " - Software and System (İstanbul)",
     
     "SummaryHeader" : "Interests and professional goals",
     "SummaryContent" : "<p>I follow the innovations and changes in the software industry. I think the future of cloud computing will become an important area in the computing, mobile devices, intuitive control, functional programming languages, and so on. I want to draw my attention in a very different subject and conducts R & D in this area.</p><p>I improved myself in my professional career, primarily in the area want to contribute to my country's technological know-how.</p>",
     
-    "ReferencesHeader" : "References"
+    "ReferencesHeader" : "References",
+
+    "Theme" : "Thema <span class=\"caret\"></span>",
+    "Language" : "Language <span class=\"caret\"></span>"
 }
