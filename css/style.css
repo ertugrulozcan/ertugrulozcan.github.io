@@ -49,4 +49,30 @@ header h2
 {
 	color: white;
 }
+
+.menu a:link
+{
+    color: white;
+	text-decoration: none;
+}
+
+.menu a:visited
+{
+    color: white;
+	text-decoration: none;
+}
+
+.menu a:hover
+{
+    color: white;
+	text-decoration: none;
+	cursor: pointer; 
+	cursor: hand;
+}
+
+.menu a:active
+{
+    color: white;
+	text-decoration: none;
+}
 	
