@@ -16,6 +16,7 @@ header h1
     color: #FFFFFF;
     font-family: SegoeWP-Light;
     font-size: 500%;
+	margin-top: 20px;
 }
 
 header h2
@@ -28,7 +29,6 @@ header h2
 
 #container
 {
-	margin-top: 0;
 	padding-left: 5%;
 	padding-right: 5%;
 	min-height: 595px;
