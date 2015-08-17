@@ -29,8 +29,22 @@ header h2
 
 #container
 {
+	padding-top: 1%;
 	padding-left: 5%;
 	padding-right: 5%;
 	min-height: 595px;
 	background: transparent url(../assets/images/highlight-bg.png) 50% 0 no-repeat;
 }
+
+#menu
+{
+	font-family: SegoeWP-Light;
+	font-size: 180%;
+	color: #909090;
+}
+
+#menu #selected
+{
+	color: white;
+}
+	
