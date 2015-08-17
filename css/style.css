@@ -11,6 +11,14 @@ body
 	overflow-x: hidden;
 }
 
+#container
+{
+	padding-top: 1%;
+	padding-right: 5%;
+	min-height: 595px;
+	background: transparent url(../assets/images/highlight-bg.png) 50% 0 no-repeat;
+}
+
 header
 {
 	padding-left: 5%;
@@ -32,13 +40,9 @@ header h2
     margin-left:3px;
 }
 
-#container
+content
 {
 	margin-top: 100px;
-	padding-top: 1%;
-	padding-right: 5%;
-	min-height: 595px;
-	background: transparent url(../assets/images/highlight-bg.png) 50% 0 no-repeat;
 }
 
 .menu
