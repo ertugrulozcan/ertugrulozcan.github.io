@@ -43,6 +43,8 @@ header h2
 	color: #909090;
 }
 
+.menu li {list-style-type: none;}
+
 .menu #selected
 {
 	color: white;
