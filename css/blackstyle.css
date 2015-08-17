@@ -1,11 +1,13 @@
 body
 {
+	background: #e7e7e7 url(../assets/images/body-bg.png) 0 0 repeat;
     background-color:#1E1E1E !important;
     -webkit-font-smoothing: antialiased;
 	padding: 0;
 	margin: 0;
 	font-family: SegoeWP;
 	color: white;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -23,4 +25,12 @@ header h2
     color: #909090;
 	font-size: 90%;
     margin-left:3px;
+}
+
+#container
+{
+	margin-left: 5%;
+	margin-right: 5%;
+	min-height: 595px;
+	background: transparent url(../assets/images/highlight-bg.jpg) 50% 0 no-repeat;
 }
