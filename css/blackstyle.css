@@ -28,7 +28,8 @@ header h2
 
 #container
 {
-	margin-left: 5%;
-	margin-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	min-height: 595px;
 	background: transparent url(../assets/images/highlight-bg.png) 50% 0 no-repeat;
 }
