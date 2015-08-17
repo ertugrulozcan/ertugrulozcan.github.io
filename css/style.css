@@ -36,14 +36,14 @@ header h2
 	background: transparent url(../assets/images/highlight-bg.png) 50% 0 no-repeat;
 }
 
-#menu
+.menu
 {
 	font-family: SegoeWP-Light;
 	font-size: 180%;
 	color: #909090;
 }
 
-#menu #selected
+.menu #selected
 {
 	color: white;
 }
