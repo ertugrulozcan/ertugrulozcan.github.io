@@ -45,10 +45,13 @@ header h2
 	float: right;
 	font-family: SegoeWP-Light;
 	font-size: 150%;
-	color: #909090;
 }
 
-.menu li {list-style-type: none;}
+.menu li
+{
+	list-style-type: none;
+	color: #808080;
+}
 
 .menu .selected
 {
