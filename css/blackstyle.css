@@ -1,7 +1,6 @@
 body
 {
 	background: #171717 url(../assets/images/body-bg.png) 0 0 repeat;
-    background-color:#1E1E1E !important;
     -webkit-font-smoothing: antialiased;
 	padding: 0;
 	margin: 0;
@@ -31,6 +30,5 @@ header h2
 {
 	margin-left: 5%;
 	margin-right: 5%;
-	min-height: 595px;
 	background: transparent url(../assets/images/highlight-bg.png) 50% 0 no-repeat;
 }
