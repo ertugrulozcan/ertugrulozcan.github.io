@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
     <head>
         <meta charset='utf-8'>
@@ -23,23 +23,32 @@
 		<link rel="stylesheet" type="text/css" title="Black" href="css/style.css">
 		
 		<!--JScripts-->
-        
+        <script src="js/navigation.js"></script>
     </head>
     
-    <body>
+    <body onload="navigate('mainpage.htm')">
 		<header>
-			<h1>ertuğrul özcan</h1>
-			<h2>Kişisel Blog</h2>
-			
-			<span class="menu">
-				<a class="selected" href="http://ertugrulozcan.github.io/">Ana sayfa</a>
-				<a href="http://ertugrulozcan.github.io/arsiv.htm">Arşiv</a>
-				<a href="http://ertugrulozcan.github.io/hakkinda.htm">Hakkında</a>
-			</span>
+            <div id="header-base">
+                <div id="header-perspective">
+                    <h1>ertuğrul özcan</h1>
+                    <h2>Kişisel Blog</h2>
+
+                    <span class="menu">
+                        <a onclick="navigate('mainpage.htm', this)" class="selected">Ana sayfa</a>
+                        <a onclick="navigate('archive.htm', this)" class="unselected">Arşiv</a>
+                        <a onclick="navigate('about.htm', this)" class="unselected">Hakkımda</a>
+
+                        <audio id="beep-one" preload="auto">
+                            <source src="./assets/sounds/beep.mp3">
+                            <source src="./assets/sounds/beep.ogg">
+                        </audio>
+                    </span>
+                </div>
+            </div>
 		</header>
 
-		<div class="content-main">
-			:(
+		<div id="ContentDiv" class="content-main">
+			
 		</div>
 
 		<footer>
@@ -61,7 +70,15 @@
 		</footer>
 
 		<div>
-			<script type="text/javascript">
+            <!--Beep Sound-->
+            <script>
+                var beep = $("#beep-one")[0];
+                $(".menu a").mouseenter(function () {
+                    beep.play();
+                });
+            </script>
+			
+            <script type="text/javascript">
 				var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
 				document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 			</script>

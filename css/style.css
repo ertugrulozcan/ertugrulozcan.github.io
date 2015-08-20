@@ -10,10 +10,25 @@ body
 	overflow-x: hidden;
 }
 
-header
+#header-base
 {
-	padding-left: 4%;
-	padding-right: 4%;
+	margin-left: 4%;
+    display: inline-block;
+    position: relative;
+    -webkit-perspective: 600px; /* Chrome, Safari, Opera  */
+    perspective: 600px;
+}
+
+#header-perspective
+{
+    transition: .5s; 
+    transform-origin: left;
+}
+
+#header-perspective:hover
+{
+    -webkit-transform: rotateY(20deg); /* Chrome, Safari, Opera  */
+    transform: rotateY(20deg);
 }
 
 header h1
@@ -22,14 +37,13 @@ header h1
     font-family: SegoeWP-Light;
 	font-weight: 100;
     font-size: 500%;
-	margin-top: 0px;
+	margin-top: 20px;
 }
 
 header h2
 {
     font-family: SegoeWP;
     color: #909090;
-	text-shadow: 0 0 1px rgba(255, 255, 255, 0.8);
 	font-size: 90%;
     margin-left:3px;
 }
@@ -39,24 +53,15 @@ header h2
 	margin-top: 50px;
 	padding-left: 4%;
 	padding-right: 4%;
-	min-height: 600px;
+	min-height: 400px;
 }
 
-.menu
+.menu a, a:link, a:visited, a:active
 {
-	font-family: SegoeWP-Light;
+    font-family: SegoeWP-Light;
 	font-size: 170%;
-}
-
-.menu a
-{
 	margin-right: 10px;
-}
-
-.menu a:link, a:visited, a:active
-{
 	list-style-type: none;
-	color: #505050;
 }
 
 .menu a:hover 
@@ -64,12 +69,16 @@ header h2
     color: #F95900;
 	text-decoration: none;
 	cursor: pointer; 
-	cursor: hand;
 }
 	
 .menu .selected
 {
 	color: white;
+}
+
+.menu .unselected
+{
+    color: #505050;
 }
 
 footer
