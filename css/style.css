@@ -12,7 +12,7 @@ body
 
 #header-base
 {
-	margin-left: 4%;
+	margin-left: 10%;
     display: inline-block;
     position: relative;
     -webkit-perspective: 600px; /* Chrome, Safari, Opera  */
@@ -23,12 +23,14 @@ body
 {
     transition: .5s; 
     transform-origin: left;
+    -webkit-transform: rotateY(15deg); /* Chrome, Safari, Opera  */
+    transform: rotateY(15deg);
 }
 
 #header-perspective:hover
 {
-    -webkit-transform: rotateY(20deg); /* Chrome, Safari, Opera  */
-    transform: rotateY(20deg);
+    -webkit-transform: rotateY(0); /* Chrome, Safari, Opera  */
+    transform: rotateY(0);
 }
 
 header h1
@@ -51,9 +53,11 @@ header h2
 .content-main
 {
 	margin-top: 50px;
-	padding-left: 4%;
-	padding-right: 4%;
+	padding-left: 10%;
+	padding-right: 10%;
 	min-height: 400px;
+    margin-bottom: 100px;
+    border: thin;
 }
 
 .menu a, a:link, a:visited
