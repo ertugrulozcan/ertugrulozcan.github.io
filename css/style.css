@@ -56,19 +56,24 @@ header h2
 	min-height: 400px;
 }
 
-.menu a, a:link, a:visited, a:active
+.menu a, a:link, a:visited
 {
     font-family: SegoeWP-Light;
 	font-size: 170%;
 	margin-right: 10px;
 	list-style-type: none;
+    text-decoration: none;
 }
 
 .menu a:hover 
 {
     color: #F95900;
-	text-decoration: none;
 	cursor: pointer; 
+}
+
+.menu a:active 
+{
+    color: #F73500;
 }
 	
 .menu .selected
