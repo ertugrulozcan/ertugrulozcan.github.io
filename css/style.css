@@ -103,6 +103,8 @@ header h2
 
 .menu a, a:link, a:visited
 {
+    color: black;
+    
 	font-size: 170%;
 	margin-right: 10px;
 	list-style-type: none;
@@ -122,13 +124,12 @@ header h2
 	
 .menu .selected
 {
-	color: black;
-    font-weight: normal;
+	font-weight: normal;
 }
 
 .menu .unselected
 {
-    color: #606060;
+    opacity: 0.5;
     font-weight: lighter;
 }
 
