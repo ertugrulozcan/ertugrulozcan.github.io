@@ -124,11 +124,13 @@ header h2
 .menu .selected
 {
 	color: black;
+    font-weight: normal;
 }
 
 .menu .unselected
 {
-    color: #595959;
+    color: #606060;
+    font-weight: lighter;
 }
 
 p
