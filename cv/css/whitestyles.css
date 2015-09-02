@@ -98,15 +98,21 @@ body
 {
     font-family: SegoeWP;
     height:100%;
-    background-color:#EEEEEE !important;
+    background: url('../assets/images/body-bg2.png');
     -webkit-font-smoothing: antialiased;
-    padding-top: 25px;
 }
 
 #container
 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left :7%;
+    margin-right :7%;
+    background-color:#EEEEEE !important;
     min-height:100%;
     position:relative;
+    padding-top: 50px;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.4);
 }
 
 #header
