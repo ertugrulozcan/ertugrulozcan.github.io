@@ -138,5 +138,8 @@
     "ReferencesHeader" : "References",
 
     "Theme" : "Theme <span class=\"caret\"></span>",
-    "Language" : "Language <span class=\"caret\"></span>"
+    "Language": "Language <span class=\"caret\"></span>",
+
+    "ThemeMenuItemBlack": "Black",
+    "ThemeMenuItemWhite" : "White"
 }
