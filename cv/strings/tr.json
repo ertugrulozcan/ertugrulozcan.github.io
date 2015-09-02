@@ -73,7 +73,8 @@
     "Project10Additional" : "(C#, Json teknolojileri kullanıldı, OpenWeatherMap verilerinden faydalanıldı) ",
     
     "Project11Name" : "Hesap Makinesi",
-    "Project11Description" : " - Windows Phone Bilimsel Hesap Makinesi Uygulaması",
+    "Project11Description": " - Windows Phone Bilimsel Hesap Makinesi Uygulaması",
+    "Project11Additional" : "<a href=\"https://www.windowsphone.com/en-kw/store/app/hesap-makinesi/9e19ca64-de52-42c2-9c8a-9ccc714b82f3" target=\"_blank\">Mağaza'da görüntüle</a>",
     
     "Project12Name" : "OMÜ Cep",
     "Project12Description" : " - Ondokuz Mayıs Üniversitesi Windows Phone Uygulaması",
