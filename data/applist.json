@@ -2,7 +2,7 @@
     {
         "appid": "d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0",
         "appName": "Müzik+",
-        "description": "Windows Phone Müzik Çalar Uygulamasý",
+        "description": "Windows Phone Müzik Çalar Uygulaması",
         "logo": "https://store-images.microsoft.com/image/apps.49733.13510798882945525.eb17678c-1276-44ed-a5c5-cd6c7dda1098.67590927-500b-49d4-8a68-d3d3946cbacd?w=191&h=191",
         "urlForWindows10": "https://www.microsoft.com/store/apps/9nblggh0jkqv",
         "urlForWindowsPhone81": "http://windowsphone.com/s?appid=d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0"
@@ -10,9 +10,27 @@
     {
         "appid": "c65f8058-c7d8-4e2a-9993-8584d4ff3406",
         "appName": "Araçlar",
-        "description": "Windows Phone Sensör Araçlarý Uygulamasý\n\r\n\r #El feneri\n\r #Pusula\n\r #Su terazisi\n\r #Açý ölçer\n\r #Pil durumu",
+        "description": "Windows Phone Sensör Araçları Uygulaması\n\r\n\r #El feneri\n\r #Pusula\n\r #Su terazisi\n\r #Açı ölçer\n\r #Pil durumu",
         "logo": "https://store-images.microsoft.com/image/apps.43756.9007199266302570.8600a64b-66c7-44e6-a03d-77565fad2a17.c4d1289d-9c83-49ef-a9b8-fedb4daa66c3?w=191&h=191",
         "urlForWindows10": "https://www.microsoft.com/store/apps/9wzdncrdg91w",
         "urlForWindowsPhone81": "http://windowsphone.com/s?appid=c65f8058-c7d8-4e2a-9993-8584d4ff3406"
     },
+    {
+        "appid": "9e19ca64-de52-42c2-9c8a-9ccc714b82f3",
+        "appName": "Hesap Makinesi +-×÷",
+        "description": "Windows Universal Bilimsel Hesap Makinesi Uygulaması",
+        "logo": "https://store-images.microsoft.com/image/apps.8299.13510798886209812.e84f303a-4699-4356-905e-361662c39e57.bdb2efd0-e9b0-4c81-9b77-4ab3e6d84648?w=191&h=191",
+        "urlForWindows10": "https://www.microsoft.com/store/apps/9nblggh203vw",
+        "urlForWindowsPhone81": "http://windowsphone.com/s?appid=9e19ca64-de52-42c2-9c8a-9ccc714b82f3"
+    },
+    {
+        "appid": "",
+        "appName": "Chip Online TR",
+        "description": "Chip Online TR Windows Universal Uygulaması",
+        "logo": "https://pbs.twimg.com/profile_images/578821878053253120/9sjQ1T96.png",
+        "urlForWindows10": "https://www.microsoft.com/store/apps/9nblggh5x35v",
+        "urlForWindowsPhone81": ""
+    }
 ]
+
+
