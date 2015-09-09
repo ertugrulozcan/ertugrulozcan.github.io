@@ -104,10 +104,12 @@ body
 
 #container
 {
+    /*
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left :7%;
     margin-right :7%;
+    */
     background-color:#1E1E1E !important;
     min-height:100%;
     position:relative;
