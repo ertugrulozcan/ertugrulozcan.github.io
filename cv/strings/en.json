@@ -66,7 +66,8 @@
     "Project8Description" : " - Windows Phone lock screen note application",
     
     "Project9Name" : "Chip Online",
-    "Project9Description" : " - Chip Online magazine Mobile Application",
+    "Project9Description" : " - Chip Online TR Mobile Application",
+    "Project9Additional" : "<a href=\"http://windowsphone.com/s?appid=c3313929-9292-4391-b91c-01f015df0bc2\" target=\"_blank\">View on store</a>",
     
     "Project10Name" : "Hava Durumu",
     "Project10Description" : " - Weather Mobile Application",
