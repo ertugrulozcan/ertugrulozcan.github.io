@@ -102,8 +102,6 @@ body
 {
     table-layout: fixed;
     color: white;
-    border-collapse: separate;
-    border-spacing: 3px 0;
     width: 100%;
 
 }
@@ -147,4 +145,16 @@ body
 {
     color: white;
     padding: 5px 10px;
+}
+
+.shortcut-button
+{
+    margin : 0;
+}
+
+#EquationSpan
+{
+    background-color: #141414;
+    color: white;
+    border-color: #101010;
 }

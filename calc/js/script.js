@@ -2,26 +2,26 @@
 
 function buttonclick(c)
 {
-    if (document.getElementById('EquationSpan').innerText == "0")
-        document.getElementById('EquationSpan').innerText = c;
+    if ($("#EquationSpan").val() == "0")
+        $("#EquationSpan").val(c);
     else
-        document.getElementById('EquationSpan').innerText += c;
+        $("#EquationSpan").val($("#EquationSpan").val() + c);
 }
 
 function del()
 {
-    var equ = document.getElementById('EquationSpan').innerText;
+    var equ = $("#EquationSpan").val();
     if (equ)
-        document.getElementById('EquationSpan').innerText = equ.substring(0, equ.length - 1);
+        $("#EquationSpan").val(equ.substring(0, equ.length - 1));
     
-    if (!document.getElementById('EquationSpan').innerText)
-        document.getElementById('EquationSpan').innerText = "0";
+    if (!$("#EquationSpan").val())
+        $("#EquationSpan").val("0");
 }
 
 function clear()
 {
-    document.getElementById('ResultSpan').innerText = "0";
-    document.getElementById('EquationSpan').innerText = "0";
+    $("#ResultSpan").val("0");
+    $("#EquationSpan").val("0");
 }
 
 function degreeTypeChanged(degreeType)
@@ -45,13 +45,21 @@ function degreeTypeChanged(degreeType)
 
 function exe()
 {
-    var equation =
-        {
-            equationString: document.getElementById('EquationSpan'),
-            degreeType: this.degreeType
-        };
+    var parameter = { equation: $("#EquationSpan").val(), degreeType: this.degreeType }
 
-    /*
-    * Bu noktada denklem hesaplanmak üzere bir wcf servisine gönderilir. Dönen sonuç ekrana yazdırılır.
-    */
+    $.ajax({
+        url: "http://hesapmakinesi.azurewebsites.net/CalculatorService.svc/Execute",
+        data: JSON.stringify(parameter),
+        type: "POST",
+        dataType: "text",
+        contentType: "application/json; charset=utf-8",
+        success: function (data)
+        {
+            alert("Sonuç : " + data.Result);
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown)
+        {
+            alert("Servis hatası : " + textStatus);
+        }
+    });
 }
