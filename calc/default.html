@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Hesap Makinesi +-×÷</title>
+    <link rel="shortcut icon" href="assets/favicon.ico">
+
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--jQuery-->
+    <script src="js/jquery-2.1.4.min.js"></script>
+
+    <!--Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metro style css -->
+    <link href="css/metro.css" rel="stylesheet">
+    <link href="css/metro-icons.css" rel="stylesheet">
+    <link href="css/metro-responsive.css" rel="stylesheet">
+    <link href="css/metro-schemes.css" rel="stylesheet">
+
+    <!-- Metro srtle javascript-->
+    <script src="js/metro.js"></script>
+
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="MainDiv">
+        <div class="container container-fluid">
+            <img src="assets/images/clogo1.png" width="80" height="80" style="position:absolute; margin-left: 1%; margin-top: 2%;"/>
+            <div id="ScreenDiv">
+                <span id="ResultSpan">0</span>
+                <input type="text" class="form-control" id="EquationSpan">
+            </div>
+
+            <div id="KeypadDiv">
+                <div id="StandartKeypadDiv" class="col-sm-9 col-md-6">
+                    <table>
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" style="font-size:180%;" onclick="del()">
+                                    ⌫
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" onclick="clear()">
+                                    C
+                                </button>
+                            </td>
+                            <td colspan="2">
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('ANS')">
+                                    ANS
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('(')">
+                                    (
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick(')')">
+                                    )
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick(' / ')">
+                                    /
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick(' * ')">
+                                    *
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('7')">
+                                    7
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('8')">
+                                    8
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('9')">
+                                    9
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick(' - ')">
+                                    -
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('4')">
+                                    4
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('5')">
+                                    5
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('6')">
+                                    6
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick(' + ')">
+                                    +
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('1')">
+                                    1
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('2')">
+                                    2
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('3')">
+                                    3
+                                </button>
+                            </td>
+                            <td rowspan="2">
+                                <button class="shortcut-button bg-amber bg-active-yellow fg-white bd-black ButtonStyle2" style="height: 100%;" onclick="exe()">
+                                    =
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="2">
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('0')">
+                                    0
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle2" onclick="buttonclick('.')">
+                                    .
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div id="ScientificKeypadDiv" class="col-sm-3 col-md-6">
+                    <table>
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('sin(')">
+                                    sin
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('sinh(')">
+                                    sinh
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('arcsin(')">
+                                    arcsin
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('pow(')">
+                                    pow(x,y)
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('cos(')">
+                                    cos
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('cosh(')">
+                                    cosh
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('arccos(')">
+                                    arccos
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('sqrt(')">
+                                    sqrt(x)
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('tan(')">
+                                    tan
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('tanh(')">
+                                    tanh
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('arctan(')">
+                                    arctan
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('sqrt(')">
+                                    sqrt(x,y)
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('е')">
+                                    е
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('π')">
+                                    π
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-darker bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick('!')">
+                                    !
+                                </button>
+                            </td>
+                            <td>
+                                <button class="shortcut-button bg-dark bg-active-gray fg-white bd-black ButtonStyle1" onclick="buttonclick(',')">
+                                    ,
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <p>
+                        <div class="btn-group dropup" style="margin-left: 3px;">
+                            <button class="dropdown-toggle button bg-dark bg-active-gray fg-white bd-black" data-toggle="dropdown">
+                                <span id="DegreeTypeSelectedSpan">Derece</span>
+                            </button>
+
+                            <ul class="dropdown-menu" style="background-color:#313131; border-color: white;">
+                                <li onclick="degreeTypeChanged('degree')">Derece</li>
+                                <li onclick="degreeTypeChanged('radian')">Radyan</li>
+                                <li onclick="degreeTypeChanged('grad')">Grad</li>
+                            </ul>
+                        </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container container-fluid">
+            <p>
+                <span style="font-size: small; margin: auto; text-align:center; display:block;">Ertuğrul Özcan | 2015</span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

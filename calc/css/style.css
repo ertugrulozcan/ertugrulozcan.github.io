@@ -49,7 +49,7 @@
 
 body
 {
-    background-color: #141414;
+    background: #171717 url(../assets/images/body-bg.png) 0 0 repeat;
 }
 
 #MainDiv
@@ -61,6 +61,16 @@ body
     top: 0;
     right: 0;
     bottom: 0;
+}
+
+.container
+{
+    margin: auto;
+    padding-top: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: #141414 !important;
+    box-shadow: 5px 10px 50px rgba(0, 0, 0, 0.9);
 }
 
 #ScreenDiv
@@ -157,4 +167,19 @@ body
     background-color: #141414;
     color: white;
     border-color: #101010;
+}
+
+footer
+{
+    margin: auto;
+    width: 100%;
+    left: 0;
+    top: 20px;
+    right: 0;
+    bottom: 0;
+}
+
+footer .container
+{
+    box-shadow: 5px -10px 50px rgba(0, 0, 0, 0.9);
 }

@@ -1,4 +1,4 @@
-﻿var degreeType = "degree";
+﻿var degreeType = "Degree";
 
 function buttonclick(c)
 {
@@ -26,20 +26,20 @@ function clear()
 
 function degreeTypeChanged(degreeType)
 {
-    if(degreeType == "degree")
+    if(degreeType == "Degree")
     {
-        document.getElementById('DegreeTypeSelectedSpan').innerText = 'Derece';
-        degreeType = 'degree';
+        $('DegreeTypeSelectedSpan').val('Derece');
+        degreeType = 'Degree';
     }
-    else if (degreeType == "radian")
+    else if (degreeType == "Radian")
     {
-        document.getElementById('DegreeTypeSelectedSpan').innerText = 'Radyan';
-        degreeType = 'radian';
+        $('DegreeTypeSelectedSpan').val('Radyan');
+        degreeType = 'Radian';
     }
-    else if (degreeType == "grad")
+    else if (degreeType == "Grad")
     {
-        document.getElementById('DegreeTypeSelectedSpan').innerText = 'Grad';
-        degreeType = 'grad';
+        $('DegreeTypeSelectedSpan').val('Grad');
+        degreeType = 'Grad';
     }
 }
 
@@ -48,18 +48,31 @@ function exe()
     var parameter = { equation: $("#EquationSpan").val(), degreeType: this.degreeType }
 
     $.ajax({
-        url: "http://hesapmakinesi.azurewebsites.net/CalculatorService.svc/Execute",
+        url: "https://hesapmakinesi.azurewebsites.net/CalculatorService.svc/Execute",
         data: JSON.stringify(parameter),
+        method: "Execute",
         type: "POST",
-        dataType: "text",
+        dataType: "json",
         contentType: "application/json; charset=utf-8",
         success: function (data)
         {
             alert("Sonuç : " + data.Result);
         },
-        error: function (XMLHttpRequest, textStatus, errorThrown)
+        error: function (x, e)
         {
-            alert("Servis hatası : " + textStatus);
+            if (x.status == 0) {
+                alert('Hata: Bağlı değilsiniz. Lütfen ağ bağlantınızı kontrol ediniz. \n(You are offline!! Please Check Your Network)');
+            } else if (x.status == 404) {
+                alert('Hata: URL bulunamadı. \n(Requested URL not found)');
+            } else if (x.status == 500) {
+                alert('Hata: İç sunucu hatası. \n(Internal Server Error)');
+            } else if (e == 'parsererror') {
+                alert('Hata: JSON serialize hatası. \n(Parsing JSON Request failed)');
+            } else if (e == 'timeout') {
+                alert('Hata: İste zaman aşımına uğradı. \n(Request Time out)');
+            } else {
+                alert('Bilinmeyen hata! \n(Unknown error)' + x.responseText);
+            }
         }
     });
 }
