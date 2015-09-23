@@ -1,4 +1,4 @@
-﻿var degreeType = "Degree";
+﻿var degreeType = 'Degree';
 
 function buttonclick(c)
 {
@@ -26,17 +26,17 @@ function clear()
 
 function degreeTypeChanged(degreeType)
 {
-    if(degreeType == "Degree")
+    if(degreeType == 'Degree')
     {
         $('DegreeTypeSelectedSpan').val('Derece');
         degreeType = 'Degree';
     }
-    else if (degreeType == "Radian")
+    else if (degreeType == 'Radian')
     {
         $('DegreeTypeSelectedSpan').val('Radyan');
         degreeType = 'Radian';
     }
-    else if (degreeType == "Grad")
+    else if (degreeType == 'Grad')
     {
         $('DegreeTypeSelectedSpan').val('Grad');
         degreeType = 'Grad';
@@ -45,7 +45,7 @@ function degreeTypeChanged(degreeType)
 
 function exe()
 {
-    var parameter = { equation: $("#EquationSpan").val(), degreeType: this.degreeType }
+    var parameter = { equation: $('#EquationSpan').val(), degreeType: this.degreeType }
 
     $.ajax({
         url: "https://hesapmakinesi.azurewebsites.net/CalculatorService.svc/Execute",
@@ -54,6 +54,10 @@ function exe()
         type: "POST",
         dataType: "json",
         contentType: "application/json; charset=utf-8",
+        beforeSend: function (xhr) {
+            xhr.setRequestHeader("Content-type",
+                                 "application/json; charset=utf-8");
+        },
         success: function (data)
         {
             alert("Sonuç : " + data.Result);
