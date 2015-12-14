@@ -1,0 +1,146 @@
+{
+    "PersonalInformationHeader" : "Personal Information",
+
+    "EducationStatusTitle" : "Education State",
+    "EducationStatusContent" : " : University",
+
+    "MaritalStatusTitle" : "Marital Status",
+    "MaritalStatusContent" : " : Single",
+
+    "MilitaryStatusTitle" : "Military Status",
+    "MilitaryStatusContent" : " : Completed",
+
+    "PlaceOfBirthTitle" : "Place of birth",
+    "PlaceOfBirthContent" : " : Amasya",
+
+    "DateOfBirthTitle" : "Date of birth",
+    "DateOfBirthContent" : " : 09.08.1991",
+
+    "EducationInformationHeader" : "Education Information",
+
+    "BachelorsDegreeTitle" : "University",
+    "BachelorsDegreeContent" : "<span> : Turkish Naval Academy <span style=\"opacity: 0.65;\"> Computer Engineering / Mariner - Seafarer (2009-2012) </span></span><br/><span> : Ondokuz Mayıs University <span style=\"opacity: 0.65;\"> Computer Engineering (2012-2015) </span></span>",
+
+    "HighSchoolTitle" : "High School",
+    "HighSchoolContent" : " : Amasya Anatolian High School <span style=\"opacity: 0.65;\"> (2005-2009) </span>",
+
+    "ForeignLanguageTitle" : "Foreign Language",
+    "ForeignLanguageContent" : " : English",
+
+    "VocationalInformationsHeader" : "Vocational Informations",
+
+    "ProgrammingLanguagesTitle" : "Programming Languages;",
+    
+    "UsingTechnologiesTitle" : "Using technologies;",
+    "DevelopedProjectsTitle" : "Developed projects",
+    
+    "Project1Name" : "LojikSim",
+    "Project1Description" : " - Logical Electronic Circuit Simulator",
+    "Project1Additional" : "(Java, Swing and Json technologies used)",
+    
+    "Project2Name" : "SMS PGP",
+    "Project2Description" : " - PGP API and Cryptographic SMS/E-mail Windows Phone Mobile Application",
+    "Project2Additional" : "(C#, WCF, MsSQL, Json, PKCS#7, RSA, SHA-3(Keccak), Diffie-Hellman technologies used)",
+    
+    "Project3Name" : "TNB KEP",
+    "Project3Description" : " -  .Net Library for Turkish Association of Notaries Registered Electronic Mail System",
+    "Project3Additional" : "(C#, WPF, ESYA API, PKCS#11 technologies used) ",
+    
+    "Project4Name" : "Drone112",
+    "Project4Description" : " - Parrot-ArDrone control software and web application for Ambulance-Drone project",
+    "Project4Additional" : "(JavaScript, NodeJS, Socket.IO, ExpressJS technologies used) ",
+    
+    "Project5Name" : "E-Seçim",
+    "Project5Description" : " - Electronic Elimination System, desktop application and web application",
+    "Project5Additional" : "(C#, WPF, MySQL, Json, Javascript, NodeJS, Socket.IO, PKCS#11 technologies used) ",
+    
+    "Project6Name" : "Müzik+",
+    "Project6Description" : " - Windows Phone Music Application",
+    "Project6Additional" : "<a href=\"http://www.windowsphone.com/tr-tr/store/app/m%C3%BCzik/d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0\" target=\"_blank\">View on store</a>",
+    
+    "Project7Name" : "Araçlar",
+    "Project7Description" : " - Windows Phone Tools Applications",
+    "Project7Additional" : "<a href=\"http://www.windowsphone.com/tr-tr/store/app/ara%C3%A7lar/c65f8058-c7d8-4e2a-9993-8584d4ff3406\" target=\"_blank\">View on store</a>",
+    
+    "Project8Name" : "Post-It",
+    "Project8Description" : " - Windows Phone lock screen note application",
+    
+    "Project9Name" : "Chip Online",
+    "Project9Description" : " - Chip Online TR Mobile Application",
+    "Project9Additional" : "<a href=\"http://windowsphone.com/s?appid=c3313929-9292-4391-b91c-01f015df0bc2\" target=\"_blank\">View on store</a>",
+    
+    "Project10Name" : "Hava Durumu",
+    "Project10Description" : " - Weather Mobile Application",
+    "Project10Additional" : "(C#, Json technologies used, Make use of OpenWeatherMap's datas) ",
+    
+    "Project11Name" : "Hesap Makinesi",
+    "Project11Description": " - Windows Phone Scientific Calculator Application",
+    "Project11Additional" : "<a href=\"https://www.windowsphone.com/en-kw/store/app/hesap-makinesi/9e19ca64-de52-42c2-9c8a-9ccc714b82f3\" target=\"_blank\">View on store</a>",
+    
+    "Project12Name" : "OMÜ Cep",
+    "Project12Description" : " - Ondokuz Mayıs University Windows Phone Application",
+    
+    "Project13Name" : "OMÜ Alışveriş",
+    "Project13Description" : " - Second-hand goods swap site",
+    "Project13Additional" : "(Java, JSP, Servlet, MySQL technologies used)",
+    
+    "SeminarsAndCoursesHeader" : "Seminars and Courses",
+    
+    "Conference1Title" : "Leadership Symposium 2010 , “Leadership Approach's Dynamic Practices in 21st Century“",
+    "Conference1Description" : " (Turkish Naval Academy – 2010)",
+    
+    "Conference2Title" : "Military Leadership Conference",
+    "Conference2Description" : " (Turkish Naval Academy – 2011)",
+    
+    "Conference3Title" : "\"Ethic and Leadership\" / Prof.Dr. Güven DÜNDAR",
+    "Conference3Description" : " (Turkish Naval Academy – 2011)",
+    
+    "Conference4Title" : "Naval History Symposium / Prof.Dr. İlber Ortaylı",
+    "Conference4Description" : " (Turkish Naval Academy – 2012)",
+    
+    "Conference5Title" : "Ankara Google Developer Group Android Training Seminar and GDG Android Development Course",
+    "Conference5Description" : " (Samsun - 2012)",
+    
+    "Conference6Title" : "Cryptography Application Course / INETD (Association of Internet Technologies)",
+    "Conference6Description" : " (Mersin University - 2014)",
+    
+    "Conference7Title" : "AB'14 Academic Computing Conference",
+    "Conference7Description" : " (Mersin University - 2014)",
+    
+    "Conference8Title" : "TUBITAK Software Projects Competition <strong>(Turkey's 2nd Prize with Project SMSPGP)</strong>",
+    "Conference8Description" : " (Ankara - 2014)",
+    
+    "Conference9Title" : "OKÜP (Central BlackSea Universities Platform) Project Market Research&Development Projects Competition",
+    "Conference9Description" : " (Samsun - 2014)",
+    
+    "Conference10Title" : "Course of \"Veteran C language and components\" / Rıza Engür Pişirici",
+    "Conference10Description" : " (Eskişehir - 2015)",
+    
+    "Conference11Title" : "AB'15 Academic Computing Conference",
+    "Conference11Description" : " (Anatolian University - 2015)",
+    
+    "Conference12Title" : "IBM Bluemix Activity",
+    "Conference12Description" : " IBM&Viveka (OMÜ Teknopark - 2015)",
+    
+    "Conference13Title" : "OKÜP (Central BlackSea Universities Platform) Project Market Exposition",
+    "Conference13Description" : " (Hitit University - 2015)",
+    
+    "JobExperienceHeader" : "Job Experience",
+    
+    "JobExperience1" : "2014 - Internship : Center of Technology Solutions",
+    "JobExperience1Additional" : " - Software and System (İstanbul)",
+    
+    "JobExperience2" : "2013 - Internship : Center of Technology Solutions",
+    "JobExperience2Additional" : " - Software and System (İstanbul)",
+    
+    "SummaryHeader" : "Interests and professional goals",
+    "SummaryContent" : "<p>I follow the innovations and changing trends in the software industry. I think the future will become an important fields of cloud computing, mobile devices, intuitive control, functional programming languages and etc and I want to working on the this areas.</p>",
+    
+    "ReferencesHeader" : "References",
+
+    "Theme" : "Theme <span class=\"caret\"></span>",
+    "Language": "Language <span class=\"caret\"></span>",
+
+    "ThemeMenuItemBlack": "Black",
+    "ThemeMenuItemWhite" : "White"
+}

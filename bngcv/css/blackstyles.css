@@ -1,0 +1,161 @@
+﻿/* Font dosyalarının eklenmesi */
+@font-face
+{
+    font-family: SegoeWP;
+    src: url(../assets/fonts/segoewp/segoe-wp.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Bold;
+    src: url(../assets/fonts/segoewp/segoe-wp-bold.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Black;
+    src: url(../assets/fonts/segoewp/segoe-wp-black.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Light;
+    src: url(../assets/fonts/segoewp/segoe-wp-light.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Semibold;
+    src: url(../assets/fonts/segoewp/segoe-wp-semibold.ttf);
+}
+
+@font-face
+{
+    font-family: SegoeWP-Semilight;
+    src: url(../assets/fonts/segoewp/segoe-wp-semilight.ttf);
+}
+
+/* Tüm yazılar için ortak stil özelikleri */
+*
+{
+    color: #BBBBBB;
+}
+
+/* Ana başlık için etiket */
+maintitle
+{
+    color: #FFFFFF;
+    font-family: SegoeWP-Light;
+    font-size: 240%;
+}
+
+h1
+{
+    color: #FFFFFF;
+    font-weight:lighter;
+}
+
+h2
+{
+    font-family: SegoeWP-Light; 
+    font-weight:100; 
+    font-size: 150%; 
+    margin-right:200px;
+    color:#FFFFFF; 
+    margin-right:12px; 
+    text-decoration:none;
+}
+
+hr
+{
+    color: #007ACC;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 122, 204, 1), rgba(0, 122, 204, 0.5), rgba(0, 122, 204, 0));
+}
+
+.personal .td1
+{
+    width: 150px;
+    font-weight:600; 
+}
+
+.education .td1
+{
+    width: 100px;
+    font-weight:600; 
+}
+
+/* Alt yazı */
+subtletext
+{
+    font-family: SegoeWP;
+    color: #909090;
+    margin-left:3px;
+}
+
+body
+{
+    font-family: SegoeWP;
+    height:100%;
+    background: url('../assets/images/body-bg.png');
+    -webkit-font-smoothing: antialiased;
+}
+
+#container
+{
+    /*
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left :7%;
+    margin-right :7%;
+    */
+    background-color:#1E1E1E !important;
+    min-height:100%;
+    position:relative;
+    padding-top: 50px;
+    box-shadow: 0 15px 15px rgba(50, 50, 50, 0.3);
+}
+
+#header
+{
+    padding-left: 3%;
+    padding-bottom: 20px;
+}
+
+#content
+{
+    padding-left: 3%;
+    padding-bottom: 160px;
+}
+
+#footer
+{
+    background-color:#333333;
+    font-size: 80%;
+    color: #707070;
+    width:100%;
+    height: 110px;
+    padding: 20px;
+    bottom: 0;
+    position:absolute;
+}
+
+#ProfileCardDiv
+{
+    background: #292929;
+    height: 300px;
+    width: 500px;
+    margin-left: 30px;
+    border-radius: 5px;
+    border: 1px solid #007ACC;
+    box-shadow: 0 1px 4px 0px rgba(0,0,0,.05);
+    font-weight: 700;
+    text-align: left;
+}
+
+.circleBorderedImg
+{
+    border-radius: 50%;
+    border: 4px solid #69708C;
+}
