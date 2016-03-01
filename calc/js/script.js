@@ -48,7 +48,7 @@ function exe()
     var parameter = { equation: $('#EquationSpan').val(), degreeType: this.degreeType }
 
     $.ajax({
-        url: "http://localhost:21130/CalculatorService.svc/Execute",
+        url: "http://hesapmakinesi.azurewebsites.net/CalculatorService.svc/Execute",
         data: JSON.stringify(parameter),
         method: "Execute",
         type: "POST",
