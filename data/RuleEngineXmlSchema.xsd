@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RuleEngineXmlSchema"
+    targetNamespace="http://ertugrulozcan.github.io/data/RuleEngineXmlSchema.xsd"
+    elementFormDefault="qualified"
+    xmlns="http://ertugrulozcan.github.io/data/RuleEngineXmlSchema.xsd"
+    xmlns:mstns="http://ertugrulozcan.github.io/data/RuleEngineXmlSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  
+  <xs:simpleType name="ConditionValueType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="String"/>
+      <xs:enumeration value="Bool"/>
+      <xs:enumeration value="Numeric"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="ComparisonMethodType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="Equal"/>
+      <xs:enumeration value="NotEqual"/>
+      <xs:enumeration value="Greater"/>
+      <xs:enumeration value="GreaterOrEqual"/>
+      <xs:enumeration value="Less"/>
+      <xs:enumeration value="LessOrEqual"/>
+      <xs:enumeration value="And"/>
+      <xs:enumeration value="Or"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="ConditionXsdType">
+    <xs:sequence>
+      <xs:element name="Property">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:element name="Value">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:element name="Type"
+                  default="String"
+                  minOccurs="1"
+                  type="ConditionValueType" />
+
+      <xs:element name="Method"
+                  default="Equal"
+                  minOccurs="1"
+                  type="ComparisonMethodType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SetterXsdType">
+    <xs:sequence>
+      <xs:element name="Property">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:element name="Value">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ActionXsdType">
+    <xs:sequence>
+      <xs:element name="Method">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:element name="Action.Parameters">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Parameter"
+                        maxOccurs="unbounded"
+                        type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleXsdType">
+    <xs:sequence>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:element name="Rule.Conditions">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Condition"
+                        maxOccurs="unbounded"
+                        type="ConditionXsdType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="Rule.Action" type="ActionXsdType" />
+
+      <xs:element name="Rule.Setters">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Setter"
+                        maxOccurs="unbounded"
+                        type="SetterXsdType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+      <xs:element name="Rule.Callback" type="ActionXsdType" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RuleSetXsdType">
+    <xs:sequence>
+      <xs:element name="Name">
+        <xs:simpleType>
+          <xs:restriction base="xs:string"></xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+
+      <xs:element name="RuleSet.Rules">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Rule"
+                        maxOccurs="unbounded"
+                        type="RuleXsdType"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="RuleSet"
+              type="RuleSetXsdType" />
+</xs:schema>
