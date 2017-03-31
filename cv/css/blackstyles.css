@@ -110,7 +110,6 @@ body
     margin-left :7%;
     margin-right :7%;
     */
-    background-color:#1E1E1E !important;
     min-height:100%;
     position:relative;
     padding-top: 50px;
@@ -131,7 +130,7 @@ body
 
 #footer
 {
-    background-color:#333333;
+    background-color:#212121;
     font-size: 80%;
     color: #707070;
     width:100%;
