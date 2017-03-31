@@ -98,7 +98,7 @@ body
 {
     font-family: SegoeWP;
     height:100%;
-    background: #0E0E0E url("../assets/images/main-wrapper-bg.png") repeat;
+    background: #0E0E0E url("https://ertugrulozcan.github.io/cv/assets/images/main-wrapper-bg.png") repeat;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -130,7 +130,7 @@ body
 
 #footer
 {
-    background-color:#212121;
+    background-color:#171717;
     font-size: 80%;
     color: #707070;
     width:100%;
@@ -147,7 +147,7 @@ body
     width: 500px;
     margin-left: 30px;
     border-radius: 5px;
-    border: 1px solid #007ACC;
+    border: 1px solid #227A99;
     box-shadow: 0 1px 4px 0px rgba(0,0,0,.05);
     font-weight: 700;
     text-align: left;
