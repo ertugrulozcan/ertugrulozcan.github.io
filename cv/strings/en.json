@@ -127,11 +127,14 @@
     
     "JobExperienceHeader" : "Job Experience",
     
-    "JobExperience1" : "2014 - Internship : Center of Technology Solutions",
-    "JobExperience1Additional" : " - Software and System (İstanbul)",
-    
-    "JobExperience2" : "2013 - Internship : Center of Technology Solutions",
+    "JobExperience3" : "2015 - Matriks Data Bilgi Dağıtım Hizmetleri A.Ş.",
+    "JobExperience3Additional" : " - Software Development Specialist (İstanbul)",
+
+    "JobExperience2" : "2014 - Internship : Center of Technology Solutions",
     "JobExperience2Additional" : " - Software and System (İstanbul)",
+    
+    "JobExperience1" : "2013 - Internship : Center of Technology Solutions",
+    "JobExperience1Additional" : " - Software and System (İstanbul)",
     
     "SummaryHeader" : "Interests and professional goals",
     "SummaryContent" : "<p>I follow the innovations and changing trends in the software industry. I think the future will become an important fields of cloud computing, mobile devices, intuitive control, functional programming languages and etc and I want to working on the this areas.</p>",
