@@ -34,404 +34,407 @@
 
     <body onload="BindStrings('tr');">
         <div id="container">
-            <div id="header" style="margin-left:2%; margin-right:2%;">
-                <div class="ProfileCard">
-                    <table>
-                        <td>
-                            <img src="assets/images/ves.jpg" style="width: 90px; height: 90px; margin-right:20px;">
-                        </td>
-                        <td>
-                            <div style="margin-bottom:13px;">
-                                <maintitle>Ahmet Ertuğrul Özcan</maintitle>
-                                <br />
-                                <subtletext>&#9993; ertugrul.ozcan@bil.omu.edu.tr</subtletext>
-                                <br />
-                                <subtletext>☎ (+90) 542 530 3141</subtletext>
-                            </div>        
-                        </td>
-                    </table>
-                </div> 
-            </div>
-
-            <div id="content" style="margin-left:2%; margin-right:2%;">
-                <h2 id="PersonalInformationHeader">Kişisel Bilgiler *</h2>
-                <hr/>
-                <p>
-                    <table class="personal">
-                        <tr>
-                            <td id="EducationStatusTitle" class="td1">Eğitim Durumu *</td>
-                            <td id="EducationStatusContent"> : Üniversite *</td>
-                        </tr>
-                        <tr>
-                            <td id="MaritalStatusTitle" class="td1">Medeni hali *</td>
-                            <td id="MaritalStatusContent"> : Bekar *</td>
-                        </tr>
-                        <tr>
-                            <td id="MilitaryStatusTitle" class="td1">Askerlik durumu *</td>
-                            <td id="MilitaryStatusContent"> : Yapıldı *</td>
-                        </tr>
-                        <tr>
-                            <td id="PlaceOfBirthTitle" class="td1">Doğum yeri *</td>
-                            <td id="PlaceOfBirthContent"> : Amasya *</td>
-                        </tr>
-                        <tr>
-                            <td id="DateOfBirthTitle" class="td1">Doğum tarihi *</td>
-                            <td id="DateOfBirthContent"> : 09.08.1991 *</td>
-                        </tr>
-                    </table>
-                </p>
-                
-                <br/>
-                <h2 id="EducationInformationHeader">Eğitim Bilgileri *</h2>
-                <hr/>
-                <p>
-                    <table class="education">
-                        <tr>
-                            <td id="BachelorsDegreeTitle" class="td1" valign="top">Lisans *</td> 
-                            <td id="BachelorsDegreeContent">
-                                <span> : Deniz Harp Okulu *<span style="opacity: 0.65;"> Bilgisayar Mühendisliği, Denizcilik İşletmesi (Yandal) (2009-2012) </span></span>
-                                <br/>
-                                <span> : Ondokuz Mayıs Üniversitesi *<span style="opacity: 0.65;"> Bilgisayar Mühendisliği (2012-2015) </span></span>
+            <div class="container-fluid">
+                <div id="header" class="col-sm-12 col-md-12 col-lg-8" style="margin-left:2%; margin-right:2%;">
+                    <div class="ProfileCard">
+                        <table>
+                            <td>
+                                <img src="assets/images/ves.jpg" style="width: 90px; height: 90px; margin-right:20px;">
                             </td>
-                        </tr>
-                        <tr>
-                            <td id="HighSchoolTitle" class="td1">Lise *</td>
-                            <td id="HighSchoolContent"> : Amasya Anadolu Lisesi *<span style="opacity: 0.65;"> (2005-2009) </span></td>
-                        </tr>
-                        
-                        <tr>
-                            <td id="ForeignLanguageTitle" class="td1">Yabancı dil *</td>
-                            <td id="ForeignLanguageContent"> : İngilizce *</td>
-                        </tr>
-                    </table>
-                </p>
-                
-                <br/>
-                <h2 id="VocationalInformationsHeader">Mesleki Bilgiler *</h2>
-                <hr/>
-                <p>
-                    <strong id="ProgrammingLanguagesTitle">Programlama dilleri; *</strong>
-                    <br/>
-                    <table>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                C/C++
+                            <td>
+                                <div style="margin-bottom:13px;">
+                                    <maintitle>Ahmet Ertuğrul Özcan</maintitle>
+                                    <br />
+                                    <subtletext>&#9993; ertugrul.ozcan@bil.omu.edu.tr</subtletext>
+                                    <br />
+                                    <subtletext>☎ (+90) 542 530 3141</subtletext>
+                                </div>        
                             </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:91%">
-                                        (7y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                Java
-                            </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:88%;">
-                                        (5y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                C#
-                            </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                        (4y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                XAML
-                            </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                        (2y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                Html
-                            </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-                                        (7y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                Javascript
-                            </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                        (4y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                PHP
-                            </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                        (2y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                JSP
-                            </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                        (2y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="width: 100px; font-size: 110%;" valign="top">
-                                SQL
-                            </td>
-                            <td style="width: 300px;">
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                        (4y)
-                                    </div>
-                                </div>            
-                            </td>
-                        </tr>
-                    </table>
-                </p>
-                
-                <p>
-                    <strong id="UsingTechnologiesTitle">Kullanılan teknolojiler; *</strong>
-                    <br/>
-                    
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <ul>
-                                        <li>WPF/Silverlight</li>
-                                        <li>Windows Store Development</li>
-                                        <li>Windows Phone Development</li>
-                                        <li>WCF</li>
-                                        <li>Entity Framework</li>
-                                        <li>Android Development</li>
-                                        <li>AWT/Swing/Applet</li>
-                                        
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>JSP/Servlets</li>
-                                        <li>MySQL</li>
-                                        <li>Socket.IO</li>
-                                        <li>NodeJS</li>
-                                        <li>jQuery</li>
-                                        <li>Bootstrap</li>
-                                        <li>PKCS#11</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </p>
-                
-                <br/>
-                <h2 id="DevelopedProjectsTitle">Geliştirilen projeler *</h2>
-                <hr/>
-                <p>
-                    <li>
-                        <span id="Project1Name">LojikSim *</span><span id="Project1Description" style="opacity: 0.65;"> - Lojik Elektronik Devre Simülatörü</span>
-                        <br/><span id="Project1Additional" style="opacity: 0.65;">(Java, Swing ve Json teknolojileri kullanıldı)</span></li>
-                    </li>
-                    <li>
-                        <span id="Project2Name">SMS PGP *</span><span id="Project2Description" style="opacity: 0.65;"> - PGP API ve Kriptolu SMS/E-posta Windows Phone Mobil Uygulaması</span>
-                        <br/><span id="Project2Additional" style="opacity: 0.65;">(C#, WCF, MsSQL, Json, PKCS#7, RSA, SHA-3(Keccak), Diffie-Hellman teknolojileri kullanıldı)</span>
-                    </li>
-                    <li>
-                        <span id="Project3Name">TNB KEP *</span><span id="Project3Description" style="opacity: 0.65;"> - Türkiye Noterler Birliği Kayıtlı Elektronik Posta Sistemi entegrasyonu için .Net kütüphanesi</span>
-                        <br/><span id="Project3Additional" style="opacity: 0.65;">(C#, WPF, ESYA API, PKCS#11 teknolojileri kullanıldı) </span>
-                    </li>
-                    <li>
-                        <span id="Project4Name">Drone112 *</span><span id="Project4Description" style="opacity: 0.65;"> - Ambulans-Drone projesi kapsamında geliştirilen Parrot-ArDrone kontrol yazılımı ve web uygulaması</span>
-                        <br/><span id="Project4Additional" style="opacity: 0.65;">(JavaScript, NodeJS, Socket.IO, ExpressJS teknolojileri kullanıldı) </span>
-                    </li>
-                    <li>
-                        <span id="Project5Name">E-Seçim *</span><span id="Project5Description" style="opacity: 0.65;"> - Elektronik seçim sistemi, masaüstü uygulaması ve web uygulaması</span>
-                        <br/><span id="Project5Additional" style="opacity: 0.65;">(C#, WPF, MySQL, Json, Javascript, NodeJS, Socket.IO, PKCS#11 teknolojileri kullanıldı) </span>
-                    </li>
-                    <li>
-                        <span id="Project6Name">Müzik+ *</span><span id="Project6Description" style="opacity: 0.65;"> - Windows Phone Müzik Uygulaması</span>
-                        <br/><span id="Project6Additional" style="opacity: 0.65;">http://www.windowsphone.com/tr-tr/store/app/m%C3%BCzik/d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0</span>
-                    </li>
-                    <li>
-                        <span id="Project7Name">Araçlar *</span><span id="Project7Description" style="opacity: 0.65;"> - Windows Phone sensör araçları uygulaması</span>
-                        <br/><span id="Project7Additional" style="opacity: 0.65;">http://www.windowsphone.com/tr-tr/store/app/ara%C3%A7lar/c65f8058-c7d8-4e2a-9993-8584d4ff3406</span>
-                    </li>
-                    <li>
-                        <span id="Project8Name">Post-It *</span><span id="Project8Description" style="opacity: 0.65;"> - Windows Phone kilit ekranı not uygulaması</span>
-                    </li>
-                    <li>
-                        <span id="Project9Name">Chip Online *</span><span id="Project9Description" style="opacity: 0.65;"> - Chip Online Dergisi Mobil Uygulaması</span>
-                        <br/><span id="Project9Additional" style="opacity: 0.65;">http://windowsphone.com/s?appid=c3313929-9292-4391-b91c-01f015df0bc2</span>
-                    </li>
-                    <li>
-                        <span id="Project10Name">Hava Durumu *</span><span id="Project10Description" style="opacity: 0.65;"> - Hava Durumu Mobil Uygulaması</span>
-                        <br/><span id="Project10Additional" style="opacity: 0.65;">(C#, Json teknolojileri kullanıldı, OpenWeatherMap verilerinden faydalanıldı) </span>
-                    </li>
-                    <li>
-                        <span id="Project11Name">Hesap Makinesi *</span><span id="Project11Description" style="opacity: 0.65;"> - Windows Phone Bilimsel Hesap Makinesi Uygulaması</span>
-                        <br/><span id="Project11Additional" style="opacity: 0.65;">https://www.microsoft.com/en-us/store/apps/calculator/9nblggh203vw</span>
-                    </li>
-                    <li>
-                        <span id="Project12Name">OMÜ Cep *</span><span id="Project12Description" style="opacity: 0.65;"> - Ondokuz Mayıs Üniversitesi Windows Phone Uygulaması</span>
-                    </li>
-                    <li>
-                        <span id="Project13Name">OMÜ Alışveriş *</span><span id="Project13Description" style="opacity: 0.65;"> - İkinci el eşya takas sitesi</span>
-                        <br/><span id="Project13Additional" style="opacity: 0.65;">(Java, JSP, Servlet, MySQL teknolojileri kullanıldı)</span></li>
-                    </li>
-                </p>
-                
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-                <br />
-
-                <br/>
-                <h2 id="SeminarsAndCoursesHeader">Konferans, seminer, kurs ve yarışmalar *</h2>
-                <hr/>
-                <p>
-                    <li>
-                        <span id="Conference1Title">Liderlik Sempozyumu 2010 , “Liderlik Anlayışının 21'inci YY. Gerekleri Doğrultusunda Değişken Uygulamaları *”</span>
-                        <span id="Conference1Description" style="opacity: 0.65;"> (Deniz Harp Okulu – 2010) *</span>
-                    </li>
-                    <li>
-                        <span id="Conference2Title">Askeri Liderlik Konferansı *</span>
-                        <span id="Conference2Description" style="opacity: 0.65;"> (Deniz Harp Okulu – 2011)</span>
-                    </li>
-                    <li>
-                        <span id="Conference3Title">"Etik ve Liderlik" Konulu Konferans / Prof.Dr. Güven DÜNDAR *</span>
-                        <span id="Conference3Description" style="opacity: 0.65;"> (Deniz Harp Okulu – 2011)</span>
-                    </li>
-                    <li>
-                        <span id="Conference4Title">Deniz Harp Tarihi Sempozyumu / Prof.Dr. İlber Ortaylı *</span>
-                        <span id="Conference4Description" style="opacity: 0.65;"> (Deniz Harp Okulu – 2012)</span>
-                    </li>
-                    <li>
-                        <span id="Conference5Title">Android Geliştirici Günleri kapsamında Ankara Google Developer Group Android Eğitim Semineri ve GDG Android geliştirme kursu *</span>
-                        <span id="Conference5Description" style="opacity: 0.65;"> (Samsun - 2012)</span>
-                    </li>
-                    <li>
-                        <span id="Conference6Title">Kriptoloji Uygulamaları Kursu *</span>
-                        <span id="Conference6Description" style="opacity: 0.65;"> (Mersin Üniversitesi - 2014)</span>
-                    </li>
-                    <li>
-                        <span id="Conference7Title">AB'14 Akademik Bilişim Konferansı *</span>
-                        <span id="Conference7Description" style="opacity: 0.65;"> (Mersin Üniversitesi - 2014)</span>
-                    </li>
-                    <li>
-                        <span id="Conference8Title">Tübitak Yazılım Projeleri Yarışması (SMS PGP projesi ile Türkiye 2.'lik ödülü) *</span>
-                        <span id="Conference8Description" style="opacity: 0.65;"> (Ankara - 2014)</span>
-                    </li>
-                    <li>
-                        <span id="Conference9Title">OKÜP (Orta Karadeniz Üniversiteler Platformu) Proje Pazarı ArGe Projeleri Yarışması *</span>
-                        <span id="Conference9Description" style="opacity: 0.65;"> (Samsun - 2014)</span>
-                    </li>
-                    <li>
-                        <span id="Conference10Title">"Emektar C dili ve bileşenleri" kursu / Rıza Engür Pişirici *</span>
-                        <span id="Conference10Description" style="opacity: 0.65;"> (Eskişehir - 2015)</span>
-                    </li>
-                    <li>
-                        <span id="Conference11Title">AB'15 Akademik Bilişim Konferansı *</span>
-                        <span id="Conference11Description" style="opacity: 0.65;"> (Anadolu Üniversitesi - 2015)</span>
-                    </li>
-                    <li>
-                        <span id="Conference12Title">IBM Bluemix Etkinliği *</span>
-                        <span id="Conference12Description" style="opacity: 0.65;"> (OMÜ Teknopark - 2015)</span>
-                    </li>
-                    <li>
-                        <span id="Conference13Title">OKÜP (Orta Karadeniz Üniversiteler Platformu) Proje Pazarı Sergisi *</span>
-                        <span id="Conference13Description" style="opacity: 0.65;"> (Hitit Üniversitesi - 2015)</span>
-                    </li>
-                </p>
-                
-                <br/>
-                <h2 id="JobExperienceHeader">İş tecrübesi *</h2>
-                <hr/>
-                <p>
-                    <li>
-                        <span id="JobExperience1">2014 - Staj : Teknoloji Çözümleri Merkezi</span><span id="JobExperience1Additional" style="opacity: 0.65;"> - Yazılım ve Sistem (İstanbul)</span> 
-                    </li> 
-                    <li>
-                        <span id="JobExperience2">2013 - Staj : Teknoloji Çözümleri Merkezi</span><span id="JobExperience2Additional" style="opacity: 0.65;"> - Yazılım ve Sistem (İstanbul)</span> 
-                    </li> 
-                </p>
-                
-                <br/>
-                <h2 id="SummaryHeader">İlgi alanları ve mesleki hedefler *</h2>
-                <hr/>
-                <div id="SummaryContent">
-                    <p>
-                        Yazılım sektöründeki yenilikleri ve değişimleri takip ediyorum. Gelecekte bilişim alanında önemli bir alan haline geleceğini düşündüğüm bulut bilişim, mobil cihazlar, sezgisel kontrol, fonksiyonel programlama dilleri vb. bir çok farklı konu ilgimi çekmekte ve bu alanlarda ar-ge çalışmaları yürütmek istiyorum. *
-                    </p>
-                    <p>
-                        Mesleki kariyerimde kendimi geliştirdiğim alanda öncelikle ülkemin teknolojik birikimine katkıda bulunmak istiyorum. *
-                    </p>
+                        </table>
+                    </div> 
                 </div>
 
-                <br/>
-                <h2 id="ReferencesHeader">Referanslar *</h2>
-                <hr/>
-                <p>
-                    <ul>
-                        <li>
-                            <span><b>İbrahim Aslan</b></span>
-                            <br/>
-                            <span style="opacity: 0.65;">SoftTech - Solution Architect</span>
-                            <br/>
-                            <span style="opacity: 0.65;">&#9993; Ibrahim.Aslan@softtech.com.tr</span>
-                            <br/>
-                            <span style="opacity: 0.65;">☎ (+90) 532 627 9817</span>
-                        </li>
+                <div id="content" class="col-sm-12 col-md-12 col-lg-8" style="margin-left:2%; margin-right:2%;">
+                    <h2 id="PersonalInformationHeader">Kişisel Bilgiler *</h2>
+                    <hr/>
+                    <p>
+                        <table class="personal">
+                            <tr>
+                                <td id="EducationStatusTitle" class="td1">Eğitim Durumu *</td>
+                                <td id="EducationStatusContent"> : Üniversite *</td>
+                            </tr>
+                            <tr>
+                                <td id="MaritalStatusTitle" class="td1">Medeni hali *</td>
+                                <td id="MaritalStatusContent"> : Bekar *</td>
+                            </tr>
+                            <tr>
+                                <td id="MilitaryStatusTitle" class="td1">Askerlik durumu *</td>
+                                <td id="MilitaryStatusContent"> : Yapıldı *</td>
+                            </tr>
+                            <tr>
+                                <td id="PlaceOfBirthTitle" class="td1">Doğum yeri *</td>
+                                <td id="PlaceOfBirthContent"> : Amasya *</td>
+                            </tr>
+                            <tr>
+                                <td id="DateOfBirthTitle" class="td1">Doğum tarihi *</td>
+                                <td id="DateOfBirthContent"> : 09.08.1991 *</td>
+                            </tr>
+                        </table>
+                    </p>
+                    
+                    <br/>
+                    <h2 id="EducationInformationHeader">Eğitim Bilgileri *</h2>
+                    <hr/>
+                    <p>
+                        <table class="education">
+                            <tr>
+                                <td id="BachelorsDegreeTitle" class="td1" valign="top">Lisans *</td> 
+                                <td id="BachelorsDegreeContent">
+                                    <span> : Deniz Harp Okulu *<span style="opacity: 0.65;"> Bilgisayar Mühendisliği, Denizcilik İşletmesi (Yandal) (2009-2012) </span></span>
+                                    <br/>
+                                    <span> : Ondokuz Mayıs Üniversitesi *<span style="opacity: 0.65;"> Bilgisayar Mühendisliği (2012-2015) </span></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id="HighSchoolTitle" class="td1">Lise *</td>
+                                <td id="HighSchoolContent"> : Amasya Anadolu Lisesi *<span style="opacity: 0.65;"> (2005-2009) </span></td>
+                            </tr>
+                            
+                            <tr>
+                                <td id="ForeignLanguageTitle" class="td1">Yabancı dil *</td>
+                                <td id="ForeignLanguageContent"> : İngilizce *</td>
+                            </tr>
+                        </table>
+                    </p>
+                    
+                    <br/>
+                    <h2 id="VocationalInformationsHeader">Mesleki Bilgiler *</h2>
+                    <hr/>
+                    <p>
+                        <strong id="ProgrammingLanguagesTitle">Programlama dilleri; *</strong>
+                        <br/>
+                        <table>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    C/C++
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:91%">
+                                            (7y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    Java
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:88%;">
+                                            (5y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    C#
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                                            (4y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    XAML
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                            (2y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    Html
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                            (7y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    Javascript
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                            (4y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    PHP
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            (2y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    JSP
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                            (2y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 100px; font-size: 110%;" valign="top">
+                                    SQL
+                                </td>
+                                <td style="width: 300px;">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
+                                            (4y)
+                                        </div>
+                                    </div>            
+                                </td>
+                            </tr>
+                        </table>
+                    </p>
+                    
+                    <p>
+                        <strong id="UsingTechnologiesTitle">Kullanılan teknolojiler; *</strong>
                         <br/>
                         
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <ul>
+                                            <li>WPF/Silverlight</li>
+                                            <li>Windows Store Development</li>
+                                            <li>Windows Phone Development</li>
+                                            <li>WCF</li>
+                                            <li>Entity Framework</li>
+                                            <li>Android Development</li>
+                                            <li>AWT/Swing/Applet</li>
+                                            
+                                        </ul>
+                                    </td>
+                                    <td>
+                                        <ul>
+                                            <li>JSP/Servlets</li>
+                                            <li>MySQL</li>
+                                            <li>Socket.IO</li>
+                                            <li>NodeJS</li>
+                                            <li>jQuery</li>
+                                            <li>Bootstrap</li>
+                                            <li>PKCS#11</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </p>
+                    
+                    <br/>
+                    <h2 id="DevelopedProjectsTitle">Geliştirilen projeler *</h2>
+                    <hr/>
+                    <p>
                         <li>
-                            <span><b>Didem Ferah Öztoprak</b></span>
-                            <br/>
-                            <span style="opacity: 0.65;">IBM - IT Specialist</span>
-                            <br/>
-                            <span style="opacity: 0.65;">&#9993; didemferah@gmail.com</span>
-                            <br/>
-                            <span style="opacity: 0.65;">☎ (+90) 530 879 6116</span>
+                            <span id="Project1Name">LojikSim *</span><span id="Project1Description" style="opacity: 0.65;"> - Lojik Elektronik Devre Simülatörü</span>
+                            <br/><span id="Project1Additional" style="opacity: 0.65;">(Java, Swing ve Json teknolojileri kullanıldı)</span></li>
                         </li>
-                    </ul> 
-                </p>
+                        <li>
+                            <span id="Project2Name">SMS PGP *</span><span id="Project2Description" style="opacity: 0.65;"> - PGP API ve Kriptolu SMS/E-posta Windows Phone Mobil Uygulaması</span>
+                            <br/><span id="Project2Additional" style="opacity: 0.65;">(C#, WCF, MsSQL, Json, PKCS#7, RSA, SHA-3(Keccak), Diffie-Hellman teknolojileri kullanıldı)</span>
+                        </li>
+                        <li>
+                            <span id="Project3Name">TNB KEP *</span><span id="Project3Description" style="opacity: 0.65;"> - Türkiye Noterler Birliği Kayıtlı Elektronik Posta Sistemi entegrasyonu için .Net kütüphanesi</span>
+                            <br/><span id="Project3Additional" style="opacity: 0.65;">(C#, WPF, ESYA API, PKCS#11 teknolojileri kullanıldı) </span>
+                        </li>
+                        <li>
+                            <span id="Project4Name">Drone112 *</span><span id="Project4Description" style="opacity: 0.65;"> - Ambulans-Drone projesi kapsamında geliştirilen Parrot-ArDrone kontrol yazılımı ve web uygulaması</span>
+                            <br/><span id="Project4Additional" style="opacity: 0.65;">(JavaScript, NodeJS, Socket.IO, ExpressJS teknolojileri kullanıldı) </span>
+                        </li>
+                        <li>
+                            <span id="Project5Name">E-Seçim *</span><span id="Project5Description" style="opacity: 0.65;"> - Elektronik seçim sistemi, masaüstü uygulaması ve web uygulaması</span>
+                            <br/><span id="Project5Additional" style="opacity: 0.65;">(C#, WPF, MySQL, Json, Javascript, NodeJS, Socket.IO, PKCS#11 teknolojileri kullanıldı) </span>
+                        </li>
+                        <li>
+                            <span id="Project6Name">Müzik+ *</span><span id="Project6Description" style="opacity: 0.65;"> - Windows Phone Müzik Uygulaması</span>
+                            <br/><span id="Project6Additional" style="opacity: 0.65;">http://www.windowsphone.com/tr-tr/store/app/m%C3%BCzik/d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0</span>
+                        </li>
+                        <li>
+                            <span id="Project7Name">Araçlar *</span><span id="Project7Description" style="opacity: 0.65;"> - Windows Phone sensör araçları uygulaması</span>
+                            <br/><span id="Project7Additional" style="opacity: 0.65;">http://www.windowsphone.com/tr-tr/store/app/ara%C3%A7lar/c65f8058-c7d8-4e2a-9993-8584d4ff3406</span>
+                        </li>
+                        <li>
+                            <span id="Project8Name">Post-It *</span><span id="Project8Description" style="opacity: 0.65;"> - Windows Phone kilit ekranı not uygulaması</span>
+                        </li>
+                        <li>
+                            <span id="Project9Name">Chip Online *</span><span id="Project9Description" style="opacity: 0.65;"> - Chip Online Dergisi Mobil Uygulaması</span>
+                            <br/><span id="Project9Additional" style="opacity: 0.65;">http://windowsphone.com/s?appid=c3313929-9292-4391-b91c-01f015df0bc2</span>
+                        </li>
+                        <li>
+                            <span id="Project10Name">Hava Durumu *</span><span id="Project10Description" style="opacity: 0.65;"> - Hava Durumu Mobil Uygulaması</span>
+                            <br/><span id="Project10Additional" style="opacity: 0.65;">(C#, Json teknolojileri kullanıldı, OpenWeatherMap verilerinden faydalanıldı) </span>
+                        </li>
+                        <li>
+                            <span id="Project11Name">Hesap Makinesi *</span><span id="Project11Description" style="opacity: 0.65;"> - Windows Phone Bilimsel Hesap Makinesi Uygulaması</span>
+                            <br/><span id="Project11Additional" style="opacity: 0.65;">https://www.microsoft.com/en-us/store/apps/calculator/9nblggh203vw</span>
+                        </li>
+                        <li>
+                            <span id="Project12Name">OMÜ Cep *</span><span id="Project12Description" style="opacity: 0.65;"> - Ondokuz Mayıs Üniversitesi Windows Phone Uygulaması</span>
+                        </li>
+                        <li>
+                            <span id="Project13Name">OMÜ Alışveriş *</span><span id="Project13Description" style="opacity: 0.65;"> - İkinci el eşya takas sitesi</span>
+                            <br/><span id="Project13Additional" style="opacity: 0.65;">(Java, JSP, Servlet, MySQL teknolojileri kullanıldı)</span></li>
+                        </li>
+                    </p>
+                    
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+
+                    <br/>
+                    <h2 id="SeminarsAndCoursesHeader">Konferans, seminer, kurs ve yarışmalar *</h2>
+                    <hr/>
+                    <p>
+                        <li>
+                            <span id="Conference1Title">Liderlik Sempozyumu 2010 , “Liderlik Anlayışının 21'inci YY. Gerekleri Doğrultusunda Değişken Uygulamaları *”</span>
+                            <span id="Conference1Description" style="opacity: 0.65;"> (Deniz Harp Okulu – 2010) *</span>
+                        </li>
+                        <li>
+                            <span id="Conference2Title">Askeri Liderlik Konferansı *</span>
+                            <span id="Conference2Description" style="opacity: 0.65;"> (Deniz Harp Okulu – 2011)</span>
+                        </li>
+                        <li>
+                            <span id="Conference3Title">"Etik ve Liderlik" Konulu Konferans / Prof.Dr. Güven DÜNDAR *</span>
+                            <span id="Conference3Description" style="opacity: 0.65;"> (Deniz Harp Okulu – 2011)</span>
+                        </li>
+                        <li>
+                            <span id="Conference4Title">Deniz Harp Tarihi Sempozyumu / Prof.Dr. İlber Ortaylı *</span>
+                            <span id="Conference4Description" style="opacity: 0.65;"> (Deniz Harp Okulu – 2012)</span>
+                        </li>
+                        <li>
+                            <span id="Conference5Title">Android Geliştirici Günleri kapsamında Ankara Google Developer Group Android Eğitim Semineri ve GDG Android geliştirme kursu *</span>
+                            <span id="Conference5Description" style="opacity: 0.65;"> (Samsun - 2012)</span>
+                        </li>
+                        <li>
+                            <span id="Conference6Title">Kriptoloji Uygulamaları Kursu *</span>
+                            <span id="Conference6Description" style="opacity: 0.65;"> (Mersin Üniversitesi - 2014)</span>
+                        </li>
+                        <li>
+                            <span id="Conference7Title">AB'14 Akademik Bilişim Konferansı *</span>
+                            <span id="Conference7Description" style="opacity: 0.65;"> (Mersin Üniversitesi - 2014)</span>
+                        </li>
+                        <li>
+                            <span id="Conference8Title">Tübitak Yazılım Projeleri Yarışması (SMS PGP projesi ile Türkiye 2.'lik ödülü) *</span>
+                            <span id="Conference8Description" style="opacity: 0.65;"> (Ankara - 2014)</span>
+                        </li>
+                        <li>
+                            <span id="Conference9Title">OKÜP (Orta Karadeniz Üniversiteler Platformu) Proje Pazarı ArGe Projeleri Yarışması *</span>
+                            <span id="Conference9Description" style="opacity: 0.65;"> (Samsun - 2014)</span>
+                        </li>
+                        <li>
+                            <span id="Conference10Title">"Emektar C dili ve bileşenleri" kursu / Rıza Engür Pişirici *</span>
+                            <span id="Conference10Description" style="opacity: 0.65;"> (Eskişehir - 2015)</span>
+                        </li>
+                        <li>
+                            <span id="Conference11Title">AB'15 Akademik Bilişim Konferansı *</span>
+                            <span id="Conference11Description" style="opacity: 0.65;"> (Anadolu Üniversitesi - 2015)</span>
+                        </li>
+                        <li>
+                            <span id="Conference12Title">IBM Bluemix Etkinliği *</span>
+                            <span id="Conference12Description" style="opacity: 0.65;"> (OMÜ Teknopark - 2015)</span>
+                        </li>
+                        <li>
+                            <span id="Conference13Title">OKÜP (Orta Karadeniz Üniversiteler Platformu) Proje Pazarı Sergisi *</span>
+                            <span id="Conference13Description" style="opacity: 0.65;"> (Hitit Üniversitesi - 2015)</span>
+                        </li>
+                    </p>
+                    
+                    <br/>
+                    <h2 id="JobExperienceHeader">İş tecrübesi *</h2>
+                    <hr/>
+                    <p>
+                        <li>
+                            <span id="JobExperience1">2014 - Staj : Teknoloji Çözümleri Merkezi</span><span id="JobExperience1Additional" style="opacity: 0.65;"> - Yazılım ve Sistem (İstanbul)</span> 
+                        </li> 
+                        <li>
+                            <span id="JobExperience2">2013 - Staj : Teknoloji Çözümleri Merkezi</span><span id="JobExperience2Additional" style="opacity: 0.65;"> - Yazılım ve Sistem (İstanbul)</span> 
+                        </li> 
+                    </p>
+                    
+                    <br/>
+                    <h2 id="SummaryHeader">İlgi alanları ve mesleki hedefler *</h2>
+                    <hr/>
+                    <div id="SummaryContent">
+                        <p>
+                            Yazılım sektöründeki yenilikleri ve değişimleri takip ediyorum. Gelecekte bilişim alanında önemli bir alan haline geleceğini düşündüğüm bulut bilişim, mobil cihazlar, sezgisel kontrol, fonksiyonel programlama dilleri vb. bir çok farklı konu ilgimi çekmekte ve bu alanlarda ar-ge çalışmaları yürütmek istiyorum. *
+                        </p>
+                        <p>
+                            Mesleki kariyerimde kendimi geliştirdiğim alanda öncelikle ülkemin teknolojik birikimine katkıda bulunmak istiyorum. *
+                        </p>
+                    </div>
+
+                    <br/>
+                    <h2 id="ReferencesHeader">Referanslar *</h2>
+                    <hr/>
+                    <p>
+                        <ul>
+                            <li>
+                                <span><b>İbrahim Aslan</b></span>
+                                <br/>
+                                <span style="opacity: 0.65;">SoftTech - Solution Architect</span>
+                                <br/>
+                                <span style="opacity: 0.65;">&#9993; Ibrahim.Aslan@softtech.com.tr</span>
+                                <br/>
+                                <span style="opacity: 0.65;">☎ (+90) 532 627 9817</span>
+                            </li>
+                            <br/>
+                            
+                            <li>
+                                <span><b>Didem Ferah Öztoprak</b></span>
+                                <br/>
+                                <span style="opacity: 0.65;">IBM - IT Specialist</span>
+                                <br/>
+                                <span style="opacity: 0.65;">&#9993; didemferah@gmail.com</span>
+                                <br/>
+                                <span style="opacity: 0.65;">☎ (+90) 530 879 6116</span>
+                            </li>
+                        </ul> 
+                    </p>
+                </div>
             </div>
+            
             <div id="footer">
                 <div class="row" style="margin-left:1%;">
                     <div class="col-xs-5">
