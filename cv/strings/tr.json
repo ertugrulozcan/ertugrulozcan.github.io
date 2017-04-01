@@ -138,8 +138,8 @@
     
     "ReferencesHeader" : "Referanslar",
 
-    "Theme" : "Tema <span class=\"caret\"></span>",
-    "Language": "Dil <span class=\"caret\"></span>",
+    "Theme" : "Tema &nbsp;<span class=\"caret\"></span>",
+    "Language": "Dil &nbsp;<span class=\"caret\"></span>",
     
     "ThemeMenuItemBlack": "Siyah",
     "ThemeMenuItemWhite" : "Beyaz"
