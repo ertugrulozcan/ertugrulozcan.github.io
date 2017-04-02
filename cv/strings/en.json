@@ -1,11 +1,11 @@
 {
     "PersonalInformationHeader" : "Personal Information",
 
-    "EducationStatusTitle" : "Education State",
+    "EducationStatusTitle" : "Education",
     "EducationStatusContent" : "University",
 
     "MaritalStatusTitle" : "Marital Status",
-    "MaritalStatusContent" : "Single",
+    "MaritalStatusContent" : "Unmarried",
 
     "MilitaryStatusTitle" : "Military Status",
     "MilitaryStatusContent" : "Completed",
