@@ -160,5 +160,7 @@
     "Language": "Language &nbsp;<span class=\"caret\"></span>",
 
     "ThemeMenuItemBlack": "Black",
-    "ThemeMenuItemWhite" : "White"
+    "ThemeMenuItemWhite" : "White",
+
+    "OpenAsPDF" : "Open as PDF"
 }

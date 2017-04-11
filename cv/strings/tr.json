@@ -159,6 +159,8 @@
     "Theme" : "Tema &nbsp;<span class=\"caret\"></span>",
     "Language": "Dil &nbsp;<span class=\"caret\"></span>",
     
-    "ThemeMenuItemBlack": "Siyah",
-    "ThemeMenuItemWhite" : "Beyaz"
+    "ThemeMenuItemBlack" : "Siyah",
+    "ThemeMenuItemWhite" : "Beyaz",
+
+    "OpenAsPDF" : "PDF Olarak Görüntüle"
 }
