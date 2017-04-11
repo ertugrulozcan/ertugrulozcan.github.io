@@ -4,16 +4,16 @@
     "EducationStatusTitle" : "Eğitim Durumu",
     "EducationStatusContent" : "Üniversite",
 
-    "MaritalStatusTitle" : "Medeni hali",
+    "MaritalStatusTitle" : "Medeni Hali",
     "MaritalStatusContent" : "Bekar",
 
-    "MilitaryStatusTitle" : "Askerlik durumu",
+    "MilitaryStatusTitle" : "Askerlik Durumu",
     "MilitaryStatusContent" : "Yapıldı",
 
-    "PlaceOfBirthTitle" : "Doğum yeri",
+    "PlaceOfBirthTitle" : "Doğum Yeri",
     "PlaceOfBirthContent" : "Amasya",
 
-    "DateOfBirthTitle" : "Doğum tarihi",
+    "DateOfBirthTitle" : "Doğum Tarihi",
     "DateOfBirthContent" : "09.08.1991",
 
     "EducationInformationHeader" : "Eğitim Bilgileri",
@@ -24,15 +24,15 @@
     "HighSchoolTitle" : "Lise",
     "HighSchoolContent" : "Amasya Anadolu Lisesi <span style=\"opacity: 0.65;\"> (2005-2009) </span>",
 
-    "ForeignLanguageTitle" : "Yabancı dil",
+    "ForeignLanguageTitle" : "Yabancı Dil",
     "ForeignLanguageContent" : "İngilizce",
 
     "VocationalInformationsHeader" : "Mesleki Bilgiler",
 
-    "ProgrammingLanguagesTitle" : "Programlama dilleri;",
+    "ProgrammingLanguagesTitle" : "Programlama Dilleri;",
     
-    "UsingTechnologiesTitle" : "Kullanılan teknolojiler;",
-    "DevelopedProjectsTitle" : "Geliştirilen projeler",
+    "UsingTechnologiesTitle" : "Kullanılan Teknolojiler;",
+    "DevelopedProjectsTitle" : "Geliştirilen / Katılım Sağlanan Projeler",
     
     "Project1Name" : "LojikSim",
     "Project1Description" : " - Lojik Elektronik Devre Simülatörü",
@@ -83,6 +83,18 @@
     "Project13Name" : "OMÜ Alışveriş",
     "Project13Description" : " - İkinci el eşya takas sitesi",
     "Project13Additional" : "(Java, JSP, Servlet, MySQL teknolojileri kullanıldı)",
+
+    "Project14Name" : "Enerji Ticareti Terminali",
+    "Project14Description" : " - Türkiye Enerji Borsası için geliştirilmiş Ticaret (Trading) Ekranı ve Tahmin, Analiz, Veri İzleme/Haber Terminali ",
+    "Project14Additional" : "",
+
+    "Project15Name" : "Ertis",
+    "Project15Description" : " - Kurumsal Kaynak Yönetimi Sistemi ve Web Uygulaması",
+    "Project15Additional" : "(PHP, Javascript, AngularJS, Laravel Framework, MySQL, ApacheServer teknolojileri kullanıldı)",
+
+    "Project16Name" : "Logisim",
+    "Project16Description" : " - Andreas Tetzl / http://www.tetzl.de",
+    "Project16Additional" : "(Türkçe çeviri)",
     
     "SeminarsAndCoursesHeader" : "Konferans, seminer, kurs ve yarışmalar",
     
@@ -124,6 +136,9 @@
     
     "Conference13Title" : "OKÜP (Orta Karadeniz Üniversiteler Platformu) Proje Pazarı Sergisi",
     "Conference13Description" : " (Hitit Üniversitesi - 2015)",
+
+    "Conference14Title" : "Özgür Yazılım ve Linux Günleri",
+    "Conference14Description" : " (Bilgi Üniversitesi - 2015)",
     
     "JobExperienceHeader" : "İş tecrübesi",
     

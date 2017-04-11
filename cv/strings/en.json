@@ -83,6 +83,18 @@
     "Project13Name" : "OMÜ Alışveriş",
     "Project13Description" : " - Second-hand goods swap site",
     "Project13Additional" : "(Java, JSP, Servlet, MySQL technologies used)",
+
+    "Project14Name" : "Energy Trading Terminal",
+    "Project14Description" : " - Trading, Forecasting, Analysis, Data Monitoring / News Terminal for the Turkish Energy Market",
+    "Project14Additional" : "",
+
+    "Project15Name" : "Ertis",
+    "Project15Description" : " - Enterprise Resource Management System & ve Web Application",
+    "Project15Additional" : "(PHP, Javascript, AngularJS, Laravel Framework, MySQL, ApacheServer technologies used)",
+
+    "Project16Name" : "Logisim",
+    "Project16Description" : " - Andreas Tetzl / http://www.tetzl.de",
+    "Project16Additional" : "(Turkish translation)",
     
     "SeminarsAndCoursesHeader" : "Seminars and Courses",
     

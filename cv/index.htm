@@ -22,14 +22,23 @@
         
         <!-- Google Analytics Izleme Script'i -->
         <script>
-	        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	        	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	        	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	        (function(i, s, o, g, r, a, m)
+            {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function()
+                {
+                    (i[r].q = i[r].q || []).push(arguments)
+                },
+                i[r].l = 1 * new Date();
+                a = s.createElement(o),
+	        	m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a,m)
+	        })(window,document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 	        ga('create', 'UA-66403590-1', 'auto');
 	        ga('send', 'pageview');
         </script>
-        
     </head>
 
     <body onload="BindStrings('tr');">
@@ -69,22 +78,22 @@
                                 <td id="EducationStatusContent">Üniversite *</td>
                             </tr>
                             <tr>
-                                <td id="MaritalStatusTitle" class="td1">Medeni hali *</td>
+                                <td id="MaritalStatusTitle" class="td1">Medeni Hali *</td>
                                 <td> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td id="MaritalStatusContent">Bekar *</td>
                             </tr>
                             <tr>
-                                <td id="MilitaryStatusTitle" class="td1">Askerlik durumu *</td>
+                                <td id="MilitaryStatusTitle" class="td1">Askerlik Durumu *</td>
                                 <td> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td id="MilitaryStatusContent">Yapıldı *</td>
                             </tr>
                             <tr>
-                                <td id="PlaceOfBirthTitle" class="td1">Doğum yeri *</td>
+                                <td id="PlaceOfBirthTitle" class="td1">Doğum Yeri *</td>
                                 <td> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td id="PlaceOfBirthContent">Amasya *</td>
                             </tr>
                             <tr>
-                                <td id="DateOfBirthTitle" class="td1">Doğum tarihi *</td>
+                                <td id="DateOfBirthTitle" class="td1">Doğum Tarihi *</td>
                                 <td> : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                                 <td id="DateOfBirthContent">09.08.1991 *</td>
                             </tr>
@@ -123,7 +132,7 @@
                     <h2 id="VocationalInformationsHeader">Mesleki Bilgiler *</h2>
                     <hr/>
                     <p>
-                        <strong id="ProgrammingLanguagesTitle">Programlama dilleri; *</strong>
+                        <strong id="ProgrammingLanguagesTitle">Programlama Dilleri; *</strong>
                         <br/>
                         <table>
                             <tr>
@@ -133,7 +142,7 @@
                                 <td style="width: 300px;">
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:91%">
-                                            (7y)
+                                            (8y)
                                         </div>
                                     </div>            
                                 </td>
@@ -145,7 +154,7 @@
                                 <td style="width: 300px;">
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:88%;">
-                                            (5y)
+                                            (7y)
                                         </div>
                                     </div>            
                                 </td>
@@ -157,7 +166,7 @@
                                 <td style="width: 300px;">
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                            (4y)
+                                            (6y)
                                         </div>
                                     </div>            
                                 </td>
@@ -169,14 +178,14 @@
                                 <td style="width: 300px;">
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                            (2y)
+                                            (4y)
                                         </div>
                                     </div>            
                                 </td>
                             </tr>
                             <tr>
                                 <td style="width: 100px; font-size: 110%;" valign="top">
-                                    Html
+                                    Html/CSS
                                 </td>
                                 <td style="width: 300px;">
                                     <div class="progress">
@@ -193,7 +202,7 @@
                                 <td style="width: 300px;">
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                                            (4y)
+                                            (7y)
                                         </div>
                                     </div>            
                                 </td>
@@ -240,7 +249,7 @@
                     <br />
                     
                     <p>
-                        <strong id="UsingTechnologiesTitle">Kullanılan teknolojiler; *</strong>
+                        <strong id="UsingTechnologiesTitle">Kullanılan Teknolojiler; *</strong>
                         <br/>
                         
                         <table>
@@ -249,13 +258,16 @@
                                     <td>
                                         <ul>
                                             <li>WPF/Silverlight</li>
+                                            <li>Unity IoC</li>
+                                            <li>Prism</li>
                                             <li>Windows Store Development</li>
                                             <li>Windows Phone Development</li>
                                             <li>WCF</li>
                                             <li>Entity Framework</li>
+                                            <li>NHibernate</li>
                                             <li>Android Development</li>
+                                            <li>Xamarin</li>
                                             <li>AWT/Swing/Applet</li>
-                                            
                                         </ul>
                                     </td>
                                     <td>
@@ -265,8 +277,12 @@
                                             <li>Socket.IO</li>
                                             <li>NodeJS</li>
                                             <li>jQuery</li>
+                                            <li>AngularJS</li>
+                                            <li>Ajax</li>
                                             <li>Bootstrap</li>
+                                            <li>ESYA API</li>
                                             <li>PKCS#11</li>
+                                            <li>Git</li>
                                         </ul>
                                     </td>
                                 </tr>
@@ -275,15 +291,27 @@
                     </p>
                     
                     <br/>
-                    <h2 id="DevelopedProjectsTitle">Geliştirilen projeler *</h2>
+                    <h2 id="DevelopedProjectsTitle">Geliştirilen / Katılım Sağlanan Projeler *</h2>
                     <hr/>
                     <p>
+                        <li>
+                            <span id="Project14Name">Enerji Ticareti Terminali*</span><span id="Project14Description" style="opacity: 0.65;"> - Türkiye Enerji Borsası için geliştirilmiş Ticaret (Trading) Ekranı ve Tahmin, Analiz, Veri İzleme/Haber Terminali </span>
+                            <br/><span id="Project14Additional" style="opacity: 0.65;"></span></li>
+                        </li>
+                        <li>
+                            <span id="Project15Name">Ertis *</span><span id="Project15Description" style="opacity: 0.65;"> - Kurumsal Kaynak Yönetimi Sistemi ve Web Uygulaması</span>
+                            <br/><span id="Project15Additional" style="opacity: 0.65;">(PHP, Laravel Framework, MySQL)</span></li>
+                        </li>
                         <li>
                             <span id="Project1Name">LojikSim *</span><span id="Project1Description" style="opacity: 0.65;"> - Lojik Elektronik Devre Simülatörü</span>
                             <br/><span id="Project1Additional" style="opacity: 0.65;">(Java, Swing ve Json teknolojileri kullanıldı)</span></li>
                         </li>
                         <li>
-                            <span id="Project2Name">SMS PGP *</span><span id="Project2Description" style="opacity: 0.65;"> - PGP API ve Kriptolu SMS/E-posta Windows Phone Mobil Uygulaması</span>
+                            <span id="Project16Name">Logisim *</span><span id="Project16Description" style="opacity: 0.65;"> - Andreas Tetzl / http://www.tetzl.de</span>
+                            <br/><span id="Project16Additional" style="opacity: 0.65;">(Türkçe çeviri)</span></li>
+                        </li>
+                        <li>
+                            <span id="Project2Name">SMS PGP *</span><span id="Project2Description" style="opacity: 0.65;"> - Açık Anahtarlı Şifreleme ve Güvenilir E-İmza Destekli PGP API ve Kriptolu SMS/E-posta Mobil Uygulaması</span>
                             <br/><span id="Project2Additional" style="opacity: 0.65;">(C#, WCF, MsSQL, Json, PKCS#7, RSA, SHA-3(Keccak), Diffie-Hellman teknolojileri kullanıldı)</span>
                         </li>
                         <li>
@@ -300,7 +328,7 @@
                         </li>
                         <li>
                             <span id="Project6Name">Müzik+ *</span><span id="Project6Description" style="opacity: 0.65;"> - Windows Phone Müzik Uygulaması</span>
-                            <br/><span id="Project6Additional" style="opacity: 0.65;">http://www.windowsphone.com/tr-tr/store/app/m%C3%BCzik/d92cfd90-a6a2-4285-afaa-bbfc01ed3ff0</span>
+                            <br/><span id="Project6Additional" style="opacity: 0.65;">http://allaboutwindowsphone.com/software/content/Mzik.php</span>
                         </li>
                         <li>
                             <span id="Project7Name">Araçlar *</span><span id="Project7Description" style="opacity: 0.65;"> - Windows Phone sensör araçları uygulaması</span>
@@ -387,6 +415,10 @@
                         <li>
                             <span id="Conference13Title">OKÜP (Orta Karadeniz Üniversiteler Platformu) Proje Pazarı Sergisi *</span>
                             <span id="Conference13Description" style="opacity: 0.65;"> (Hitit Üniversitesi - 2015)</span>
+                        </li>
+                        <li>
+                            <span id="Conference14Title">Özgür Yazılım ve Linux Günleri *</span>
+                            <span id="Conference14Description" style="opacity: 0.65;"> (Bilgi Üniversitesi - 2015)</span>
                         </li>
                     </p>
                     
