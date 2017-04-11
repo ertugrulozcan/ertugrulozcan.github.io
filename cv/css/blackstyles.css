@@ -185,3 +185,10 @@ video
     border-radius: 50%;
     border: 4px solid #69708C;
 }
+
+.fixedbutton
+{
+    position: fixed;
+    top: 15px;
+    right: 15px; 
+}
