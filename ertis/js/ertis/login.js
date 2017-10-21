@@ -10,8 +10,8 @@ function LoginButtonClickHandler()
 
 function Login(username, password)
 {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function()
+	var httpReq = new XMLHttpRequest();
+	httpReq.onreadystatechange = function ()
 	{
 		if (this.readyState == 4 && this.status == 200)
 		{
@@ -23,11 +23,11 @@ function Login(username, password)
 		}	
 	};
 
-	xhttp.open("POST", SERVICE_URL, true);
+	httpReq.open("POST", SERVICE_URL, true);
 	httpReq.setRequestHeader('Access-Control-Allow-Headers', '*');
 	httpReq.setRequestHeader('Access-Control-Allow-Origin', '*');
-	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-	xhttp.send("username=" + username + "&password=" + password);
+	httpReq.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	httpReq.send("username=" + username + "&password=" + password);
 }
 
 function LoginWithAjax(username, password)
