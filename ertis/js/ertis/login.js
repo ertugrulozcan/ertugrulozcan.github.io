@@ -12,13 +12,48 @@ function Login(username, password)
 {
 	console.log("Login()");
 
-	var httpReq = new XMLHttpRequest();
+	if (window.XMLHttpRequest)
+	{
+		// code for modern browsers
+		xmlhttp = new XMLHttpRequest();
+	}
+	else
+	{
+		// code for old IE browsers
+		xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+
+	var httpReq = xmlhttp;
 	httpReq.onreadystatechange = function ()
 	{
 		console.log("LoginResponse;\n" + this.responseText);
 
 		if (!this.responseText)
 			return;
+		
+		if (this.readyState == 0)
+		{
+			console.log("Request not initialized.");
+			return;
+		}
+
+		if (this.readyState == 1)
+		{
+			console.log("Server connnection established.");
+			return;
+		}
+
+		if (this.readyState == 2)
+		{
+			console.log("Request received.");
+			return;
+		}
+
+		if (this.readyState == 3)
+		{
+			console.log("Request processing.");
+			return;
+		}
 		
 		if (this.readyState == 4)
 		{
