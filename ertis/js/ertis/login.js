@@ -20,20 +20,23 @@ function Login(username, password)
 		if (!this.responseText)
 			return;
 		
-		if (this.readyState == 4 && this.status == 200)
+		if (this.readyState == 4)
 		{
-			showMessage(this.responseText);
-			console.log("Login success");
-		}
-		else if (this.status == 401)
-		{
-			showErrorMessage("Kullanıcı adı ya da şifre hatalı!");
-			console.log("Username or password is incorrect");
-		}
-		else
-		{	
-			showErrorMessage(this.responseText);
-			console.log("Login error;\n" + this.responseText);
+			if (this.status == 200)
+			{
+				showMessage(this.responseText);
+				console.log("Login success");
+			}
+			else if (this.status == 401)
+			{
+				showErrorMessage("Kullanıcı adı ya da şifre hatalı!");
+				console.log("Username or password is incorrect");
+			}
+			else
+			{
+				showErrorMessage(this.responseText);
+				console.log("Login error;\n" + this.responseText);
+			}
 		}
 	};
 
