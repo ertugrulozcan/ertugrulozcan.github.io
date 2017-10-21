@@ -10,6 +10,26 @@ function LoginButtonClickHandler()
 
 function Login(username, password)
 {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function()
+	{
+		if (this.readyState == 4 && this.status == 200)
+		{
+			this.showMessage(this.responseText);
+		}
+		else
+		{
+			this.showErrorMessage(this.responseText);
+		}	
+	};
+
+	xhttp.open("POST", SERVICE_URL, true);
+	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	xhttp.send("username=" + username + "&password=" + password);
+}
+
+function LoginWithAjax(username, password)
+{
 	$.ajax(
 	{	
 		type: "POST",
@@ -41,15 +61,21 @@ function Login(username, password)
 		},
 		crossDomain: true,
 		dataType: 'jsonp',
-		});
-	
-	function showMessage(message)
-	{
-		alert("Message\n" + message);
-	}
-
-	function showErrorMessage(message)
-	{
-		alert("Error\n" + message);
-	}
+	});
 }
+
+function showMessage(message)
+{
+	alert("Message\n" + message);
+}
+
+function showErrorMessage(message)
+{
+	alert("Error\n" + message);
+}
+
+// http://astroturf.azurewebsites.net/api/login
+// callback = jQuery32105316654096257596_1508621026662
+// username = ertugrul.ozcan % 40projectertis.com
+// password =.Abcd1234!
+// _ = 1508621026663
