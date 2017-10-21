@@ -1,4 +1,4 @@
-var SERVICE_URL = "http://astroturf.azurewebsites.net/api/login";
+var SERVICE_URL = "http://ertis.azurewebsites.net/api/login";
 
 function LoginButtonClickHandler()
 {
