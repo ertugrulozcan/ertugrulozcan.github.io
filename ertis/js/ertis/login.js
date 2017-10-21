@@ -38,6 +38,8 @@ function Login(username, password)
 		error: function (data)
 		{
 			alert(data);
-		}	
+		},
+		crossDomain: true,
+		dataType: 'jsonp',
 	});
 }
