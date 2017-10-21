@@ -15,11 +15,11 @@ function Login(username, password)
 	{
 		if (this.readyState == 4 && this.status == 200)
 		{
-			this.showMessage(this.responseText);
+			showMessage(this.responseText);
 		}
 		else
 		{
-			this.showErrorMessage(this.responseText);
+			showErrorMessage(this.responseText);
 		}	
 	};
 
