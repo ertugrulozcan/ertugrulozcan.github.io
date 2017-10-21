@@ -28,18 +28,28 @@ function Login(username, password)
 			//alert(data);
 			if (data.msg != null)
 			{
-				alert(data.msg);
+				showMessage(data.msg);
 			}
 			else
 			{
-				alert("anan");
+				showErrorMessage("Response data is null");
 			}
 		},
 		error: function (data)
 		{
-			alert(data);
+			showErrorMessage(data);
 		},
 		crossDomain: true,
 		dataType: 'jsonp',
-	});
+		});
+	
+	function showMessage(message)
+	{
+		alert("Message\n" + message);
+	}
+
+	function showErrorMessage(message)
+	{
+		alert("Error\n" + message);
+	}
 }
