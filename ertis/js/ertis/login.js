@@ -24,6 +24,8 @@ function Login(username, password)
 	};
 
 	xhttp.open("POST", SERVICE_URL, true);
+	httpReq.setRequestHeader('Access-Control-Allow-Headers', '*');
+	httpReq.setRequestHeader('Access-Control-Allow-Origin', '*');
 	xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	xhttp.send("username=" + username + "&password=" + password);
 }
