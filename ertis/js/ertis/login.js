@@ -10,23 +10,30 @@ function LoginButtonClickHandler()
 
 function Login(username, password)
 {
+	console.log("Login()");
+
 	var httpReq = new XMLHttpRequest();
 	httpReq.onreadystatechange = function ()
 	{
+		console.log("LoginResponse;\n" + this.responseText);
+
 		if (!this.responseText)
 			return;
 		
 		if (this.readyState == 4 && this.status == 200)
 		{
 			showMessage(this.responseText);
+			console.log("Login success");
 		}
 		else if (this.status == 401)
 		{
 			showErrorMessage("Kullanıcı adı ya da şifre hatalı!");
+			console.log("Username or password is incorrect");
 		}
 		else
 		{	
 			showErrorMessage(this.responseText);
+			console.log("Login error;\n" + this.responseText);
 		}
 	};
 
@@ -35,6 +42,8 @@ function Login(username, password)
 	httpReq.setRequestHeader('Access-Control-Allow-Origin', '*');
 	httpReq.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 	httpReq.send("username=" + username + "&password=" + password);
+
+	console.log("Login request sent.");
 }
 
 function showMessage(message)
@@ -46,9 +55,3 @@ function showErrorMessage(message)
 {
 	alert("Error\n" + message);
 }
-
-// http://astroturf.azurewebsites.net/api/login
-// callback = jQuery32105316654096257596_1508621026662
-// username = ertugrul.ozcan % 40projectertis.com
-// password =.Abcd1234!
-// _ = 1508621026663
