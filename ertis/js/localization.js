@@ -38,7 +38,7 @@ function Localize(culture)
 }
 
 function BindStrings(language) {
-	$.each(data, function (key, val) {
+	$.each(currentDictionary.KeyValueDictionary, function (key, val) {
 		try {
 			document.getElementById(key).innerHTML = val;
 			//console.log(key + " : " + val);
