@@ -17,6 +17,7 @@ function FetchLocalizationDictionary(culture)
 	httpReq.onreadystatechange = function () {
 		if (this.readyState == 4) {
 			if (this.status == 200) {
+				console.log("LocalizationData fetched.");
 				SetCurrentDictionary(this.responseText);
 			}
 		}
