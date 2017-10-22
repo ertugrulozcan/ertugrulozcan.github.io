@@ -18,7 +18,7 @@ function FetchLocalizationDictionary(culture)
 		if (this.readyState == 4) {
 			if (this.status == 200) {
 				console.log("LocalizationData fetched.");
-				SetCurrentDictionary(this.responseText);
+				SetCurrentDictionary(JSON.parse(this.responseText));
 			}
 		}
 	};
