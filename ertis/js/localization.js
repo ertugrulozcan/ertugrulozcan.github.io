@@ -34,11 +34,11 @@ function Localize(culture)
 	console.log("Localize()");
 
 	FetchLocalizationDictionary(culture);
-	BindStrings();
+	BindStrings(currentDictionary.KeyValueDictionary);
 }
 
-function BindStrings() {
-	$.each(currentDictionary.KeyValueDictionary, function (key, val) {
+function BindStrings(data) {
+	$.each(data, function (key, val) {
 		try {
 			document.getElementById(key).innerHTML = val;
 			//console.log(key + " : " + val);
