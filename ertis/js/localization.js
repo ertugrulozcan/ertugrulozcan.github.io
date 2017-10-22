@@ -43,6 +43,8 @@ function Localize(culture)
 }
 
 function BindStrings(data) {
+	console.log("Data : " + data);
+	
 	$.each(data, function (key, val) {
 		try {
 			document.getElementById(key).innerHTML = val;
