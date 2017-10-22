@@ -31,6 +31,8 @@ function FetchLocalizationDictionary(culture)
 
 function SetCurrentDictionary(dict)
 {
+	console.log("LocalizationDictionary : " + dict);
+
 	currentDictionary = dict;
 	BindStrings(currentDictionary.KeyValueDictionary);
 }
@@ -44,7 +46,7 @@ function Localize(culture)
 
 function BindStrings(data) {
 	console.log("Data : " + data);
-	
+
 	$.each(data, function (key, val) {
 		try {
 			document.getElementById(key).innerHTML = val;
