@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Ertis</title>
+	<title>ERTIS | Dashboard</title>
 
 	<!--jQuery-->
 	<script src="js/jquery-3.2.1.min.js"></script>
@@ -19,30 +19,111 @@
 	<!--Fontawesome-->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 
+	<!-- Toastr style -->
+	<link href="css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+	<!-- Gritter -->
+	<link href="js/plugins/gritter/jquery.gritter.css" rel="stylesheet">
+
+	<link href="css/animate.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/jqstooltip.css" rel="stylesheet">
+
 	<!--CSS-->
-	<!--<link rel="stylesheet" type="text/css" title="Black" href="css/style.css">-->
+	<link rel="stylesheet" type="text/css" title="Black" href="css/style.css">
 	
+	<!-- Mainly scripts -->
+	<script async="" src="../../www.google-analytics.com/analytics.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+	<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	
+	<!-- Flot -->
+	<script src="js/plugins/flot/jquery.flot.js"></script>
+	<script src="js/plugins/flot/jquery.flot.tooltip.min.js"></script>
+	<script src="js/plugins/flot/jquery.flot.spline.js"></script>
+	<script src="js/plugins/flot/jquery.flot.resize.js"></script>
+	<script src="js/plugins/flot/jquery.flot.pie.js"></script>
+	
+	<!-- Peity -->
+	<script src="js/plugins/peity/jquery.peity.min.js"></script>
+	<script src="js/demo/peity-demo.js"></script>
+	
+	<!-- Custom and plugin javascript -->
+	<script src="js/inspinia.js"></script>
+	<script src="js/plugins/pace/pace.min.js"></script>
+	
+	<!-- jQuery UI -->
+	<script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+	
+	<!-- GITTER -->
+	<script src="js/plugins/gritter/jquery.gritter.min.js"></script>
+	
+	<!-- Sparkline -->
+	<script src="js/plugins/sparkline/jquery.sparkline.min.js"></script>
+	
+	<!-- Sparkline demo data  -->
+	<script src="js/demo/sparkline-demo.js"></script>
+	
+	<!-- ChartJS-->
+	<script src="js/plugins/chartJs/Chart.min.js"></script>
+	
+	<!-- Toastr -->
+	<script src="js/plugins/toastr/toastr.min.js"></script>
+
+	<script>
+		if (document.cookie.indexOf("access_token") == -1) {
+			location.href = "/login.html";
+		}
+	</script>
+
 	<script>
 		$(function()
 		{
 			$("header").load("header.html");
 			$("footer").load("footer.html");
+
+			$("#pace").load("pace.html");
+			$("#sidebar").load("sidebar.html");
+			$("#content").load("dashboard.html");
+			$("#chatbox").load("chatbox.html");
+			$("#rightsidebar").load("rightsidebar.html");
 		});
 	</script>
 </head>
 
-<body>
-	<header>
-		
-	</header>
+<body class="pace-done">
+	<!--Wtf Pace-->
+	<div id="pace" />
 
-	<div>
+	<!--MainWrapper-->
+	<div id="wrapper">
+		<!--SideBar-->
+		<div id="sidebar" />
 
+		<div id="page-wrapper" class="gray-bg dashboard-1">
+			<!--Header-->
+			<header>
+			
+			</header>
+
+			<!--PageContent-->
+			<div id="content">
+			
+			</div>
+		</div>
+
+		<!--Footer-->
+		<footer>
+			
+		</footer>>
+
+		<!--ChatBox-->
+		<div id="chatbox" />
+
+		<!--RightSideBar-->
+		<div id="rightsidebar" />
 	</div>
-
-	<footer>
-		
-	</footer>
 </body>
-
 </html>
