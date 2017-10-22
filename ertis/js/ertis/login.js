@@ -2,8 +2,8 @@ var SERVICE_URL = "http://ertis.azurewebsites.net/api/login";
 
 function LoginButtonClickHandler()
 {
-	var username = $('#usernameTextField').val();
-	var password = $('#passwordTextField').val();
+	var username = $('#UsernameTextBox').val();
+	var password = $('#PasswordBox').val();
 
 	this.Login(username, password);
 }
@@ -64,7 +64,9 @@ function Login(username, password)
 			}
 			else if (this.status == 401)
 			{
-				showErrorMessage("Kullanıcı adı ya da şifre hatalı!");
+				//showErrorMessage("Kullanıcı adı ya da şifre hatalı!");
+				$('#ErrorMessageTextBlock').text("Kullanıcı adı ya da şifre hatalı!");
+
 				console.log("Username or password is incorrect");
 			}
 			else
