@@ -12,6 +12,13 @@ function Login(username, password)
 {
 	console.log("Login()");
 
+	$('#ErrorMessageTextBlock').text("");
+	$("#progressBar").show();
+	$("#progressBar").progressbar({
+		value: 100
+	});
+	IndeterminateProgressBar($("#progressBar"));
+	
 	if (window.XMLHttpRequest)
 	{
 		// code for modern browsers
@@ -75,6 +82,8 @@ function Login(username, password)
 				console.log("Login error;\n" + this.responseText);
 			}
 		}
+
+		$("#progressBar").hide();
 	};
 
 	httpReq.open("POST", SERVICE_URL, true);
@@ -94,4 +103,24 @@ function showMessage(message)
 function showErrorMessage(message)
 {
 	alert("Error\n" + message);
+}
+
+function IndeterminateProgressBar(progressbar)
+{
+	$(progressbar).css(
+	{
+		"padding-left": "0%",
+		"padding-right": "90%"
+	});
+	
+	$(progressbar).progressbar("option", "value", 100);
+	
+	$(progressbar).animate(
+	{
+		paddingLeft: "90%",
+		paddingRight: "0%"
+	}, 1000, "linear",
+	function () {
+		IndeterminateProgressBar(progressbar);
+	});
 }
