@@ -46,7 +46,7 @@ function BindStrings(data) {
 	$.each(data, function (key, val) {
 		try {
 			document.getElementById(key).innerHTML = val;
-			//console.log(key + " : " + val);
+			console.log(key + " : " + val);
 		}
 		catch (exc) {
 			console.log("Hata : " + exc.message + "(key:" + key + ", value:" + val + ")");
