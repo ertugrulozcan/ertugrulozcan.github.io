@@ -2,7 +2,7 @@ var SERVICE_URL = "https://ertis.azurewebsites.net/api/login";
 
 function LoginOnLoad()
 {
-	Localize();
+	Localize("tr-TR");
 
 	console.log("LoginOnLoad()");
 	$("#progressRing").hide();
