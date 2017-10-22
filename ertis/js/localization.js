@@ -44,11 +44,14 @@ function Localize(culture)
 }
 
 function BindStrings(data) {
-	console.log("Data : " + data);
-
 	$.each(data, function (key, val) {
 		try {
-			document.getElementById(key).innerHTML = val;
+			elements = document.getElementsByName(key);
+			for (var i = 0; i < elements.length; i++)
+			{
+				elements[i].innerHTML = val;
+			}
+
 			console.log(key + " : " + val);
 		}
 		catch (exc) {
