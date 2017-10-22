@@ -49,7 +49,10 @@ function BindStrings(data) {
 			elements = document.getElementsByName(key);
 			for (var i = 0; i < elements.length; i++)
 			{
-				elements[i].innerHTML = val;
+				if (elements[i].tagName == 'INPUT')
+					elements[i].placeholder = val;
+				else
+					elements[i].innerHTML = val;
 			}
 
 			console.log(key + " : " + val);
