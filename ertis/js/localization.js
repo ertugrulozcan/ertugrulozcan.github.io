@@ -1,4 +1,4 @@
-var LOCALIZATION_SERVICE_URL = "http://ertis.azurewebsites.net/api/localization/tr-TR";
+var LOCALIZATION_SERVICE_URL = "https://ertis.azurewebsites.net/api/localization/tr-TR";
 
 function BindStrings(language)
 {
