@@ -15,30 +15,43 @@
 	<link rel="stylesheet" href="css/jquery-ui.min.css">
 
 	<script src="js/ertis/login.js"></script>
+
+	<style>
+	.progressRing
+	{
+		border: 6px solid #FFFFFF;
+		border-top: 6px solid #1AB394;
+		border-radius: 50%;
+		width: 30px;
+		height: 30px;
+		animation: spin 1s linear infinite;
+		position: relative;
+		margin-left: -20px;
+		left: 50%;
+	}
+
+	@keyframes spin
+	{
+		0% { transform: rotate(0deg); }
+		100% { transform: rotate(360deg); }
+	}
+	</style>
 </head>
 
-<body class="gray-bg">
+<body class="gray-bg" onload="LoginOnLoad()">
 	<div class="middle-box text-center loginscreen animated fadeInDown">
 		<div>
-			<div style="height:5%;"></div>
-
 			<div>
 				<h1 class="logo-name">
 					<img src="images/ertis.logo.md.black.png" class="grow" width="100" height="100" />
 				</h1>
 			</div>
 
-			<br />
-			<br />
-
 			<!--
             <h3>Hoşgeldiniz</h3>
             <p>
                 Bazi aciklamalar
             </p>
-
-            <br />
-            <br />
             -->
 
 			<form class="m-t">
@@ -50,10 +63,18 @@
 					<input name="PasswordBox" id="PasswordBox" type="password" class="form-control" placeholder="Parola" required="">
 				</div>
 
-				<p>
-					<div id="progressBar"></div>
+				<div class="text-muted text-center">
+					<div id="progressRing">
+						<div class="progressRing"></div> 
+
+						<div style="height:10px;"></div>
+						<span>
+							 Lütfen bekleyiniz...
+						</span>
+					</span>
+
 					<strong id="ErrorMessageTextBlock" style="color: red;"></strong>
-				</p>
+				</div>
 
 				<br/>
 

@@ -1,5 +1,11 @@
 var SERVICE_URL = "https://ertis.azurewebsites.net/api/login";
 
+function LoginOnLoad()
+{
+	console.log("LoginOnLoad()");
+	$("#progressRing").hide();
+}
+
 function LoginButtonClickHandler()
 {
 	var username = $('#UsernameTextBox').val();
@@ -13,11 +19,12 @@ function Login(username, password)
 	console.log("Login()");
 
 	$('#ErrorMessageTextBlock').text("");
-	$("#progressBar").show();
+	$("#progressRing").show();
+	/* $("#progressBar").show();
 	$("#progressBar").progressbar({
 		value: 100
 	});
-	IndeterminateProgressBar($("#progressBar"));
+	IndeterminateProgressBar($("#progressBar")); */
 	
 	if (window.XMLHttpRequest)
 	{
@@ -83,7 +90,8 @@ function Login(username, password)
 			}
 		}
 
-		$("#progressBar").hide();
+		$("#progressRing").hide();
+		// $("#progressBar").hide();
 	};
 
 	httpReq.open("POST", SERVICE_URL, true);
