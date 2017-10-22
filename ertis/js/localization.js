@@ -17,7 +17,7 @@ function FetchLocalizationDictionary(culture)
 	httpReq.onreadystatechange = function () {
 		if (this.readyState == 4) {
 			if (this.status == 200) {
-				currentDictionary = this.responseText;
+				SetCurrentDictionary(this.responseText);
 			}
 		}
 	};
@@ -27,14 +27,19 @@ function FetchLocalizationDictionary(culture)
 	httpReq.setRequestHeader('Access-Control-Allow-Origin', '*');
 	httpReq.setRequestHeader("Content-type", "application/json");
 	httpReq.send();
-}	
+}
+
+function SetCurrentDictionary(dict)
+{
+	currentDictionary = dict;
+	BindStrings(currentDictionary.KeyValueDictionary);
+}
 
 function Localize(culture)
 {
 	console.log("Localize()");
 
 	FetchLocalizationDictionary(culture);
-	BindStrings(currentDictionary.KeyValueDictionary);
 }
 
 function BindStrings(data) {
