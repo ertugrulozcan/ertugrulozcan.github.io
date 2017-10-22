@@ -37,7 +37,7 @@ function Localize(culture)
 	BindStrings();
 }
 
-function BindStrings(language) {
+function BindStrings() {
 	$.each(currentDictionary.KeyValueDictionary, function (key, val) {
 		try {
 			document.getElementById(key).innerHTML = val;
