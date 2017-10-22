@@ -32,8 +32,6 @@ function FetchLocalizationDictionary(culture)
 
 function SetCurrentDictionary(dict)
 {
-	console.log("LocalizationDictionary : " + dict);
-
 	currentDictionary = dict;
 	BindStrings(currentDictionary.KeyValueDictionary);
 }
