@@ -43,7 +43,7 @@ function SetCurrentDictionary(dict)
 
 function Localize(culture)
 {
-	console.log("Localize()");
+	console.log("Localize(" + culture + ")");
 
 	FetchLocalizationDictionary(culture);
 }
