@@ -74,13 +74,17 @@ function BindStrings(data)
 
 function Loc(dict)
 {
+	console.log("Loc()");
 	Loc(dict, "*");
 }
 
 function Loc(dict, tagName)
 {
+	console.log("Loc(tagName)");
 	var element, lockey, val;
 	var allElements = document.getElementsByTagName(tagName);
+
+	console.log("allElements.length : " + allElements.length);
 
 	for (i = 0; i < allElements.length; i++)
 	{
