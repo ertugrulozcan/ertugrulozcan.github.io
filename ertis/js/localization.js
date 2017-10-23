@@ -89,7 +89,11 @@ function Loc(dict, tagName)
 
 		if (lockey)
 		{
+			console.log("lockey : " + lockey);
+
 			val = dict[lockey];
+
+			console.log("lockey.value : " + val);
 
 			if (val)
 			{
@@ -101,7 +105,7 @@ function Loc(dict, tagName)
 			}	
 			
 			// element.removeAttribute("lockey");
-		}	
+		}
 	}	
 }
 
