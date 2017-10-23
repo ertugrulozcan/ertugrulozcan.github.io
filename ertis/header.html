@@ -1,12 +1,22 @@
 <div class="row border-bottom">
 	<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
 		<div class="navbar-header">
-			<a class="navbar-minimalize minimalize-styl-2 btn btn-primary" href="#">
+			<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#">
 				<i class="fa fa-bars"></i>
 			</a>
+
+			<!-- action="https://ertis.com/search.html" -->
+			<form role="search" class="navbar-form-custom">
+				<div class="form-group">
+					<input type="text" placeholder="Ara" class="form-control" name="top-search" id="top-search">
+				</div>
+			</form>
 		</div>
 
-		<ul class="nav navbar-top-links" style="float:left; margin-top: 7px;">
+		<ul class="nav navbar-top-links navbar-right">
+			<li>
+				<span class="m-r-sm text-muted welcome-message">Hoşgeldiniz</span>
+			</li>
 			<li class="dropdown">
 				<a class="dropdown-toggle count-info" data-toggle="dropdown" href="#">
 					<i class="fa fa-envelope"></i>
@@ -36,8 +46,7 @@
 							<div class="media-body ">
 								<small class="pull-right text-navy">5h ago</small>
 								<strong>Chris Johnatan Overtunk</strong> started following
-								<strong>Monica Smith
-								</strong>.
+								<strong>Monica Smith</strong>.
 								<br>
 								<small class="text-muted">Yesterday 1:21 pm - 11.06.2014</small>
 							</div>
@@ -112,29 +121,18 @@
 					</li>
 				</ul>
 			</li>
-		</ul>
 
-		<ul class="nav navbar-top-links navbar-right">
-			<li class="navbar-form-custom">
-				<form role="search" action="http://webapplayers.com/inspinia_admin-v2.7/search_results.html">
-					<div class="form-group">
-						<input type="text" placeholder="Ara" class="form-control search-box" name="top-search" id="top-search">
-					</div>
-				</form>
-			</li>
 
 			<li>
-				<a href="logout.jsp">
-					<i class="fa fa-sign-out"></i> Çıkış
+				<a href="login.html">
+					<i class="fa fa-sign-out"></i> Log out
 				</a>
 			</li>
-
 			<li>
 				<a class="right-sidebar-toggle">
 					<i class="fa fa-tasks"></i>
 				</a>
 			</li>
 		</ul>
-
 	</nav>
 </div>
