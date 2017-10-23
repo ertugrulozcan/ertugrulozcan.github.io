@@ -80,7 +80,7 @@ function Loc(dict)
 
 function Loc(dict, tagName)
 {
-	console.log("Loc(tagName)");
+	console.log("Loc(" + tagName + ")");
 	var element, lockey, val;
 	var allElements = document.getElementsByTagName(tagName);
 
