@@ -48,6 +48,41 @@ function Localize(culture)
 	FetchLocalizationDictionary(culture);
 }
 
+function Loc(dict, tagName)
+{
+	var element, lockey, val;
+	var allElements = document.getElementsByTagName(tagName);
+
+	for (i = 0; i < allElements.length; i++)
+	{
+		element = allElements[i];
+		lockey = element.getAttribute("lockey");
+
+		if (lockey)
+		{
+			val = dict[lockey];
+
+			if (val)
+			{
+				if (element.tagName == 'INPUT')
+					element.placeholder = val;
+				else
+					element.innerHTML = val;
+			}
+			else
+			{
+				element.innerHTML = "Key : " + lockey;
+			}	
+			
+			// element.removeAttribute("lockey");
+		}
+	}	
+}
+
+/*
+//
+// Eski
+//
 function BindStrings(data)
 {
 	$.each(data, function (key, val)
@@ -71,68 +106,4 @@ function BindStrings(data)
 	
 	console.log("String veriler bind edildi.");
 }
-
-function Loc(dict, tagName)
-{
-	console.log("Loc(" + tagName + ")");
-	var element, lockey, val;
-	var allElements = document.getElementsByTagName(tagName);
-
-	console.log("allElements.length : " + allElements.length);
-
-	for (i = 0; i < allElements.length; i++)
-	{
-		element = allElements[i];
-		lockey = element.getAttribute("lockey");
-
-		if (lockey)
-		{
-			console.log("lockey : " + lockey);
-
-			val = dict[lockey];
-
-			console.log("lockey.value : " + val);
-
-			if (val)
-			{
-				element.innerHTML = val;
-			}
-			else
-			{
-				element.innerHTML = "Key : " + lockey;
-			}	
-			
-			// element.removeAttribute("lockey");
-		}
-	}	
-}
-
-function Anan()
-{
-	var z, i, elmnt, file, xhttp;
-	
-	z = document.getElementsByTagName("*");
-	
-	for (i = 0; i < z.length; i++)
-	{
-		elmnt = z[i];
-		file = elmnt.getAttribute("w3-include-html");
-		
-		if (file)
-		{
-			xhttp = new XMLHttpRequest();
-			xhttp.onreadystatechange = function ()
-			{
-				if (this.readyState == 4 && this.status == 200)
-				{
-					elmnt.innerHTML = this.responseText;
-					elmnt.removeAttribute("w3-include-html");
-					w3.includeHTML(cb);
-				}
-			}
-			xhttp.open("GET", file, true);
-			xhttp.send();
-			return;
-		}
-	}
-};
+*/
