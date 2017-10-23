@@ -38,7 +38,7 @@ function FetchLocalizationDictionary(culture)
 function SetCurrentDictionary(dict)
 {
 	currentDictionary = dict;
-	Loc(currentDictionary.KeyValueDictionary);
+	Loc(currentDictionary.KeyValueDictionary, "*");
 }
 
 function Localize(culture)
@@ -70,12 +70,6 @@ function BindStrings(data)
 	});
 	
 	console.log("String veriler bind edildi.");
-}
-
-function Loc(dict)
-{
-	console.log("Loc()");
-	Loc(dict, "*");
 }
 
 function Loc(dict, tagName)
