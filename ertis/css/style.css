@@ -5720,7 +5720,7 @@ body.body-small .vote-icon {
 #small-chat {
   position: fixed;
   bottom: 45px;
-  right: 20px;
+  right: 10px;
   z-index: 100;
 }
 #small-chat .badge {
