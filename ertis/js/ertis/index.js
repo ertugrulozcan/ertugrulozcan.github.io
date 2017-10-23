@@ -24,4 +24,7 @@ function IncludePages()
 
 	// RightSidebar
 	$.get("rightsidebar.html", function (data) { $("#rightsidebar").html(data); });
+
+	// BodyScripts
+	$.get("bodyscripts.html", function (data) { $("#bodyscripts").html(data); });
 }
