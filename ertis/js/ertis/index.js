@@ -19,6 +19,9 @@ function IncludePages()
 	// Content
 	$.get("content.html", function (data) { $("#content").html(data); });
 
+	// Footer
+	$.get("footer.html", function (data) { $("#footer").html(data); });
+
 	// ChatBox
 	$.get("chatbox.html", function (data) { $("#chatbox").html(data); });
 
