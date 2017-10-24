@@ -1,5 +1,11 @@
 var SERVICE_URL = "https://ertis.azurewebsites.net/api/account/register";
 
+function RegisterOnLoad() {
+	Localize("tr-TR");
+
+	console.log("RegisterOnLoad()");
+}
+
 function RegisterButtonClickHandler() {
 	var name = $('#NameTextBox').val();
 	var surname = $('#surnameTextBox').val();
@@ -22,11 +28,8 @@ function RegisterButtonClickHandler() {
 	this.Register(user);
 }
 
-
-
 function Register(user) {
 	console.log("Register()");
-
 
 	if (window.XMLHttpRequest) {
 		// code for modern browsers
