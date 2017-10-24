@@ -7,7 +7,7 @@
 	<title>Ertis | Kayıt</title>
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+	<link href="css/font-awesome.css" rel="stylesheet">
 	<link href="css/plugins/iCheck/custom.css" rel="stylesheet">
 	<link href="css/animate.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -18,82 +18,95 @@
 
 <body class="gray-bg">
 	<center>
-		<h1 class="logo-name">ertis</h1>
+		<h1 class="logo-name">
+			<img src="images/ertis.logo.md.black.png" class="grow" width="100" height="100" />
+		</h1>
 	</center>
 
 	<div class="middle-box text-center loginscreen   animated fadeInDown">
-		<div>
-			<h3>ERTIS</h3>
-			<p>Bir Hesap Oluşturun.</p>
-			
-			<div class="m-t">
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Name" id="NameTextBox" required="">
-				</div>
-
-				<div class="form-group">
-					<input type="text" class="form-control" placeholder="Surname" id="surnameTextBox" required="">
-				</div>
-				
-				<div class="form-group" id="data_1">
-					<div class="input-group date">
-						<span class="input-group-addon">
-							<i class="fa fa-calendar"></i>
-						</span>
-						<input type="text" class="form-control" id="birthDateBox" placeholder="Birth Date">
-					</div>
-				</div>
-				
-				<div class="form-group">
-					<input type="text" class="form-control" id="phoneBox" placeholder="Phone: 0 (999) 999-9999">
-				</div>
-				
-				<div class="form-group">
-					<input type="email" class="form-control" id="emailBox" placeholder="Email" required="">
-				</div>
-				
-				<div id="pwd-container1">
-					<div class="form-group">
-						<input type="password" class="form-control example1" id="passwordBox" placeholder="Password">
-					</div>
-					<div class="form-group">
-						<div class="pwstrength_viewport_progress"></div>
-					</div>
-				</div>
-				
-				<div class="form-group">
-					<input type="password" class="form-control" placeholder="Confirm Password" id="confirmPassword" required="">
-				</div>
-				
-				<div class="form-group">
-					<div class="checkbox i-checks">
-						<label>
-							<input type="checkbox">
-							<i></i> Gizlilik Politikasını Okudum ve Kabul Ediyorum </label>
-					</div>
-				</div>
-				
-				<button type="button" class="btn btn-primary block full-width m-b" onclick="RegisterButtonClickHandler()">Kayıt Ol</button>
-
-				<p class="text-muted text-center">
-					<small>Hesabınız var mı?</small>
-				</p>
-				
-				<a class="btn btn-sm btn-white btn-block" href="login.html">Giriş Yap</a>
-			</div>
-		</div>
-
-		<hr/>
+		<h3>Kayıt</h3>
 		
-		<div class="row">
-			<div class="col-md-6">
-				Copyright ERTIS Inc.
+		<div class="m-t">
+			<!-- Name -->
+			<div class="form-group">
+				<input id="NameTextBox" type="text" class="form-control" placeholder="Name" required>
 			</div>
-			
-			<div class="col-md-6 text-right">
-				<small>© 2015-2017</small>
+		
+			<!-- Surname -->
+			<div class="form-group">
+				<input id="surnameTextBox" type="text" class="form-control" placeholder="Surname" required>
 			</div>
+		
+			<!-- BirthDate -->
+			<div class="form-group" id="data_1">
+				<div class="input-group date">
+					<span class="input-group-addon">
+						<i class="fa fa-calendar"></i>
+					</span>
+		
+					<input type="text" class="form-control" id="birthDateBox" placeholder="Birth Date">
+				</div>
+			</div>
+		
+			<!-- PhoneNumber -->
+			<div class="form-group">
+				<input id="phoneBox" type="text" class="form-control" placeholder="Phone: 0 (999) 999-9999">
+			</div>
+		
+			<!-- EmailAddress -->
+			<div class="form-group">
+				<input id="emailBox" type="email" class="form-control" placeholder="Email" required>
+			</div>
+		
+			<!-- Password -->
+			<div id="pwd-container1">
+				<div class="form-group">
+					<input id="passwordBox" type="password" class="form-control example1" placeholder="Password">
+				</div>
+		
+				<!-- PasswordStrengthIndicator -->
+				<div class="form-group">
+					<div class="pwstrength_viewport_progress"></div>
+				</div>
+			</div>
+		
+			<!-- RePassword -->
+			<div class="form-group">
+				<input id="confirmPassword" type="password" class="form-control" placeholder="Confirm Password" required>
+			</div>
+		
+			<!-- Non-Disclosure Agreement -->
+			<div class="form-group">
+				<div class="checkbox i-checks">
+					<label>
+						<input type="checkbox">
+						<i></i> Gizlilik Politikasını Okudum ve Kabul Ediyorum </label>
+				</div>
+			</div>
+		
+			<!-- RegisterButton -->
+			<button type="button" class="btn btn-primary block full-width m-b" onclick="RegisterButtonClickHandler()">Kayıt Ol</button>
+		
+			<br />
+			<br />
+			<br />
+		
+			<p class="text-muted text-center">
+				<small>Hesabınız var mı?</small>
+			</p>
+		
+			<!-- GotoLoginButton -->
+			<a class="btn btn-sm btn-white btn-block" href="login.html">Giriş Yap</a>
 		</div>
+		
+		<div class="m-t">
+			<input type="image" class="btnClaim" src="images/tr.png" onclick="Localize('tr-TR');" style="width: 20px; height: 20px;">
+			<input type="image" class="btnClaim" src="images/uk.png" onclick="Localize('en-US');" style="width: 20px; height: 20px;">
+		</div>
+		
+		<p class="m-t">
+			<small>Ertis &copy; 2017</small>
+		</p>
 	</div>
 
 	<!-- Mainly scripts -->
@@ -143,5 +156,4 @@
 		}
 	</script>
 </body>
-
 </html>
