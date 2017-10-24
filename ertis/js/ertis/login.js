@@ -4,6 +4,21 @@ function LoginOnLoad()
 {
 	Localize("tr-TR");
 
+	// EnterKey event handler for username textBox
+	// EnterKey event handler for username textBox
+	$("#UsernameTextBox").keyup(function (event) {
+		if (event.keyCode === 13) {
+			$("#LoginButton").click();
+		}
+	});
+
+	// EnterKey event handler for username textBox
+	$("#PasswordBox").keyup(function (event) {
+		if (event.keyCode === 13) {
+			$("#LoginButton").click();
+		}
+	});
+
 	console.log("LoginOnLoad()");
 	$("#progressRing").hide();
 }
