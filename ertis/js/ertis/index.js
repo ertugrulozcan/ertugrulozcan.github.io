@@ -1,5 +1,8 @@
 function IndexOnLoad()
 {
+	if (!checkUserToken())
+		return;	
+	
 	IncludePages();
 
 	console.log("IndexOnLoad()");

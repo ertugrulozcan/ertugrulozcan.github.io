@@ -92,6 +92,7 @@ function Login(username, password)
 			{
 				console.log("Login success");
 				createCookie("access_token", JSON.stringify(this.responseText), 1);
+				createCookie("username", username, 1);
 				window.location.assign("index.html");
 			}
 			else if (this.status == 401)
