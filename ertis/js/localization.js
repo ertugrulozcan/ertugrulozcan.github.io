@@ -71,7 +71,10 @@ function Loc(dict, tagName)
 			}
 			else
 			{
-				element.innerHTML = "Key : " + lockey;
+				if (element.tagName == 'INPUT')
+					element.placeholder = "Key:" + lockey;
+				else
+					element.innerHTML = "Key:" + lockey;
 			}	
 			
 			// element.removeAttribute("lockey");
