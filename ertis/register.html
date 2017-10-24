@@ -17,24 +17,22 @@
 </head>
 
 <body class="gray-bg">
-	<center>
-		<h1 class="logo-name">
-			<img src="images/ertis.logo.md.black.png" class="grow" width="100" height="100" />
-		</h1>
-	</center>
-
+	<h1 class="logo-name">
+		<img src="images/ertis.logo.md.black.png" class="grow" width="100" height="100" />
+	</h1>
+	
 	<div class="middle-box text-center loginscreen   animated fadeInDown">
-		<h3>Kayıt</h3>
+		<h3 lockey="Register">Kayıt</h3>
 		
 		<div class="m-t">
 			<!-- Name -->
 			<div class="form-group">
-				<input id="NameTextBox" type="text" class="form-control" placeholder="Name" required>
+				<input id="NameTextBox" lockey="Name" type="text" class="form-control" placeholder="Name" required>
 			</div>
 		
 			<!-- Surname -->
 			<div class="form-group">
-				<input id="surnameTextBox" type="text" class="form-control" placeholder="Surname" required>
+				<input id="surnameTextBox" lockey="Surname" type="text" class="form-control" placeholder="Surname" required>
 			</div>
 		
 			<!-- BirthDate -->
@@ -44,24 +42,24 @@
 						<i class="fa fa-calendar"></i>
 					</span>
 		
-					<input type="text" class="form-control" id="birthDateBox" placeholder="Birth Date">
+					<input id="birthDateBox" lockey="BirthDate" type="text" class="form-control" placeholder="Birth Date">
 				</div>
 			</div>
 		
 			<!-- PhoneNumber -->
 			<div class="form-group">
-				<input id="phoneBox" type="text" class="form-control" placeholder="Phone: 0 (999) 999-9999">
+				<input id="phoneBox" lockey="PhoneNumber" type="text" class="form-control" placeholder="Phone: 0 (999) 999-9999">
 			</div>
 		
 			<!-- EmailAddress -->
 			<div class="form-group">
-				<input id="emailBox" type="email" class="form-control" placeholder="Email" required>
+				<input id="emailBox" lockey="EmailAddress" type="email" class="form-control" placeholder="Email" required>
 			</div>
 		
 			<!-- Password -->
 			<div id="pwd-container1">
 				<div class="form-group">
-					<input id="passwordBox" type="password" class="form-control example1" placeholder="Password">
+					<input id="passwordBox" lockey="Password" type="password" class="form-control example1" placeholder="Password">
 				</div>
 		
 				<!-- PasswordStrengthIndicator -->
@@ -72,31 +70,32 @@
 		
 			<!-- RePassword -->
 			<div class="form-group">
-				<input id="confirmPassword" type="password" class="form-control" placeholder="Confirm Password" required>
+				<input id="confirmPassword" lockey="ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password" required>
 			</div>
 		
 			<!-- Non-Disclosure Agreement -->
 			<div class="form-group">
 				<div class="checkbox i-checks">
-					<label>
+					<label style="font-size: 10px;">
 						<input type="checkbox">
-						<i></i> Gizlilik Politikasını Okudum ve Kabul Ediyorum </label>
+						<span lockey="NonDisclosureAggreementMessage">Gizlilik Politikasını Okudum ve Kabul Ediyorum</span> 
+					</label>
 				</div>
 			</div>
 		
 			<!-- RegisterButton -->
-			<button type="button" class="btn btn-primary block full-width m-b" onclick="RegisterButtonClickHandler()">Kayıt Ol</button>
+			<button type="button" lockey="Register" class="btn btn-primary block full-width m-b" onclick="RegisterButtonClickHandler()">Kayıt Ol</button>
 		
 			<br />
 			<br />
 			<br />
 		
 			<p class="text-muted text-center">
-				<small>Hesabınız var mı?</small>
+				<small lockey="HaveYouAccount">Hesabınız var mı?</small>
 			</p>
 		
 			<!-- GotoLoginButton -->
-			<a class="btn btn-sm btn-white btn-block" href="login.html">Giriş Yap</a>
+			<a lockey="GoToLogin" class="btn btn-sm btn-white btn-block" href="login.html">Giriş Yap</a>
 		</div>
 		
 		<div class="m-t">
