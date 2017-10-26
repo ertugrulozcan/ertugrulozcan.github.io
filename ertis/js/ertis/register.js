@@ -33,6 +33,7 @@ function Register(user) {
     console.log("Register()");
 
     $('#ErrorMessageTextBlock').text("");
+    disablePage();
     $("#progressRing").show();
 
     if (window.XMLHttpRequest) {
@@ -81,6 +82,7 @@ function Register(user) {
         }
 
         $("#progressRing").hide();
+        enablePage();
     };
 
     httpReq.open("POST", SERVICE_URL, true);
