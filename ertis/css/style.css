@@ -10347,7 +10347,8 @@ body.md-skin {
 }
 
 .captionPanel {
-    width: 450px;
+    width: 90%;
+    max-width: 400px;
     padding: 0px;
     background: #fefefe;
     margin: 0 auto;
