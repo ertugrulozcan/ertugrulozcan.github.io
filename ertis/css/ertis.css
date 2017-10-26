@@ -18,3 +18,8 @@
         transform: rotate(360deg);
     }
 }
+
+.disabledDiv {
+    pointer-events: none;
+    opacity: 0.4;
+}

@@ -93,6 +93,16 @@ function Register(user) {
     console.log(user);
 }
 
+function enablePage() {
+    $("#inputsDiv").removeClass("disabledDiv");
+    $("#buttonsDiv").removeClass("disabledDiv");
+}
+
+function disablePage() {
+    $("#inputsDiv").addClass("disabledDiv");
+    $("#buttonsDiv").addClass("disabledDiv");
+}
+
 function showMessage(message) {
     alert("Message\n" + message);
 }

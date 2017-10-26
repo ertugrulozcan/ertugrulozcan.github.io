@@ -36,12 +36,14 @@
 			-->
 
             <form class="m-t" method="POST" onsubmit="return LoginButtonClickHandler()">
-                <div class="form-group">
-                    <input name="UsernameTextBox" id="UsernameTextBox" lockey="EmailAddress" type="email" for="email" class="form-control" placeholder="E-posta Adresi" required>
-                </div>
+                <div id="inputsDiv">
+                    <div class="form-group">
+                        <input name="UsernameTextBox" id="UsernameTextBox" lockey="EmailAddress" type="email" for="email" class="form-control" placeholder="E-posta Adresi" required>
+                    </div>
 
-                <div class="form-group">
-                    <input name="PasswordBox" id="PasswordBox" lockey="Password" type="password" for="password" class="form-control" placeholder="Parola" required>
+                    <div class="form-group">
+                        <input name="PasswordBox" id="PasswordBox" lockey="Password" type="password" for="password" class="form-control" placeholder="Parola" required>
+                    </div>
                 </div>
 
                 <div class="text-muted text-center">
@@ -59,21 +61,24 @@
 
                 <br/>
 
-                <button id="LoginButton" type="button" class="btn btn-primary block full-width m-b" onclick="LoginButtonClickHandler()"><span lockey="Login">Giriş</span></button>
+                <div id="buttonsDiv">
+                    <button id="LoginButton" type="button" class="btn btn-primary block full-width m-b" onclick="LoginButtonClickHandler()"><span lockey="Login">Giriş</span></button>
 
-                <a href="#">
-                    <small lockey="ForgotMyPassword">Parolamı unuttum?</small>
-                </a>
+                    <a href="#">
+                        <small lockey="ForgotMyPassword">Parolamı unuttum?</small>
+                    </a>
 
-                <br />
-                <br />
-                <br />
+                    <br />
+                    <br />
+                    <br />
 
-                <p class="text-muted text-center">
-                    <small lockey="RegisterMessage2">Bir hesabınız yok mu?</small>
-                </p>
+                    <p class="text-muted text-center">
+                        <small lockey="RegisterMessage2">Bir hesabınız yok mu?</small>
+                    </p>
 
-                <a lockey="CreateAccount" class="btn btn-sm btn-white btn-block" href="register.html">Hesap Oluştur</a>
+                    <a lockey="CreateAccount" class="btn btn-sm btn-white btn-block" href="register.html">Hesap Oluştur</a>
+                </div>
+            </form>
         </div>
 
         <div class="m-t">
