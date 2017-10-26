@@ -203,34 +203,32 @@
             var numbers = new RegExp('[0-9]');
             var specialchars = new RegExp('([!,%,&,@,#,$,^,*,?,_,~])');
 
-            function check_strength(thisval) {
-                if (thisval.length > 6) {
-                    characters = 1;
-                } else {
-                    characters = -1;
-                };
+            if (pass.length > 6) {
+                characters = 1;
+            } else {
+                characters = -1;
+            };
 
-                if (thisval.match(upperCase)) {
-                    capitalletters = 1
-                } else {
-                    capitalletters = 0;
-                };
+            if (pass.match(upperCase)) {
+                capitalletters = 1
+            } else {
+                capitalletters = 0;
+            };
 
-                if (thisval.match(lowerCase)) {
-                    loweletters = 1
-                } else {
-                    loweletters = 0;
-                };
+            if (pass.match(lowerCase)) {
+                loweletters = 1
+            } else {
+                loweletters = 0;
+            };
 
-                if (thisval.match(numbers)) {
-                    number = 1
-                } else {
-                    number = 0;
-                };
+            if (pass.match(numbers)) {
+                number = 1
+            } else {
+                number = 0;
+            };
 
-                var total = characters + capitalletters + loweletters + number + special;
-                return total;
-            }
+            var total = characters + capitalletters + loweletters + number + special;
+            return total;
         }
     </script>
 </body>
