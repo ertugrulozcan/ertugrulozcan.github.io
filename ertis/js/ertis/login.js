@@ -6,6 +6,10 @@ function LoginOnLoad()
 
 	// EnterKey event handler for username textBox
 	// EnterKey event handler for username textBox
+	/*
+	
+	// Test onsubmit;
+
 	$("#UsernameTextBox").keyup(function (event) {
 		if (event.keyCode === 13) {
 			$("#LoginButton").click();
@@ -18,6 +22,7 @@ function LoginOnLoad()
 			$("#LoginButton").click();
 		}
 	});
+	*/
 
 	console.log("LoginOnLoad()");
 	$("#progressRing").hide();
@@ -29,6 +34,8 @@ function LoginButtonClickHandler()
 	var password = $('#PasswordBox').val();
 
 	this.Login(username, password);
+
+	return false; // prevent further bubbling of event
 }
 
 function Login(username, password)
