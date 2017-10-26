@@ -174,7 +174,7 @@
     </script>
 
     <script>
-        $('input[type=password]').on('input', function(e) {
+        function checkPasswordStrength() {
             var passBox = $('#passwordBox');
             var passwordStrengthMeter = $('#passwordStrengthMeter');
 
@@ -185,6 +185,14 @@
                 passwordStrengthMeter.attr('data-strength', 0)
                 passwordStrengthMeter.hide();
             }
+        }
+
+        $(document).ready(function() {
+            checkPasswordStrength();
+        });
+
+        $('input[type=password]').on('input', function(e) {
+            checkPasswordStrength();
         });
 
         function strength(pass) {
