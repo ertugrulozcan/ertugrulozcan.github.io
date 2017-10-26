@@ -8427,7 +8427,7 @@ body.md-skin {
 
 .captionPanel {
   width: 500px;
-  padding: 30px 20px;
+  padding: 30px 50px;
   background: #fefefe;
   margin: 0 auto;
   border: 1px solid #c4cddb;
@@ -8436,6 +8436,10 @@ body.md-skin {
   box-shadow: 0 1px 1px #ccc;
   border-radius: 5px;
   position: relative;
+}
+
+.captionPanel .header {
+  padding: 0px;
 }
 
 .captionPanel h1 {
