@@ -33,7 +33,11 @@
         <form method="POST" onsubmit="return RegisterButtonClickHandler()" class="m-t panelContent">
             <!-- Name -->
             <div class="form-group">
-                <input id="NameTextBox" lockey="Name" type="text" class="form-control" placeholder="Name" required>
+                <label lockey="Name"></label>
+                <div class="input-group">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                    <input id="NameTextBox" lockey="Name" type="text" class="form-control" placeholder="Name" required>
+                </div>
             </div>
 
             <!-- Surname -->
@@ -138,6 +142,8 @@
     <script src="js/plugins/iCheck/icheck.min.js"></script>
     <script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
     <script src="js/plugins/validate/jquery.validate.min.js"></script>
+
+    <!--Checkbox-->
     <script>
         $(document).ready(function() {
             $('.i-checks').iCheck({
@@ -151,49 +157,6 @@
             forceParse: false,
             calendarWeeks: true,
             autoclose: true
-        });
-    </script>
-
-    <script>
-        $('input[type=password]').keyup(function() {
-            // keyup code here
-        }).focus(function() {
-            $('#pswd_info').show();
-        }).blur(function() {
-            $('#pswd_info').hide();
-        });
-
-        $(document).ready(function() {
-            // set password variable
-            var pswd = $(this).val();
-
-            //validate the length
-            if (pswd.length < 8) {
-                $('#length').removeClass('valid').addClass('invalid');
-            } else {
-                $('#length').removeClass('invalid').addClass('valid');
-            }
-
-            //validate letter
-            if (pswd.match(/[A-z]/)) {
-                $('#letter').removeClass('invalid').addClass('valid');
-            } else {
-                $('#letter').removeClass('valid').addClass('invalid');
-            }
-
-            //validate capital letter
-            if (pswd.match(/[A-Z]/)) {
-                $('#capital').removeClass('invalid').addClass('valid');
-            } else {
-                $('#capital').removeClass('valid').addClass('invalid');
-            }
-
-            //validate number
-            if (pswd.match(/\d/)) {
-                $('#number').removeClass('invalid').addClass('valid');
-            } else {
-                $('#number').removeClass('valid').addClass('invalid');
-            }
         });
     </script>
 </body>
