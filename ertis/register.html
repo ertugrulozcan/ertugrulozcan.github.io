@@ -88,7 +88,9 @@
                 </div>
 
                 <!-- PasswordStrengthIndicator -->
-
+                <div class="strength-meter">
+                    <div id="passwordStrengthMeter" class="strength-meter-fill" data-strength="0"></div>
+                </div>
             </div>
 
             <!-- RePassword -->
@@ -168,6 +170,19 @@
             forceParse: false,
             calendarWeeks: true,
             autoclose: true
+        });
+    </script>
+
+    <script>
+        $('input[type=password]').on('input', function(e) {
+            var passBox = $('#passwordBox');
+            if (passBox.val().length > 0) {
+                $('#passwordStrengthMeter').attr('data-strength', 1)
+                passBox.show();
+            } else {
+                $('#passwordStrengthMeter').attr('data-strength', 0)
+                passBox.hide();
+            }
         });
     </script>
 </body>
