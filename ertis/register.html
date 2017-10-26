@@ -20,12 +20,14 @@
 <body class="gray-bg" onload="RegisterOnLoad()">
 	<div class="middle-box text-center loginscreen animated fadeInDown">
 		<img src="images/ertis.logo.md.black.png" class="logo-name grow" width="100" height="100" />
+	</div>
 
-		<br/>
+	<br/>
 
-		<h3 lockey="Register">Kayıt</h3>
-		
-		<div class="m-t">
+	<div class="captionPanel">
+		<h1 lockey="Register">Kayıt</h3>
+			
+		<form method="POST" onsubmit="return RegisterButtonClickHandler()" class="m-t">
 			<!-- Name -->
 			<div class="form-group">
 				<input id="NameTextBox" lockey="Name" type="text" class="form-control" placeholder="Name" required>
@@ -40,12 +42,12 @@
 			<div class="form-group">
 				<input id="emailBox" lockey="EmailAddress" type="email" class="form-control" placeholder="Email" required>
 			</div>
-
+	
 			<!-- PhoneNumber -->
 			<div class="form-group">
 				<input id="phoneBox" lockey="PhoneNumberWithNotation" type="text" class="form-control" placeholder="Phone: 0 (999) 999-9999">
 			</div>
-
+	
 			<!-- BirthDate -->
 			<div class="form-group" id="data_1">
 				<div class="input-group date">
@@ -64,14 +66,22 @@
 				</div>
 		
 				<!-- PasswordStrengthIndicator -->
-				<div class="pwstrength_viewport_progress"></div>
+				<div id="pswd_info" class="passwordStrength">
+					<h4>Password must meet the following requirements:</h4>
+					<ul>
+						<li id="letter" class="invalid">At least <strong>one letter</strong></li>
+						<li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+						<li id="number" class="invalid">At least <strong>one number</strong></li>
+						<li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+					</ul>
+				</div>
 			</div>
 		
 			<!-- RePassword -->
 			<div class="form-group">
 				<input id="confirmPassword" lockey="ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password" required>
 			</div>
-
+	
 			<br />
 		
 			<!-- Non-Disclosure Agreement -->
@@ -81,13 +91,13 @@
 						<input type="checkbox">
 						<span lockey="NonDisclosureAggreementMessage">Gizlilik Politikasını Okudum ve Kabul Ediyorum</span> 
 					</label>
-
+	
 					<a href="policy.html" target="_blank" lockey="TermsAndConditions"></a>
 				</div>
 			</div>
 		
 			<br />
-			
+	
 			<!-- RegisterButton -->
 			<button type="button" lockey="Register" class="btn btn-primary block full-width m-b" onclick="RegisterButtonClickHandler()">Kayıt Ol</button>
 		
@@ -102,8 +112,10 @@
 			<!-- GotoLoginButton -->
 			<a lockey="GoToLogin" class="btn btn-sm btn-white btn-block" href="login.html">Giriş Yap</a>
 		</div>
-		
-		<div class="m-t">
+	</div>
+	
+	<div>
+		<div class="m-t middle-box text-center ">
 			<input type="image" class="btnClaim" src="images/tr.png" onclick="Localize('tr-TR');" style="width: 20px; height: 20px;">
 			<input type="image" class="btnClaim" src="images/uk.png" onclick="Localize('en-US');" style="width: 20px; height: 20px;">
 		</div>
@@ -120,8 +132,6 @@
 	<!-- iCheck -->
 	<script src="js/plugins/iCheck/icheck.min.js"></script>
 	<script src="js/plugins/datapicker/bootstrap-datepicker.js"></script>
-	<script src="js/plugins/pwstrength/pwstrength-bootstrap.min.js"></script>
-	<script src="js/plugins/pwstrength/zxcvbn.js"></script>
 	<script src="js/plugins/validate/jquery.validate.min.js"></script>
 	<script>
 		$(document).ready(function () {
@@ -137,27 +147,49 @@
 			calendarWeeks: true,
 			autoclose: true
 		});
-		var options1 = {};
-		options1.ui = {
-			container: "#pwd-container1",
-			showVerdictsInsideProgressBar: true,
-			viewports: {
-				progress: ".pwstrength_viewport_progress"
-			}
-		};
-		options1.common = {
-			debug: false,
-		};
-		$('.example1').pwstrength(options1);
-		function checkPass() {
-			if ($("#password").val() != $("#confirmPassword").val()) {
-				alert("Passwords do not match.");
-				return false;
-			}
-			else {
-				return true;
-			}
+	</script>
+
+	<script>
+		$('input[type=password]').keyup(function() {
+			// keyup code here
+		}).focus(function() {
+			$('#pswd_info').show();
+		}).blur(function() {
+			$('#pswd_info').hide();
+		});
+
+	$(document).ready(function() {
+		// set password variable
+		var pswd = $(this).val();
+
+		//validate the length
+		if ( pswd.length < 8 ) {
+			$('#length').removeClass('valid').addClass('invalid');
+		} else {
+			$('#length').removeClass('invalid').addClass('valid');
 		}
+
+		//validate letter
+		if ( pswd.match(/[A-z]/) ) {
+			$('#letter').removeClass('invalid').addClass('valid');
+		} else {
+			$('#letter').removeClass('valid').addClass('invalid');
+		}
+
+		//validate capital letter
+		if ( pswd.match(/[A-Z]/) ) {
+			$('#capital').removeClass('invalid').addClass('valid');
+		} else {
+			$('#capital').removeClass('valid').addClass('invalid');
+		}
+
+		//validate number
+		if ( pswd.match(/\d/) ) {
+			$('#number').removeClass('invalid').addClass('valid');
+		} else {
+			$('#number').removeClass('valid').addClass('invalid');
+		}
+	});
 	</script>
 </body>
 </html>
