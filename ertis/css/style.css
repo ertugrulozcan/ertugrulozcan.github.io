@@ -10369,9 +10369,9 @@ body.md-skin {
     padding: 10px 0;
     font-size: 18px;
     text-align: center;
-    background: #eff4f7;
+    background: #efeff1;
     border-bottom: 1px solid #dde0e7;
-    box-shadow: 0 -1px 0 #fff inset;
+    /* box-shadow: 0 -1px 0 #fff inset; */
     border-radius: 5px 5px 0 0;
     /* otherwise we get some uncut corners with container div */
     text-shadow: 1px 1px 0 #fff;
