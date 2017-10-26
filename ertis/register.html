@@ -176,12 +176,14 @@
     <script>
         $('input[type=password]').on('input', function(e) {
             var passBox = $('#passwordBox');
+            var passwordStrengthMeter = $('#passwordStrengthMeter');
+
             if (passBox.val().length > 0) {
-                $('#passwordStrengthMeter').attr('data-strength', 1)
-                passBox.show();
+                passwordStrengthMeter.attr('data-strength', 1)
+                passwordStrengthMeter.show();
             } else {
-                $('#passwordStrengthMeter').attr('data-strength', 0)
-                passBox.hide();
+                passwordStrengthMeter.attr('data-strength', 0)
+                passwordStrengthMeter.hide();
             }
         });
     </script>
