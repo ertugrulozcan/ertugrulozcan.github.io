@@ -5783,6 +5783,7 @@ body.mini-navbar.fixed-sidebar .logo-element {
     z-index: 100;
     margin: 0 auto;
     padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .lockscreen.middle-box {
@@ -10369,12 +10370,13 @@ body.md-skin {
     padding: 10px 0;
     font-size: 18px;
     text-align: center;
-    background: #efeff1;
+    color: #F7F7F7;
+    background: #1AB394;
     border-bottom: 1px solid #dde0e7;
     /* box-shadow: 0 -1px 0 #fff inset; */
     border-radius: 5px 5px 0 0;
     /* otherwise we get some uncut corners with container div */
-    text-shadow: 1px 1px 0 #fff;
+    text-shadow: 1px 1px 0 #49714A;
 }
 
 .captionPanel form ul li {
