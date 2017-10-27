@@ -37,7 +37,7 @@
                     <label lockey="Name"></label>
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-user" aria-hidden="true"></span></span>
-                        <input id="NameTextBox" lockey="Name" type="text" class="form-control" placeholder="Name" required pattern="\w+">
+                        <input id="NameTextBox" lockey="Name" type="text" class="form-control" placeholder="Name" required pattern="[A-Za-z]">
                     </div>
                 </div>
 
@@ -46,7 +46,7 @@
                     <label lockey="Surname"></label>
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-user-plus" aria-hidden="true"></span></span>
-                        <input id="surnameTextBox" lockey="Surname" type="text" class="form-control" placeholder="Surname" required>
+                        <input id="surnameTextBox" lockey="Surname" type="text" class="form-control" placeholder="Surname" required pattern="[A-Za-z]">
                     </div>
                 </div>
 
@@ -55,7 +55,7 @@
                     <label lockey="EmailAddress"></label>
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-at" aria-hidden="true"></span></span>
-                        <input id="emailBox" lockey="EmailAddress" type="email" class="form-control" placeholder="Email" required>
+                        <input id="emailBox" lockey="EmailAddress" type="email" class="form-control" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                     </div>
                 </div>
 
