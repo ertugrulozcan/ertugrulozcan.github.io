@@ -37,7 +37,7 @@
                     <label lockey="Name"></label>
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-user" aria-hidden="true"></span></span>
-                        <input id="NameTextBox" lockey="Name" type="text" class="form-control" placeholder="Name" required>
+                        <input id="NameTextBox" lockey="Name" type="text" class="form-control" placeholder="Name" required pattern="\w+">
                     </div>
                 </div>
 
@@ -85,7 +85,7 @@
                         <label lockey="Password"></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="fa fa-key" aria-hidden="true"></span></span>
-                            <input id="passwordBox" lockey="Password" type="password" class="form-control example1" placeholder="Password">
+                            <input id="passwordBox" lockey="Password" type="password" class="form-control example1" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
                         </div>
                     </div>
 
