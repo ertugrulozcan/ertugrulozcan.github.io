@@ -126,13 +126,13 @@ function SetErrorMessage(messageLocKey) {
 }
 
 function SubscribePhoneNumberFixHandler() {
-    $('.phonenumber').on('input', function(e) {
+    $('#phoneBox').on('input', function(e) {
         FixPhoneNumberStringFormat();
     });
 }
 
 function FixPhoneNumberStringFormat() {
-    $(".phonenumber").text(function(i, text) {
+    $("#phoneBox").text(function(i, text) {
         if (text[0] == '0')
             text = text.substring(1);
 
