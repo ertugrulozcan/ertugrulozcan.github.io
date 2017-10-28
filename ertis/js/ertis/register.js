@@ -4,7 +4,7 @@ function RegisterOnLoad() {
     Localize("tr-TR");
 
     console.log("RegisterOnLoad()");
-    FixPhoneNumberStringFormat();
+    SubscribePhoneNumberFixHandler();
     $("#progressRing").hide();
 }
 
@@ -123,6 +123,12 @@ function SetErrorMessage(messageLocKey) {
         $('#ErrorMessageTextBlock').removeAttr("lockey");
         $('#ErrorMessageTextBlock').text("");
     }
+}
+
+function SubscribePhoneNumberFixHandler() {
+    $('.phonenumber').on('input', function(e) {
+        FixPhoneNumberStringFormat();
+    });
 }
 
 function FixPhoneNumberStringFormat() {
