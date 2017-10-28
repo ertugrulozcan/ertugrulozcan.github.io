@@ -85,7 +85,7 @@
                         <label lockey="Password"></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="fa fa-key" aria-hidden="true"></span></span>
-                            <input id="passwordBox" lockey="Password" type="password" class="form-control example1" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                            <input id="passwordBox" lockey="Password" type="password" class="form-control example1" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" oninvalid="this.setCustomValidity(LocalizeKey('PasswordPatternMessage'))">
                         </div>
                     </div>
 
@@ -100,7 +100,7 @@
                     <label lockey="ConfirmPassword"></label>
                     <div class="input-group">
                         <span class="input-group-addon"><span class="fa fa-key" aria-hidden="true"></span></span>
-                        <input id="confirmPassword" lockey="ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+                        <input id="confirmPassword" lockey="ConfirmPassword" type="password" class="form-control" placeholder="Confirm Password" required>
                     </div>
                 </div>
 
