@@ -4,6 +4,7 @@ function RegisterOnLoad() {
     Localize("tr-TR");
 
     console.log("RegisterOnLoad()");
+    FixPhoneNumberStringFormat();
     $("#progressRing").hide();
 }
 
