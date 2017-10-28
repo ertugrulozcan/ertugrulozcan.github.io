@@ -105,6 +105,16 @@ function disablePage() {
     $("#buttonsDiv").addClass("disabledDiv");
 }
 
+function FixPhoneNumberStringFormat() {
+    $(".phonenumber").text(function(i, text) {
+        if (text[0] == '0')
+            text = text.substring(1);
+
+        text = text.replace(/(\d{3})(\d{3})(\d{4})/, 0 + "$1 $2 $3");
+        return text;
+    });
+}
+
 function showMessage(message) {
     alert("Message\n" + message);
 }
