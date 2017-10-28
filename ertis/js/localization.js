@@ -67,7 +67,7 @@ function Loc(dict, tagName) {
     }
 }
 
-function LocalizeKey(locKey) {
+function LocalizeKey(lockey) {
     if (currentDictionary && lockey) {
         var val = currentDictionary.KeyValueDictionary[lockey];
         if (val) {
