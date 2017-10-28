@@ -129,7 +129,7 @@ function SetErrorMessage(messageLocKey) {
 }
 
 function FixPhoneNumberStringFormat() {
-    $("#phoneBox").mask("0999 999 9999");
+    $("#phoneBox").mask("999 999 9999");
 
     $("#phoneBox").on("blur", function() {
         if (!$("#phoneBox").val())
