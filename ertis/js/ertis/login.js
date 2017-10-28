@@ -91,7 +91,7 @@ function Login(username, password) {
                 window.location.assign("index.html");
             } else if (this.status == 401) {
                 //showErrorMessage("Kullanıcı adı ya da şifre hatalı!");
-                $('#ErrorMessageTextBlock').text("Kullanıcı adı ya da şifre hatalı!");
+                $('#ErrorMessageTextBlock').attr("lockey", "UsernameOrPasswordIncorrect");
 
                 console.log("Username or password is incorrect");
             } else {
