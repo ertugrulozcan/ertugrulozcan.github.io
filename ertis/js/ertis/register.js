@@ -23,8 +23,8 @@ function RegisterButtonClickHandler() {
     var repassword = $('#confirmPassword').val();
 
     if (password != repassword) {
-        SetErrorMessage("");
-        return;
+        SetErrorMessage("PasswordsDoNotMatch");
+        return false;
     }
 
     var user = {
@@ -39,6 +39,7 @@ function RegisterButtonClickHandler() {
     }
 
     this.Register(user);
+    return true;
 }
 
 function Register(user) {
