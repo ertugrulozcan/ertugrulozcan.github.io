@@ -4,7 +4,10 @@ function RegisterOnLoad() {
     Localize("tr-TR");
 
     console.log("RegisterOnLoad()");
-    SubscribePhoneNumberFixHandler();
+
+    // Phone number format mask
+    $("#phoneBox").mask("0999 999 9999");
+
     $("#progressRing").hide();
 }
 
@@ -125,19 +128,20 @@ function SetErrorMessage(messageLocKey) {
     }
 }
 
-function SubscribePhoneNumberFixHandler() {
-    $('#phoneBox').on('input', function(e) {
-        FixPhoneNumberStringFormat();
-    });
-}
-
 function FixPhoneNumberStringFormat() {
-    $("#phoneBox").text(function(i, text) {
-        if (text[0] == '0')
-            text = text.substring(1);
+    $("#phoneBox").mask("0999 999 9999");
 
-        text = text.replace(/(\d{3})(\d{3})(\d{4})/, 0 + "$1 $2 $3");
-        return text;
+    $("#phoneBox").on("blur", function() {
+        var last = $(this).val().substr($(this).val().indexOf("-") + 1);
+
+        if (last.length == 3) {
+            var move = $(this).val().substr($(this).val().indexOf("-") - 1, 1);
+            var lastfour = move + last;
+
+            var first = $(this).val().substr(0, 9);
+
+            $(this).val(first + '-' + lastfour);
+        }
     });
 }
 
