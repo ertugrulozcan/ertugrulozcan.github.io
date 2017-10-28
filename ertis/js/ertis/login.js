@@ -3,26 +3,6 @@ var SERVICE_URL = "https://ertis.azurewebsites.net/api/login";
 function LoginOnLoad() {
     Localize("tr-TR");
 
-    // EnterKey event handler for username textBox
-    // EnterKey event handler for username textBox
-    /*
-	
-    // Test onsubmit;
-
-    $("#UsernameTextBox").keyup(function (event) {
-    	if (event.keyCode === 13) {
-    		$("#LoginButton").click();
-    	}
-    });
-
-    // EnterKey event handler for username textBox
-    $("#PasswordBox").keyup(function (event) {
-    	if (event.keyCode === 13) {
-    		$("#LoginButton").click();
-    	}
-    });
-    */
-
     console.log("LoginOnLoad()");
     $("#progressRing").hide();
 }
@@ -39,14 +19,9 @@ function LoginButtonClickHandler() {
 function Login(username, password) {
     console.log("Login()");
 
-    $('#ErrorMessageTextBlock').text("");
+    SetErrorMessage("");
     disablePage();
     $("#progressRing").show();
-    /* $("#progressBar").show();
-    $("#progressBar").progressbar({
-    	value: 100
-    });
-    IndeterminateProgressBar($("#progressBar")); */
 
     if (window.XMLHttpRequest) {
         // code for modern browsers
@@ -91,7 +66,7 @@ function Login(username, password) {
                 window.location.assign("index.html");
             } else if (this.status == 401) {
                 //showErrorMessage("Kullanıcı adı ya da şifre hatalı!");
-                $('#ErrorMessageTextBlock').attr("lockey", "UsernameOrPasswordIncorrect");
+                SetErrorMessage("UsernameOrPasswordIncorrect");
 
                 console.log("Username or password is incorrect");
             } else {
@@ -102,7 +77,6 @@ function Login(username, password) {
 
         $("#progressRing").hide();
         enablePage();
-        // $("#progressBar").hide();
     };
 
     httpReq.open("POST", SERVICE_URL, true);
@@ -149,6 +123,18 @@ function getCookie(c_name) {
         }
     }
     return "";
+}
+
+function SetErrorMessage(messageLocKey) {
+    if (messageLocKey) {
+        $('#ErrorMessageTextBlock').attr("lockey", messageLocKey);
+
+        var message = LocalizeKey(messageLocKey);
+        $('#ErrorMessageTextBlock').text(message);
+    } else {
+        $('#ErrorMessageTextBlock').removeAttr("lockey");
+        $('#ErrorMessageTextBlock').text("");
+    }
 }
 
 function showMessage(message) {
