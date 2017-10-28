@@ -8,12 +8,20 @@ function RegisterOnLoad() {
 }
 
 function RegisterButtonClickHandler() {
+    SetErrorMessage("");
+
     var name = $('#NameTextBox').val();
     var surname = $('#surnameTextBox').val();
     var birthdate = $('#birthDateBox').val();
     var phone = $('#phoneBox').val();
     var email = $('#emailBox').val();
     var password = $('#passwordBox').val();
+    var repassword = $('#confirmPassword').val();
+
+    if (password != repassword) {
+        SetErrorMessage("");
+        return;
+    }
 
     var user = {
         "card": {
@@ -32,7 +40,6 @@ function RegisterButtonClickHandler() {
 function Register(user) {
     console.log("Register()");
 
-    $('#ErrorMessageTextBlock').text("");
     disablePage();
     $("#progressRing").show();
 
@@ -103,6 +110,18 @@ function enablePage() {
 function disablePage() {
     $("#inputsDiv").addClass("disabledDiv");
     $("#buttonsDiv").addClass("disabledDiv");
+}
+
+function SetErrorMessage(messageLocKey) {
+    if (messageLocKey) {
+        $('#ErrorMessageTextBlock').attr("lockey", messageLocKey);
+
+        var message = LocalizeKey(messageLocKey);
+        $('#ErrorMessageTextBlock').text(message);
+    } else {
+        $('#ErrorMessageTextBlock').removeAttr("lockey");
+        $('#ErrorMessageTextBlock').text("");
+    }
 }
 
 function FixPhoneNumberStringFormat() {
