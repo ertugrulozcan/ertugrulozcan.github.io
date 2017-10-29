@@ -85,8 +85,7 @@
                         <label lockey="Password"></label>
                         <div class="input-group">
                             <span class="input-group-addon"><span class="fa fa-key" aria-hidden="true"></span></span>
-                            <input id="passwordBox" lockey="Password" type="password" class="form-control" placeholder="Password" required pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" oninvalid="this.setCustomValidity(LocalizeKey('PasswordPatternMessage'))"
-                                oninput="this.setCustomValidity('')">
+                            <input id="passwordBox" lockey="Password" type="password" class="form-control" placeholder="Password" required pattern="(?=^.{8,}$)(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" oninvalid="this.setCustomValidity(LocalizeKey('PasswordPatternMessage'))" oninput="this.setCustomValidity('')">
                         </div>
                     </div>
 
