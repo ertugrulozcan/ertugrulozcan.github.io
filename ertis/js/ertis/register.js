@@ -8,6 +8,9 @@ function RegisterOnLoad() {
     // Phone number format mask
     FixPhoneNumberStringFormat();
 
+    // RegisterSuccessModalWindow
+    SetRegisterSuccessModalWindow();
+
     $("#progressRing").hide();
 }
 
@@ -97,7 +100,7 @@ function Register(user) {
             var response = JSON.parse(this.responseText);
 
             if (this.status == 200 && response.statusCode == 200) {
-                $('#RegisterSuccessModalWindow').modal();
+                $('#RegisterSuccessModalWindow').modal({ backdrop: "static" });
             } else if (response.statusCode == 409) {
                 SetErrorMessage("EmailAddressAlreadyExist");
             } else {
@@ -149,6 +152,12 @@ function FixPhoneNumberStringFormat() {
     $("#phoneBox").on("blur", function() {
         if (!$("#phoneBox").val())
             $("#phoneBox").text("0");
+    });
+}
+
+function SetRegisterSuccessModalWindow() {
+    $("#RegisterSuccessModalWindow").on('hide.bs.modal', function() {
+        Reload();
     });
 }
 
