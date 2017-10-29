@@ -68,7 +68,7 @@ function Register(user) {
 
     var httpReq = xmlhttp;
     httpReq.onreadystatechange = function() {
-        console.log("RegisterResponse;\n" + this.responseText);
+        //console.log("RegisterResponse;\n" + this.responseText);
 
         if (!this.responseText)
             return;
@@ -94,13 +94,15 @@ function Register(user) {
         }
 
         if (this.readyState == 4) {
-            console.log("Register response status code = " + this.status);
+            var response = JSON.parse(this.responseText);
 
-            if (this.status == 200) {
+            if (this.status == 200 && response.statusCode == 200) {
                 $('#RegisterSuccessModalWindow').modal();
+            } else if (response.statusCode == 409) {
+                SetErrorMessage("EmailAddressAlreadyExist");
             } else {
-                $('#ErrorMessageTextBlock').text(this.responseText);
-
+                //$('#ErrorMessageTextBlock').text(this.responseText);
+                alert(this.responseText);
                 console.log("Login error;\n" + this.responseText);
             }
         }
@@ -116,7 +118,7 @@ function Register(user) {
     httpReq.send(JSON.stringify(user));
 
     console.log("Register request sent.");
-    console.log(user);
+    //console.log(user);
 }
 
 function enablePage() {
