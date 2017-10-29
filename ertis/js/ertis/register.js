@@ -39,7 +39,7 @@ function RegisterButtonClickHandler() {
     }
 
     this.Register(user);
-    return true;
+    return false; // prevent further bubbling of event
 }
 
 function Register(user) {
