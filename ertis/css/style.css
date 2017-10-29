@@ -253,7 +253,7 @@ ul.nav-second-level {
     float: left;
     height: 50px;
     padding: 0;
-    width: 200px;
+    width: 270px;
     display: block;
 }
 
@@ -265,12 +265,16 @@ ul.nav-second-level {
     font-size: 14px;
 }
 
+
+/*background: none repeat scroll 0 0 rgba(0, 0, 0, 0);*/
+
 .navbar-form-custom .form-control {
-    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
-    border: medium none;
+    background: #eee;
+    border: 1px solid #ccc;
     font-size: 14px;
-    height: 60px;
-    margin: 0;
+    height: 38px;
+    margin-top: 10px;
+    margin-left: 10px;
     z-index: 2000;
 }
 
@@ -4501,6 +4505,7 @@ ol.unstyled {
     padding: 5px 20px;
     background: white;
     border-top: 1px solid #e7eaec;
+    font-size: 11px;
 }
 
 .footer.fixed {
