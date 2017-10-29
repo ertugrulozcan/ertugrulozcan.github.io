@@ -95,7 +95,7 @@ function Register(user) {
 
         if (this.readyState == 4) {
             if (this.status == 200) {
-                location.href = "/ertis/login.html";
+                $('RegisterSuccessModalWindow').style.display = "block";
             } else {
                 $('#ErrorMessageTextBlock').text(this.responseText);
 
