@@ -40,11 +40,17 @@ function RegisterButtonClickHandler() {
         return false;
     }
 
+    var birthDateStr;
+    var timestamp = Date.parse(birthdate);
+    if (isNaN(timestamp) == false) {
+        birthDateStr = new Date(birthdate).toISOString().split('.')[0];
+    }
+
     var user = {
         "card": {
             "name": name,
             "surname": surname,
-            "birthDate": new Date(birthdate).toISOString().split('.')[0],
+            "birthDate": birthDateStr,
             "emailAddress": email,
             "phoneNumber": phone
         },
