@@ -85,7 +85,7 @@ function Register(user) {
 
         if (this.readyState == 4) {
             if (this.status == 200) {
-                Login(user['username'], user['password']);
+                location.href = "/ertis/login.html";
             } else {
                 $('#ErrorMessageTextBlock').text(this.responseText);
 
