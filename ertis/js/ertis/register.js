@@ -95,7 +95,7 @@ function Register(user) {
 
         if (this.readyState == 4) {
             if (this.status == 200) {
-                $('RegisterSuccessModalWindow').style.display = "block";
+                $('#RegisterSuccessModalWindow').modal();
             } else {
                 $('#ErrorMessageTextBlock').text(this.responseText);
 
