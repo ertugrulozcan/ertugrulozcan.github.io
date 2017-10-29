@@ -157,3 +157,7 @@ function showMessage(message) {
 function showErrorMessage(message) {
     alert("Error\n" + message);
 }
+
+function Reload() {
+    location.reload(true);
+}
