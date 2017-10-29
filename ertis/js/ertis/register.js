@@ -94,6 +94,8 @@ function Register(user) {
         }
 
         if (this.readyState == 4) {
+            console.log("Register response status code = " + this.status);
+
             if (this.status == 200) {
                 $('#RegisterSuccessModalWindow').modal();
             } else {
