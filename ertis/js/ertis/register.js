@@ -22,6 +22,16 @@ function RegisterButtonClickHandler() {
     var password = $('#passwordBox').val();
     var repassword = $('#confirmPassword').val();
 
+    if (!$.trim(name)) {
+        SetErrorMessage("FillTheRequiredFields");
+        return false;
+    }
+
+    if (!$.trim(surname)) {
+        SetErrorMessage("FillTheRequiredFields");
+        return false;
+    }
+
     if (password != repassword) {
         SetErrorMessage("PasswordsDoNotMatch");
         return false;

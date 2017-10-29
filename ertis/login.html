@@ -38,7 +38,7 @@
             <form class="m-t" method="POST" onsubmit="return LoginButtonClickHandler()">
                 <div id="inputsDiv">
                     <div class="form-group">
-                        <input name="UsernameTextBox" id="UsernameTextBox" lockey="EmailAddress" type="email" for="email" class="form-control" placeholder="E-posta Adresi" required>
+                        <input name="UsernameTextBox" id="UsernameTextBox" lockey="EmailAddress" type="email" for="email" class="form-control" placeholder="E-posta Adresi" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
                     </div>
 
                     <div class="form-group">
