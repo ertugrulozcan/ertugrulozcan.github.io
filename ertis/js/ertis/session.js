@@ -23,9 +23,12 @@ var session;
 function CreateSession(loginResponse) {
     var response = JSON.parse(loginResponse);
 
-    session.token = response.access_token;
-    session.expire = response.expires_in;
-    session.userID = response.user_id;
+    session = {
+        token: response.access_token,
+        expire: response.expires_in,
+        userID: response.user_id,
+        user: undefined
+    };
 
     createCookie("access_token", JSON.stringify(this.responseText), 1);
     createCookie("username", username, 1);
