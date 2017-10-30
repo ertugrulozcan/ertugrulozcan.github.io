@@ -4,6 +4,8 @@
 var session;
 
 function CreateSession(loginResponse) {
+    console.log(loginResponse);
+
     session = JSON.parse(loginResponse);
 
     createCookie("access_token", JSON.stringify(this.responseText), 1);
