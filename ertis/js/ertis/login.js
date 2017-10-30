@@ -1,7 +1,7 @@
 var SERVICE_URL = "https://ertis.azurewebsites.net/api/login";
 
 function LoginOnLoad() {
-    console.log("Test " + 1001);
+    console.log("Test " + 1002);
     Localize("tr-TR");
 
     console.log("LoginOnLoad()");
