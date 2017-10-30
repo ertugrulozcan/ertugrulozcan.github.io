@@ -20,7 +20,7 @@ var session;
 }
 */
 
-function CreateSession(loginResponse) {
+function CreateSession(username, loginResponse) {
     var response = JSON.parse(loginResponse);
 
     session = {

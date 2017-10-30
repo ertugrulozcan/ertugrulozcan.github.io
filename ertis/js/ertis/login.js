@@ -62,7 +62,7 @@ function Login(username, password) {
             if (this.status == 200) {
                 console.log("Login success");
 
-                CreateSession(this.responseText);
+                CreateSession(username, this.responseText);
                 window.location.assign("index.html");
             } else if (this.status == 401) {
                 //showErrorMessage("Kullanıcı adı ya da şifre hatalı!");
