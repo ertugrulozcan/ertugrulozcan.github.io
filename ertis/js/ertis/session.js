@@ -60,6 +60,8 @@ function GetUser(userID) {
         if (this.readyState == 4) {
             if (this.status == 200) {
                 session.user = JSON.parse(this.responseText);
+
+                console.log("LoginUser : " + session.card.fullName);
             }
         }
     };
