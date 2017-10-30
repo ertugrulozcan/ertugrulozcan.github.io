@@ -5,7 +5,7 @@ function IndexOnLoad() {
     IncludePages();
 
     console.log("IndexOnLoad()");
-    console.log("LoginUser : " + session.card.fullName);
+    console.log("LoginUser : " + session.user.card.fullName);
 }
 
 function IncludePages() {
