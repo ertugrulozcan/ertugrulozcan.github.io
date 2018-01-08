@@ -42,12 +42,23 @@
     </style>
 
     <script>
-        var number1, number2;
-        var result = number1 + number2;
+        var testObject = {
+            prop1: undefined
+        }
+
+        function RunTest() {
+            var text = $('#testInput').val();
+
+            testObject.prop1 = {
+                param1: text
+            }
+
+            alert(text);
+        };
     </script>
 </head>
 
-<body ng-app="">
+<body ng-app="testApp" ng-controller="myCtrl">
     <nav style="background-color: #2f4050; margin-bottom: 70px; border-bottom: .5px solid #aaa">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -70,7 +81,7 @@
     <div class="container text-center">
         <div class="row content">
             <div class="col-sm-2 sidenav">
-                <button type="button" class="btn btn-primary" style="width: 100%;"><span class="fa fa-play" style="color: white; margin-right: 20px;"></span>Test</button>
+                <button id="testButton" onclick="RunTest()" type="button" class="btn btn-primary" style="width: 100%;"><span class="fa fa-play" style="color: white; margin-right: 20px;"></span>Test</button>
             </div>
 
             <div class="col-sm-10 text-left" style="color: #eee; background-color: rgba(0, 0, 0, 0.1); margin-bottom:35px;">
@@ -79,11 +90,16 @@
                     <br/>
                     <p>
                         <span>
-							<input type="text" ng-model="number1" style="color:black; margin-right: 20px;" />
-							+
-							<input type="text" ng-model="number2" style="color:black; margin-right: 20px;" />
-							<span>{{result}}</span>
+							<input id="testInput" ng-model="inputText" type="text" style="color:black; margin-right: 20px;" />
+							
+							<span>{{testObject.prop1.param1}}</span>
                         </span>
+
+                        <br/>
+                        <br/>
+                        <br/>
+
+                        <span>{{inputText}}</span>
                     </p>
                 </div>
             </div>
@@ -99,6 +115,15 @@
             <strong>Copyright</strong> ERTIS &copy; 2017
         </div>
     </div>
+
+    <script>
+        var app = angular.module('testApp', []);
+        app.controller('myCtrl', function($scope) {
+            $scope.testObject = {
+                prop1: undefined
+            };
+        });
+    </script>
 </body>
 
 </html>
