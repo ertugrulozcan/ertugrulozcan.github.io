@@ -239,7 +239,7 @@ ul.list li:last-child {
 }
 
 .paragraph {
-   margin-bottom: 2.143rem;
+   margin-bottom: 5.143rem;
    line-height: 1.714rem;
    letter-spacing: 1px;
    font-weight: 300;
@@ -250,7 +250,7 @@ ul.list li:last-child {
    -webkit-margin-end: 0px;
    font-family: 'Roboto', sans-serif;
    color: #616161;
-   font-size: 14px;
+   font-size: 15px;
 }
 
 /* button's */
