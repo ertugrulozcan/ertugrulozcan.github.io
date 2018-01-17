@@ -418,6 +418,7 @@ section {
 }
 
 .section-title p {
+   text-indent: 8%;
     font-size: 1.186rem;
     font-weight: 300;
     color: #616161;
