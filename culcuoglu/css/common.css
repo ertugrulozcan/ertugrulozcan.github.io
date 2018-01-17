@@ -239,19 +239,20 @@ ul.list li:last-child {
 }
 
 .paragraph {
-   margin-bottom: 5.143rem;
-   line-height: 1.714rem;
-   letter-spacing: 1px;
-   font-weight: 300;
-   display: block;
-   -webkit-margin-before: 1em;
-   -webkit-margin-after: 1em;
-   -webkit-margin-start: 0px;
-   -webkit-margin-end: 0px;
-   font-family: 'Roboto', sans-serif;
-   color: #616161;
-   font-size: 15px;
+    margin-bottom: 5.143rem;
+    line-height: 1.714rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-family: 'Roboto', sans-serif;
+    color: #616161;
+    font-size: 15px;
 }
+
 
 /* button's */
 
@@ -418,7 +419,6 @@ section {
 }
 
 .section-title p {
-   text-indent: 8%;
     font-size: 1.186rem;
     font-weight: 300;
     color: #616161;
@@ -446,6 +446,10 @@ section {
     margin-right: 4.286rem;
     color: #a4a4a4 !important;
     font-weight: 300;
+}
+
+.indented {
+    text-indent: 8%;
 }
 
 .section-main {
