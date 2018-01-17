@@ -238,6 +238,20 @@ ul.list li:last-child {
     color: #1b212c !important;
 }
 
+.paragraph {
+   margin-bottom: 2.143rem;
+   line-height: 1.714rem;
+   letter-spacing: 1px;
+   font-weight: 300;
+   display: block;
+   -webkit-margin-before: 1em;
+   -webkit-margin-after: 1em;
+   -webkit-margin-start: 0px;
+   -webkit-margin-end: 0px;
+   font-family: 'Roboto', sans-serif;
+   color: #616161;
+   font-size: 14px;
+}
 
 /* button's */
 
