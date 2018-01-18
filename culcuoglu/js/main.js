@@ -87,7 +87,7 @@ $(document).ready(function() {
      */
     $(window).scroll(function() {
         var header = $('.main-header');
-        if ($(this).scrollTop() > 350) {
+        if ($(this).scrollTop() > 100) {
             header.addClass('main-header-top');
             $('#backToTop').fadeIn();
         } else {

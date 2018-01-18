@@ -287,7 +287,9 @@
     }
 }
 
+
 /* Certificates Styles */
+
 .cert-logo {
     -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -297,6 +299,7 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+
 
 /* ====================================================
    03. Services Style
@@ -777,6 +780,10 @@
 /* ====================================================
        08. Carousel Styles
 =======================================================*/
+
+.owl-carousel .item .image {
+    max-height: 500px;
+}
 
 .owl-theme .owl-nav [class*=owl-] {
     color: #212121;
