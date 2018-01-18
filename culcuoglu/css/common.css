@@ -542,6 +542,10 @@ section {
 
 /* Background Image */
 
+.bg-fashion,
+.bg-natural,
+.bg-premium,
+.bg-sport,
 .bg-img-1,
 .bg-img-10,
 .bg-img-2,
@@ -599,6 +603,22 @@ section {
 
 .bg-img-10 {
     background-image: url("../img/bg/bg-img-10.jpg");
+}
+
+.bg-img-fashion {
+    background-image: url("../img/bg/bg-fashion.jpg");
+}
+
+.bg-img-natural {
+    background-image: url("../img/bg/bg-natural.jpg");
+}
+
+.bg-img-premium {
+    background-image: url("../img/bg/bg-premium.jpg");
+}
+
+.bg-img-sport {
+    background-image: url("../img/bg/bg-sport.jpg");
 }
 
 .bg-50 {
@@ -841,6 +861,27 @@ section {
 }
 
 .px-5 {
+    padding-left: 5.714rem;
+    padding-right: 5.714rem;
+}
+
+
+/* 100px */
+
+.p-6 {
+    padding: 5.714rem;
+}
+
+.pt-6 {
+    padding-top: 5.714rem;
+}
+
+.py-6 {
+    padding-top: 5.714rem;
+    padding-bottom: 7.714rem;
+}
+
+.px-6 {
     padding-left: 5.714rem;
     padding-right: 5.714rem;
 }

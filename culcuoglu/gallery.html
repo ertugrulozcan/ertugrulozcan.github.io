@@ -32,8 +32,10 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/plugins.css">
     <!-- lightbox -->
     <link rel="stylesheet" href="libs/lightbox/dist/css/lightbox.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300%7cPoppins:400,300,500,700,600' rel='stylesheet' type='text/css'>
     <!-- Owl Stylesheets -->
     <link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="libs/OwlCarousel/dist/assets/owl.theme.default.min.css">
@@ -43,6 +45,7 @@
     <link rel="stylesheet" type="text/css" href="libs/revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="libs/revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="libs/revolution/css/navigation.css">
+    <link rel="stylesheet" href="css/gallery.css">
     <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" property="stylesheet">
     <!-- Font-awesome 4.7 CSS -->
@@ -54,6 +57,8 @@
     <link rel="stylesheet" href="css/main.css" property="stylesheet">
     <link rel="stylesheet" href="css/responsive.css" property="stylesheet">
 
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -62,7 +67,6 @@
 </head>
 
 <body>
-
     <!-- start preloader area-->
     <div class="preloader-area">
         <div class="preloader">
@@ -82,7 +86,7 @@
             <nav class="menu">
                 <ul>
                     <li><a class="page-scroll" href="index.html">home</a></li>
-                    <li><a class="page-scroll" href="#">certificates</a></li>
+                    <li><a class="page-scroll" href="certificates.html">certificates</a></li>
                     <li><a class="page-scroll" href="#">products</a>
                         <ul class="sub-menu">
                             <li><a href="fashion.html">fashion</a></li>
@@ -102,71 +106,99 @@
 
     <!-- start main wrapper   -->
     <main>
-        <!--Section: home-->
-        <section id="home" class="section-main">
-            <div class="section-image bg-img-fashion">
-                <div class="overlay-dark">
-                    <div class="container pt-5">
-                        <div class="header-title">
-                            <p class="text-white">CULCUOGLU FABRICS</p>
-                            <h1 class="text-white">fashion</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--/Section: home-->
-
-        <!--Section: about_project-->
-        <section id="about_project" class="section-main ">
+        <section class="section-main bg-two">
             <!--Container-->
-            <div class="container py-5">
-                <!--First row-->
-                <div class="row">
-                    <!--First column -->
-                    <div class="col-md-12 col-lg-6">
-                        <!--First colum -->
-                        <div id="owl-carousel-portfolio" class="owl-carousel owl-theme">
-                            <div class="item"> <img class="image" src="img/blog/blog-1.jpg" alt="..."> </div>
-                            <div class="item"> <img class="image" src="img/blog/blog-2.jpg" alt="..."> </div>
-                            <div class="item"> <img class="image" src="img/blog/blog-3.jpg" alt="..."> </div>
-                            <div class="item"> <img class="image" src="img/blog/blog-4.jpg" alt="..."> </div>
-                            <div class="item"> <img class="image" src="img/blog/blog-5.jpg" alt="..."> </div>
-                            <div class="item"> <img class="image" src="img/blog/blog-6.jpg" alt="..."> </div>
-                        </div>
-                        <!--/First colum -->
-                    </div>
-                    <!--/First column -->
-                    <!--Second column -->
-                    <div class="col-md-12 col-lg-6">
-                        <div class="detail_portfolio">
-                            <h1>Fashion</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos voluptatibus vitae doloremque, soluta ducimus laboriosam perferendis quaerat ipsum autem, ipsam, magni nulla architecto. Maxime ratione quo reprehenderit veniam
-                                saepe voluptatum!</p>
-                            <ul class="list">
-                                <li>There are many variations of passages of Lorem Ipsum available.</li>
-                                <li>Mation the design of art in some form with design.</li>
-                                <li>Designer is the best reason in the force of a nationion awards.</li>
-                                <li>Mation the design of art in some form with design.</li>
-                            </ul>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit similique asperiores at dolores alias sit. </p>
-                            <dl class="row">
-                                <dt class="col-sm-3">Company</dt>
-                                <dd class="col-sm-9">Iniciativa</dd>
+            <div class="container py-6">
 
-                                <dt class="col-sm-3">Catagories</dt>
-                                <dd class="col-sm-9">Photoshop, Graphic, Shop, Mockup</dd>
-                            </dl>
-                        </div>
-                    </div>
-                    <!--/Second column -->
-                </div>
-                <!--/First row-->
             </div>
             <!--/Container-->
         </section>
-        <!--/Section: about_project-->
 
+        <!--Section: portfolio-->
+        <section id="portfolio" class="section-main bg-img-2">
+            <div class="overlay-light">
+                <!--Container-->
+                <div class="container py-5">
+                    <!--First column-->
+                    <!-- title -->
+                    <div class="row">
+                        <div class="section-title">
+                            <p></p>
+                            <h1>Gallery</h1>
+                        </div>
+                    </div>
+
+                    <!-- /title -->
+                    <!-- content -->
+                    <div class="row">
+                        <!-- GALLERY -->
+                        <div class="container fullwidth mt30">
+                            <div class="justified">
+
+                                <a href="img/gallery/1.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/1.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/2.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/2.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/3.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/3.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/4.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/4.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/5.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/5.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/6.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/6.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/7.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/7.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/8.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/8.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/9.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/9.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/10.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/10.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/11.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/11.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/12.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/12.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/13.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/13.jpg" alt="">
+                                </a>
+
+                                <a href="img/gallery/14.jpg" data-rel="lightcase:gallery" title="Caption Text">
+                                    <img src="img/gallery/14.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /GALLERY -->
+                    </div>
+                </div>
+        </section>
+        <!--/Section: portfolio-->
+
+        <!-- Section: pharse -->
         <section class="section-main bg-two">
             <!--Container-->
             <div class="container py-5">
@@ -176,6 +208,8 @@
             </div>
             <!--/Container-->
         </section>
+        <!-- /Section: pharse -->
+
 
         <!--Section: contact-->
         <section id="contact" class="section-main">
@@ -254,9 +288,7 @@
     <!-- footer script start  -->
 
     <!-- jQuery -->
-    <script>
-        window.jQuery || document.write('<script type="text/javascript" src="js/jquery.min.js"><\/script>')
-    </script>
+    <script src="js/libs/jquery.min.js"></script>
 
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="libs/bootstrap/js/tether.min.js"></script>
@@ -289,8 +321,13 @@
     <!-- jquery easing -->
     <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animsition/3.5.2/css/animsition.css"></link>
+
     <!-- jQuery Main. -->
     <script type="text/javascript" src="js/main.js"></script>
+
+    <script src="js/gscripts.js"></script>
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>
