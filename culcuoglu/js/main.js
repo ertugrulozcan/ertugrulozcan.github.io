@@ -127,9 +127,9 @@ $(document).ready(function() {
     });
 
     $('#contactMenuItem').on("click", function(e) {
-        var header_icon = $(this);
+        var header_icon = $('#header__icon');
         $('body').toggleClass('with--sidebar');
-        if ($(this).hasClass('header__icon__close')) {
+        if ($('#header__icon').hasClass('header__icon__close')) {
             header_icon.removeClass('header__icon__close');
         } else {
             header_icon.addClass('header__icon__close');
